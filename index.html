@@ -97,7 +97,7 @@
     </div>
   </div>
 
-  <main>
+  <main></main>
     <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero__overlay"></div>
@@ -124,6 +124,36 @@
     <section class="section members" id="members">
       <div class="container">
         <h2 class="section-title scroll-animate">Thành Viên Lớp</h2>
+        
+        <!-- Search Input for Members -->
+        <div class="members-search" id="members-search">
+          <div class="members-search__wrapper">
+            <svg class="members-search__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input 
+              type="text" 
+              id="members-search-input" 
+              class="members-search__input"
+              placeholder="Tìm kiếm thành viên..."
+              aria-label="Tìm kiếm thành viên"
+            >
+            <button id="members-search-clear" class="members-search__clear" aria-label="Xóa tìm kiếm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- No Results Message -->
+        <div id="members-no-results" class="members-no-results hidden">
+          <div class="members-no-results__icon">🔍</div>
+          <p class="members-no-results__text">Không tìm thấy thành viên nào</p>
+          <p class="members-no-results__hint">Thử tìm kiếm với từ khóa khác</p>
+        </div>
+        
         <div class="members__grid" id="members-grid">
           <!-- Member cards will be rendered by JavaScript -->
         </div>

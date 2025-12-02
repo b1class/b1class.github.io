@@ -1442,3 +1442,110 @@
   border-radius: var(--radius-sm);
   font-family: inherit;
 }
+
+
+/* ==================== MEMBERS SEARCH ==================== */
+.members-search {
+  max-width: 400px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.members-search__wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.members-search__wrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1), var(--shadow-md);
+}
+
+.members-search__icon {
+  color: var(--color-text-light);
+  flex-shrink: 0;
+  transition: color var(--transition-fast);
+}
+
+.members-search__wrapper:focus-within .members-search__icon {
+  color: var(--color-primary);
+}
+
+.members-search__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  outline: none;
+  min-width: 0;
+}
+
+.members-search__input::placeholder {
+  color: var(--color-text-light);
+}
+
+.members-search__clear {
+  width: 28px;
+  height: 28px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  border-radius: var(--radius-full);
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.members-search__clear.show {
+  display: flex;
+}
+
+.members-search__clear:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Members No Results */
+.members-no-results {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.members-no-results.hidden {
+  display: none;
+}
+
+.members-no-results__icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.members-no-results__text {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.members-no-results__hint {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+}
+
+/* Hide grid when no results */
+.members__grid.hidden {
+  display: none;
+}

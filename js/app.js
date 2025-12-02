@@ -10,7 +10,7 @@ const membersData = [
     id: "member-001",
     name: "Hồ Thị Thu Huyền",
     nickname: "Huyền",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/438240377_3194018950733477_6034067467652695982_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GkloBvgiflgQ7kNvwEhmMDH&_nc_oc=AdkZz9_3XvYMsaKaIlAmxcc4A9p4c8RF7r4zdLb-W_3t8MRaAkFSI487pZ0sjXAnQInlrX2mS4wv-1Cul4aVixss&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=TfssE1m2DA4WjzjUtBSr_w&oh=00_Afl1k9OkOP1eSvVwAPw1_hrXNUQsgM5UJERAp63hlY8d1g&oe=6934EE2D",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -18,8 +18,8 @@ const membersData = [
   {
     id: "member-002",
     name: "Lê Thanh Vũ",
-    nickname: "Vũ",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Vũ LT",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/557731513_24824089977222656_2481311300486690446_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FoTLqCuIQ0cQ7kNvwHAYN6A&_nc_oc=Adl2t2_QeF26FVm5ZXraY74ORSh3jwfGLF_zafQ-QgI1niUef64x6QqOBjA-YBiK-NYSTDMfA0nYGttQ53X16q-b&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=NsBmIronS92retBXAZ_I6w&oh=00_AfnKn0atsSwwlMZ7YTc6YkQ9BpuPeT6vrLxOlXL_Bu-iXw&oe=6934EE7A",
     role: "Lớp trưởng",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -28,7 +28,7 @@ const membersData = [
     id: "member-003",
     name: "Bùi Quang Hiếu",
     nickname: "Hiếu",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/80388618_2546071995488125_1742180825660653568_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lInlNHqw5iEQ7kNvwFB3Mz_&_nc_oc=AdmxsmGwwPz6JEbQxeKp8Q0rFx4j234JXCL11DIltc2MUDRntaVFRH8hYcjZvl23VmrF1VdNgWAOfjeD7bLT3Yre&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=J6jYraf74BwbQ2X0OREqvw&oh=00_AfnOSRqZmkac5n9dSbF-ssBwnFZ1iH_7ZzyPi9oxudSASw&oe=69565C1D",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -37,7 +37,7 @@ const membersData = [
     id: "member-004",
     name: "Nguyễn Thị Mỹ Trinh",
     nickname: "Trinh",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/50823698_1183582011811270_1948282549415444480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lf87znFxBM0Q7kNvwGi3TFZ&_nc_oc=Adkpg8181Iw8JHcgVFF4D6QkqvDLF5PHNgTmK8AXr2SQAcAMai8PtXmn694yEGnQrzLSd1BLqnUyF3lVHCWVh37q&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=nXJCBuM8xGpMxGAEDln53A&oh=00_AfmTJC-fCLOK3TquKAnrTJSICbbSKmwxkWBN3nSIwX62_w&oe=69566019",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -46,7 +46,7 @@ const membersData = [
     id: "member-005",
     name: "Lê Bảo Hưng",
     nickname: "Hưng",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/79749335_1454777861338486_3429765873890492416_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=A28ukiKiMIEQ7kNvwFukKHc&_nc_oc=AdmPypRu8aYi4Mh0sl2IOjmaXpqpNSUwTwiu7krxmyqDaiu4n8ICRn5g8lV2q55vDLseAG4xSxnXVsOLSjAu_uZL&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=VOdLCaCfpMM64_GpYOnQFw&oh=00_AfnLcQaAmg3giZ5spdWxcAbmhIQfLrnxqxcAf1xee2Fdbg&oe=69568B78",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -55,7 +55,7 @@ const membersData = [
     id: "member-006",
     name: "Lê Thị Thu Hồng",
     nickname: "Hồng",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/588141181_4318671631702248_7233124361324962335_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gjQYxK60ozMQ7kNvwHM6vaM&_nc_oc=AdnK994Mw97MtQ0EzjBjVqGuiLtzjdwqjSkujOH5nOvrXv0up2lXAXYG8D68ck7fROKa0EqBCI7hHvU33q60lxFd&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=gL4pzFmasUCoQYkwqrioBg&oh=00_Afllrjz3K7BwMS3N7ZrbvFJ7s7UfOx-jjd7vkHDI0xV03w&oe=6934C95D",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -63,8 +63,8 @@ const membersData = [
   {
     id: "member-007",
     name: "Nguyễn Thị Huyền Trang",
-    nickname: "Trang",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Ty Ty",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/583098965_3749244548553128_5926935321485392248_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=edCa15RbJKwQ7kNvwGLS61l&_nc_oc=Adlnxxl9Rxm5E7gLDnt9b6R1nuOq1gAnmbk37ibIQENFyzCJ1FiTDkVM-ch2pzr25VSkNejk30yx24rCmpLf4HGO&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=CPK8dPyqCZRyx5il2H0Kxw&oh=00_AfmATzGJMUBL1h3X6UMwSFkjOiHcorxOlo3tJ3VT8sv-9A&oe=6934F183",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -72,8 +72,8 @@ const membersData = [
   {
     id: "member-008",
     name: "Trần Ngọc Anh",
-    nickname: "Anh",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Bò",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/518297354_10070924489682307_2049836912380718212_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=pcmc5n2iBuIQ7kNvwFK4cQf&_nc_oc=Adm256n5bmxJo1NBVRKbF-SVbEPG0yNFdYwKXCr72fmS3K8_gYt3n_6KshtLFQ63pLT3hLq9aH2YkRyxlCQNoUvQ&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=h4kcXDzHqI8hDI8dH3phWA&oh=00_AfmtgbasOl8u3uTDEbFc7jwLHXsvDH0ZIVAFXYu-pNDpqw&oe=6934BEC8",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -82,7 +82,7 @@ const membersData = [
     id: "member-009",
     name: "Trần Thị Thái Hà",
     nickname: "Hà",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/527986925_3912840735533900_8127659940529731438_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=m-dfuIfyN6EQ7kNvwHz3BtV&_nc_oc=Adk_p1Y2k3y34iSEw-nbXv8HXRkb1ArN1gcfvEEXhCUD84BnbQMbcxr0cZr4aIyb8pJnxVZPZOGtyP5MgF407yA0&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=fmAYgvX24X9x7I1SIeotbQ&oh=00_AflI5qcLQMExOmNf2WCcU4DpYG2Ue5rYnIIQC3JFvAw4Gw&oe=6934CF9A",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -90,8 +90,8 @@ const membersData = [
   {
     id: "member-010",
     name: "Trần Xuân Thành",
-    nickname: "Thành",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Thành Heo",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/45186808_1092750044222431_3249275430963773440_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=2UiszPeDymQQ7kNvwES5uW1&_nc_oc=Adk6Qs7fMqfJrb2uOsvbFAM_qkL_ZhBvpX-peLkI8CQiJwoD6IPw7ghKeT13Gh8tSHOAcQ2Y2-AQRFIVdbdVSHmN&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Ow7cND5T3gDRy8q6Xehf_Q&oh=00_Afm9XWtBsygmlvkiv9fwi07LlmR9UhDoDnCMjKObpecZuQ&oe=69567169",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -100,7 +100,7 @@ const membersData = [
     id: "member-011",
     name: "Phạm Thị Linh",
     nickname: "Linh",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/74888329_2570078939773916_4648610079904366592_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=fSexLKc3qmIQ7kNvwHkIxUP&_nc_oc=AdkgF_w4mnxE7SbExyfxeCvXRP9lORsNS0du-mW-4h8IAKPA_3STFP5m2-FSPj1Ew58ObiV69KwOn_xL04MKVYBe&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=gPkLUoUbIcf6kZItpUU8wg&oh=00_AfkkCEr3lIccGnBr78uQ5vhHMGD2Uyf9FYuqZNCWY2AI2g&oe=69568211",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -109,7 +109,7 @@ const membersData = [
     id: "member-012",
     name: "Phan Thị Hằng",
     nickname: "Hằng",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/89151439_527185354844542_8065962390207856640_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BXUSOG0QoxEQ7kNvwFWbr4R&_nc_oc=AdmgmIIpmC36nYnUFQKI03h0dR40kgXld1GY9TJM4743u4NbPvv3f3EsPzmP_jF8iGv6Y3OGjrSYgV8xTXm0_h4N&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=UwHNo5YWxIdfgchd2R4DXg&oh=00_AfmM4f8SPWl6e9xKP8mh2nigBlXj0p6HkWpcHCbxFeGcxg&oe=69566B1D",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -118,7 +118,7 @@ const membersData = [
     id: "member-013",
     name: "Lê Công Nghĩa",
     nickname: "Nghĩa",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/504478254_2831132177072073_6895867528211320313_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_koIXS7yPusQ7kNvwGWGWCs&_nc_oc=Adm1ZjMXPXGqAOSKmlpqkr1d8IEfTKfy_hnIBp34NUPnPT08f-qB6Y8DRPluHzsQV0nJvlgfPx1pqW3GZMhi5z1D&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=X8TKgS97Oe6wYL18UdIzow&oh=00_AfnH70gQH3WXCuylQxhRejb11huatfWxgwAlQmmLwPulbQ&oe=6934C2B9",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -127,7 +127,7 @@ const membersData = [
     id: "member-014",
     name: "Võ Thị Kim Oanh",
     nickname: "Oanh",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/475791911_495340846936439_4419701785029688488_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PsUSI7MacPAQ7kNvwFI4TqY&_nc_oc=AdlkduqCOPYEzwuMXAqW3RD29MikuTEYrkLgZwu3nd0_-6G1uzA7ixBrLTkcRiIDCKMDzNVl_ohu6sB0Fsr5n6pV&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=BHt-x93XcqtChg5xhDyMIQ&oh=00_Afnub06pzunOHWcz6KjMJPWvJJadzbsfG3tY07vF9KbGBQ&oe=6934E3FF",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -135,8 +135,8 @@ const membersData = [
   {
     id: "member-015",
     name: "Nguyễn Quang Đạt",
-    nickname: "Đạt",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Ben",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/491007764_3022053597956818_240798978542083177_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5d1kQClTT9MQ7kNvwG4cGNy&_nc_oc=AdmOKfGUcBBLBjibbUK69HDgRJ-kr_pre3kdxFHKnr9kJMyDLSGuUr1RYs8kjjS4qExqtFLNCpWZHISEo1rnEZ5X&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUbmNHpOkiMT072f9uUcug&oh=00_Afkc7KHXoMMAO7ta5l09E1_SnwsgOh8_c5zCq0BHpov1_Q&oe=6934E331",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -145,7 +145,7 @@ const membersData = [
     id: "member-016",
     name: "Lê Văn Duy",
     nickname: "Duy",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/509426656_9929654580487169_5673977849734755451_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=4wU0Do6XxXMQ7kNvwGn29jF&_nc_oc=AdlZIo_LfuW_lB30ts07mI8DEnG4ZT5IF-SE4z4hOc9AM5ZZcmFPivBerdqJVnLa_alvb76W3VS6WZ9nhiZu6MVn&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=SfkgpavrUeeiDGIQALDNvQ&oh=00_Afkyv8YZejsPncNhrqwt4TtxhyWP_GlKtgRE2UmG2fW99g&oe=6934EBB2",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -153,7 +153,7 @@ const membersData = [
   {
     id: "member-017",
     name: "Mai Đức Huy",
-    nickname: "Huy",
+    nickname: "Hụ Be",
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
@@ -162,8 +162,8 @@ const membersData = [
   {
     id: "member-018",
     name: "Nguyễn Xuân Khánh",
-    nickname: "Khánh",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Kệ",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/556302338_3198133417029874_1665301481801193711_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OWvy0ENq8KQQ7kNvwFl-FES&_nc_oc=AdlRoW2fMVuMBQrRgjyRv5riIUw-wD4zeeXssAF8-zlAHx3cZ2_E_kGO1-xNBmt5qcH8r8tyBoWOstne9AQGlOTM&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=9_hbWdsJo3QXmO8ExrdHvw&oh=00_Aflb7Fm2AJ9fgcts1yzSgr7GPSA-miqfETgo4Cc4rzOjaA&oe=6934CC3E",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -171,8 +171,8 @@ const membersData = [
   {
     id: "member-019",
     name: "Nguyễn Thị Thanh Thảo",
-    nickname: "Thảo",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Thảo Chuột",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485910029_9143197962475817_6741619377461411286_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oXD8Gd727zcQ7kNvwHsKLXK&_nc_oc=AdnU2MQGNWvIT7CaltAYZNzqG7pGKbplHaHK2P-RHRQA-xnOejgMXlY6DVkkRTXLHwTJifW537tSQsafpmx6IXAc&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Tw4uqAVuWzilUHW3e-u3sA&oh=00_Afl6PTbIGb645Nft9YdKd3wLx6oITn-02yOxknF7shoDYg&oe=6934DDFA",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -180,8 +180,8 @@ const membersData = [
   {
     id: "member-020",
     name: "Nguyễn Hữu Vũ",
-    nickname: "Vũ",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Vũ Dê",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/554096748_2933116140228527_5230965230468608967_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=finQ7HjkZyEQ7kNvwEkJG6v&_nc_oc=AdmuHsSc42QpMsG_nuVAzx314hCSFUU3WqMQWOdN1OgKo2BjpoemNZSJilzjSy6RwNAfAXQNqXURqR2vOLN3SYsQ&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUmsh2SUdnuUIioo5j33tg&oh=00_AfkKi-s_VVk4TdlAV2fyEW5LIeb4Z73CtKawYLn1a73cKQ&oe=6934F22D",
     role: "",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -190,7 +190,7 @@ const membersData = [
     id: "member-021",
     name: "Tăng Bảo Ngọc",
     nickname: "Ngọc",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/430986969_3038715566270746_1724521696039631767_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oy1d8FWlk1IQ7kNvwErbE-q&_nc_oc=AdnKIF6yOPO6GMbbBU1yMOXWAL7Q6g3aG5JSmLT0dkSpqUGAej3omxevijA5QfdilJKksilTbwbaxXsGPZGkAReo&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=c9e8eS9tksJlqykITZ1vNA&oh=00_Afm5v72O_jK7V8o-H9BBz-7pqTRbK3EiUplE0agTwwE6Qg&oe=6934E1E9",
     role: "Phó học tập",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
@@ -674,7 +674,340 @@ const Animations = {
   }
 };
 
-// ==================== INIT ====================
+// ==================== SEARCH ====================
+
+const Search = {
+  // Inline search elements (in members section)
+  searchInput: null,
+  searchClear: null,
+  noResultsMessage: null,
+  membersGrid: null,
+  allMembers: [],
+  
+  // Modal search elements (in header)
+  searchModal: null,
+  searchModalOverlay: null,
+  searchModalInput: null,
+  searchModalClear: null,
+  searchModalClose: null,
+  searchToggle: null,
+  searchResults: null,
+  searchTags: null,
+
+  init() {
+    // Inline search elements
+    this.searchInput = document.getElementById('members-search-input');
+    this.searchClear = document.getElementById('members-search-clear');
+    this.noResultsMessage = document.getElementById('members-no-results');
+    this.membersGrid = document.getElementById('members-grid');
+    
+    // Modal search elements
+    this.searchModal = document.getElementById('search-modal');
+    this.searchModalOverlay = document.getElementById('search-overlay');
+    this.searchModalInput = document.getElementById('search-input');
+    this.searchModalClear = document.getElementById('search-clear');
+    this.searchModalClose = document.getElementById('search-close');
+    this.searchToggle = document.getElementById('search-toggle');
+    this.searchResults = document.getElementById('search-results');
+    this.searchTags = document.querySelectorAll('.search-tag');
+    
+    // Get sorted members from Members module
+    this.allMembers = Members.members;
+    
+    this.setupEventListeners();
+    this.setupModalEventListeners();
+  },
+
+  normalizeForSearch(str) {
+    if (str === null || str === undefined) {
+      return '';
+    }
+    return String(str).toLowerCase();
+  },
+
+  memberMatchesQuery(member, query) {
+    if (!query || query.trim() === '') {
+      return true;
+    }
+    
+    const normalizedQuery = this.normalizeForSearch(query);
+    
+    const name = this.normalizeForSearch(member.name);
+    if (name.includes(normalizedQuery)) return true;
+    
+    const nickname = this.normalizeForSearch(member.nickname);
+    if (nickname.includes(normalizedQuery)) return true;
+    
+    const role = this.normalizeForSearch(member.role);
+    if (role.includes(normalizedQuery)) return true;
+    
+    return false;
+  },
+
+  searchMembers(query) {
+    if (!query || query.trim() === '') {
+      return [...this.allMembers];
+    }
+    
+    return this.allMembers.filter(member => this.memberMatchesQuery(member, query));
+  },
+
+  handleSearchInput() {
+    const query = this.searchInput.value;
+    const results = this.searchMembers(query);
+    
+    // Show/hide clear button
+    if (this.searchClear) {
+      this.searchClear.classList.toggle('show', query.length > 0);
+    }
+    
+    // Show/hide no results message
+    if (this.noResultsMessage && this.membersGrid) {
+      if (results.length === 0 && query.trim() !== '') {
+        this.noResultsMessage.classList.remove('hidden');
+        this.membersGrid.classList.add('hidden');
+      } else {
+        this.noResultsMessage.classList.add('hidden');
+        this.membersGrid.classList.remove('hidden');
+      }
+    }
+    
+    // Render filtered results
+    this.renderFilteredGrid(results);
+  },
+
+  renderFilteredGrid(membersList) {
+    if (!this.membersGrid) return;
+    this.membersGrid.innerHTML = '';
+
+    membersList.forEach((member, index) => {
+      const card = document.createElement('div');
+      card.className = 'member-card stagger-item visible';
+      card.dataset.memberId = member.id;
+      card.style.transitionDelay = `${index * 50}ms`;
+
+      const roleHtml = member.role ? `<span class="member-card__role">${member.role}</span>` : '';
+
+      card.innerHTML = `
+        <div class="member-card__image-wrapper">
+          <img class="member-card__image" src="${member.photo}" alt="Ảnh ${member.name}" loading="lazy" onerror="this.src='images/members/default-avatar.svg'">
+        </div>
+        <div class="member-card__info">
+          <h3 class="member-card__name">${member.name}</h3>
+          ${roleHtml}
+        </div>
+      `;
+
+      card.addEventListener('click', () => Members.openModal(member.id));
+      this.membersGrid.appendChild(card);
+    });
+  },
+
+  handleClearSearch() {
+    if (this.searchInput) {
+      this.searchInput.value = '';
+      this.searchInput.focus();
+    }
+    this.handleSearchInput();
+  },
+
+  setupEventListeners() {
+    // Inline search in members section
+    if (this.searchInput) {
+      this.searchInput.addEventListener('input', () => this.handleSearchInput());
+      this.searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          this.handleClearSearch();
+        }
+      });
+    }
+    
+    if (this.searchClear) {
+      this.searchClear.addEventListener('click', () => this.handleClearSearch());
+    }
+  },
+
+  // Modal search methods
+  openSearchModal() {
+    if (this.searchModal) {
+      this.searchModal.classList.add('show');
+      document.body.classList.add('no-scroll');
+      // Focus the input after modal opens
+      setTimeout(() => {
+        if (this.searchModalInput) {
+          this.searchModalInput.focus();
+        }
+      }, 100);
+    }
+  },
+
+  closeSearchModal() {
+    if (this.searchModal) {
+      this.searchModal.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+      // Clear the modal input
+      if (this.searchModalInput) {
+        this.searchModalInput.value = '';
+      }
+      if (this.searchModalClear) {
+        this.searchModalClear.classList.remove('show');
+      }
+      // Reset results to hint
+      this.resetSearchResults();
+    }
+  },
+
+  resetSearchResults() {
+    if (this.searchResults) {
+      this.searchResults.innerHTML = `
+        <div class="search-modal__hint">
+          <p>💡 Gợi ý tìm kiếm:</p>
+          <div class="search-modal__tags">
+            <span class="search-tag" data-search="Lớp trưởng">Lớp trưởng</span>
+            <span class="search-tag" data-search="Phó">Phó học tập</span>
+            <span class="search-tag" data-search="Nguyễn">Họ Nguyễn</span>
+            <span class="search-tag" data-search="Trần">Họ Trần</span>
+          </div>
+        </div>
+      `;
+      // Re-attach tag click events
+      this.searchResults.querySelectorAll('.search-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+          const searchTerm = tag.dataset.search;
+          if (this.searchModalInput) {
+            this.searchModalInput.value = searchTerm;
+            this.handleModalSearchInput();
+          }
+        });
+      });
+    }
+  },
+
+  handleModalSearchInput() {
+    const query = this.searchModalInput ? this.searchModalInput.value : '';
+    
+    // Show/hide clear button
+    if (this.searchModalClear) {
+      this.searchModalClear.classList.toggle('show', query.length > 0);
+    }
+    
+    // If empty, show hints
+    if (!query || query.trim() === '') {
+      this.resetSearchResults();
+      return;
+    }
+    
+    // Search members
+    const results = this.searchMembers(query);
+    this.renderModalSearchResults(results, query);
+  },
+
+  renderModalSearchResults(results, query) {
+    if (!this.searchResults) return;
+    
+    if (results.length === 0) {
+      this.searchResults.innerHTML = `
+        <div class="search-no-results">
+          <div class="search-no-results__icon">🔍</div>
+          <p>Không tìm thấy kết quả cho "${query}"</p>
+        </div>
+      `;
+      return;
+    }
+    
+    let html = '';
+    results.forEach(member => {
+      html += `
+        <div class="search-result" data-member-id="${member.id}">
+          <div class="search-result__icon search-result__icon--member">
+            <img src="${member.photo}" alt="${member.name}" onerror="this.src='images/members/default-avatar.svg'">
+          </div>
+          <div class="search-result__info">
+            <div class="search-result__title">${member.name}</div>
+            <div class="search-result__subtitle">${member.nickname || ''}${member.role ? ' • ' + member.role : ''}</div>
+          </div>
+          <span class="search-result__type">Thành viên</span>
+        </div>
+      `;
+    });
+    
+    this.searchResults.innerHTML = html;
+    
+    // Add click events to results
+    this.searchResults.querySelectorAll('.search-result').forEach(result => {
+      result.addEventListener('click', () => {
+        const memberId = result.dataset.memberId;
+        this.closeSearchModal();
+        // Scroll to members section and open modal
+        Navigation.scrollToSection('members');
+        setTimeout(() => {
+          Members.openModal(memberId);
+        }, 500);
+      });
+    });
+  },
+
+  setupModalEventListeners() {
+    // Open modal on search button click
+    if (this.searchToggle) {
+      this.searchToggle.addEventListener('click', () => this.openSearchModal());
+    }
+    
+    // Close modal
+    if (this.searchModalClose) {
+      this.searchModalClose.addEventListener('click', () => this.closeSearchModal());
+    }
+    if (this.searchModalOverlay) {
+      this.searchModalOverlay.addEventListener('click', () => this.closeSearchModal());
+    }
+    
+    // Modal input events
+    if (this.searchModalInput) {
+      this.searchModalInput.addEventListener('input', () => this.handleModalSearchInput());
+      this.searchModalInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          this.closeSearchModal();
+        }
+      });
+    }
+    
+    // Clear button in modal
+    if (this.searchModalClear) {
+      this.searchModalClear.addEventListener('click', () => {
+        if (this.searchModalInput) {
+          this.searchModalInput.value = '';
+          this.searchModalInput.focus();
+        }
+        this.searchModalClear.classList.remove('show');
+        this.resetSearchResults();
+      });
+    }
+    
+    // Search tags
+    this.searchTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        const searchTerm = tag.dataset.search;
+        if (this.searchModalInput) {
+          this.searchModalInput.value = searchTerm;
+          this.handleModalSearchInput();
+        }
+      });
+    });
+    
+    // Keyboard shortcut (Ctrl/Cmd + K)
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        if (this.searchModal && this.searchModal.classList.contains('show')) {
+          this.closeSearchModal();
+        } else {
+          this.openSearchModal();
+        }
+      }
+    });
+  }
+};
+
 // ==================== PARTICLES ====================
 
 const Particles = {
@@ -761,6 +1094,7 @@ const CounterAnimation = {
 document.addEventListener('DOMContentLoaded', () => {
   Navigation.init();
   Members.init();
+  Search.init();  // Initialize search after members
   Gallery.init();
   Animations.init();
   Particles.init();

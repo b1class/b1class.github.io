@@ -52,7 +52,7 @@ function isRelativePath(assetPath) {
 function extractAssetPaths(html) {
   const paths = [];
   
-  // Extract src attributes
+  // Extract src attributes (excluding iframe src which may be external embeds)
   const srcMatches = html.matchAll(/\bsrc=["']([^"']+)["']/gi);
   for (const match of srcMatches) {
     paths.push(match[1]);
@@ -68,6 +68,22 @@ function extractAssetPaths(html) {
   }
   
   return paths;
+}
+
+/**
+ * Check if a URL is an allowed external resource
+ * @param {string} url - The URL to check
+ * @returns {boolean} - True if it's an allowed external resource
+ */
+function isAllowedExternalUrl(url) {
+  const allowedDomains = [
+    'docs.google.com',      // Google Sheets embeds
+    'fonts.googleapis.com', // Google Fonts
+    'fonts.gstatic.com',    // Google Fonts assets
+    'cdn.jsdelivr.net',     // CDN resources
+  ];
+  
+  return allowedDomains.some(domain => url.includes(domain));
 }
 
 /**
@@ -117,7 +133,9 @@ describe('Assets Property Tests', () => {
     
     // Test each path
     assetPaths.forEach(assetPath => {
-      const isRelative = isRelativePath(assetPath);
+      // Allow external URLs for known services (Google Sheets embeds, etc.)
+      const isAllowedExternal = isAllowedExternalUrl(assetPath);
+      const isRelative = isRelativePath(assetPath) || isAllowedExternal;
       if (!isRelative) {
         console.log(`Non-relative path found: ${assetPath}`);
       }
