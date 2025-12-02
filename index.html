@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang web lớp học - Nơi kết nối các thành viên và lưu giữ kỷ niệm">
+  <title>Lớp B1 Nguyễn Huệ - Trang Web Lớp Học</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Lớp B1 - Nguyễn Huệ</a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Trang chủ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#members" class="nav__link">Thành viên</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link">Kỷ niệm</a>
+          </li>
+          <li class="nav__item">
+            <a href="#fund" class="nav__link">Quỹ lớp</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Giới thiệu</a>
+          </li>
+        </ul>
+        
+        <button class="nav__close" id="nav-close" aria-label="Đóng menu">
+          <span>&times;</span>
+        </button>
+      </div>
+      
+      <button class="nav__toggle" id="nav-toggle" aria-label="Mở menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__particles" id="particles"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title animate-slide-up">Lớp B1</h1>
+        <p class="hero__subtitle animate-slide-up">Niên khóa 2009 - 2011</p>
+        <p class="hero__welcome animate-fade-in">
+          Chào mừng bạn đến với trang web của lớp chúng mình! 
+          Nơi lưu giữ những kỷ niệm đẹp và kết nối các thành viên.
+        </p>
+        <div class="hero__buttons animate-fade-in">
+          <a href="#members" class="btn btn--primary">Xem thành viên</a>
+          <a href="#gallery" class="btn btn--outline">Bộ sưu tập ảnh</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span>Cuộn xuống</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="section members" id="members">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Thành Viên Lớp</h2>
+        <div class="members__grid" id="members-grid">
+          <!-- Member cards will be rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Kỷ Niệm Của Lớp</h2>
+        <div class="gallery__container" id="gallery-container">
+          <!-- Gallery events will be rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fund Section -->
+    <section class="section fund" id="fund">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Quỹ Lớp</h2>
+        <div class="fund__content scroll-animate">
+          <div class="fund__header">
+            <div class="fund__icon">💰</div>
+            <div class="fund__info">
+              <h3>Theo dõi thu chi quỹ lớp</h3>
+              <p>Minh bạch - Rõ ràng - Cập nhật liên tục từ tháng 12/2025</p>
+            </div>
+          </div>
+          <div class="fund__features">
+            <div class="fund__feature">
+              <span class="fund__feature-icon">📊</span>
+              <span>Báo cáo chi tiết</span>
+            </div>
+            <div class="fund__feature">
+              <span class="fund__feature-icon">🔄</span>
+              <span>Cập nhật realtime</span>
+            </div>
+            <div class="fund__feature">
+              <span class="fund__feature-icon">👥</span>
+              <span>Mọi người đều xem được</span>
+            </div>
+          </div>
+          <div class="fund__sheet-container">
+            <iframe 
+              class="fund__sheet"
+              src="https://docs.google.com/spreadsheets/d/1ZzrM42HuiEFQEdq1qCvo5gLfQo2fKQ7Ya90KJR8n348/edit?usp=sharing&rm=minimal&widget=true&headers=false"
+              frameborder="0"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="fund__actions">
+            <a href="https://docs.google.com/spreadsheets/d/1ZzrM42HuiEFQEdq1qCvo5gLfQo2fKQ7Ya90KJR8n348/edit?usp=sharing" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn--fund">
+              <span>📄</span> Mở Google Sheet đầy đủ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Giới Thiệu</h2>
+        <div class="about__content scroll-animate">
+          <div class="about__text">
+            <p>
+              Chào mừng bạn đến với trang web chính thức của lớp B1! 
+              Đây là nơi chúng mình lưu giữ những kỷ niệm đẹp trong suốt 
+              những năm tháng học tập cùng nhau.
+            </p>
+            <p>
+              Trang web này được tạo ra để các thành viên có thể dễ dàng 
+              kết nối, xem lại những hình ảnh kỷ niệm và cập nhật thông tin 
+              về bạn bè cùng lớp.
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number" id="member-count">0</span>
+              <span class="stat__label">Thành viên</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" id="photo-count">0</span>
+              <span class="stat__label">Hình ảnh</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" id="event-count">0</span>
+              <span class="stat__label">Sự kiện</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__text">
+          &copy; By ITMANZ 2025 Lớp B1. Được tạo với ❤️ bởi các thành viên trong lớp.
+        </p>
+        <div class="footer__links">
+          <a href="#home" class="footer__link">Trang chủ</a>
+          <a href="#members" class="footer__link">Thành viên</a>
+          <a href="#gallery" class="footer__link">Kỷ niệm</a>
+          <a href="#fund" class="footer__link">Quỹ lớp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Member Detail Modal -->
+  <div class="modal" id="member-modal">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__content" id="modal-content">
+      <button class="modal__close" id="modal-close" aria-label="Đóng">&times;</button>
+      <div class="modal__body" id="modal-body">
+        <!-- Modal content will be rendered by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__overlay" id="lightbox-overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Đóng">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Ảnh trước">
+        <span>&#10094;</span>
+      </button>
+      <div class="lightbox__image-container">
+        <img class="lightbox__image" id="lightbox-image" src="" alt="">
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+      </div>
+      <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Ảnh sau">
+        <span>&#10095;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts - Single bundled file for static hosting -->
+  <script src="js/app.js"></script>
+</body>
+</html>
