@@ -134,7 +134,7 @@ const membersData = [
   },
   {
     id: "member-015",
-    name: "Nguyễn Quang Đạt",
+    name: "Nguyễn Văn Đạt",
     nickname: "Ben",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/491007764_3022053597956818_240798978542083177_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5d1kQClTT9MQ7kNvwG4cGNy&_nc_oc=AdmOKfGUcBBLBjibbUK69HDgRJ-kr_pre3kdxFHKnr9kJMyDLSGuUr1RYs8kjjS4qExqtFLNCpWZHISEo1rnEZ5X&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUbmNHpOkiMT072f9uUcug&oh=00_Afkc7KHXoMMAO7ta5l09E1_SnwsgOh8_c5zCq0BHpov1_Q&oe=6934E331",
     role: "",
@@ -199,6 +199,159 @@ const membersData = [
     id: "member-022",
     name: "Nguyễn Thị Thảo",
     nickname: "Thảo",
+    photo: "images/members/default-avatar.svg",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-023",
+    name: "Nguyễn Thái Thảo Trang",
+    nickname: "Trang",
+    photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/499226950_2965896520244857_1341679373321606779_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BODPXyLYAFEQ7kNvwEEyTlE&_nc_oc=AdmLLjrwUyUxxXx1b33mjNClR-oi_VYzpYxfKy9tcklaoD-NFVOE-quVxjEOaz-R3jixkFej8buA_AUweXOapnU8&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=yyVK79t6gNS45JxVcw500w&oh=00_AfnmyAmvCv8aDRd3JUocuNhjMzaXZc7VKSSunD4384zPQQ&oe=6934D95F",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-024",
+    name: "Lê Văn Toản",
+    nickname: "Toản",
+    photo: "images/members/default-avatar.svg",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-025",
+    name: "Hồ Thị Phương Nhi",
+    nickname: "Nhi",
+    photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/497823232_122105914100865050_5794639936240419975_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=K7vAvfGwo4cQ7kNvwHRlegY&_nc_oc=Adliz1lVvk-IHXi6OmMz2fwtOSQwLum7pJphZhZw9bl6By-G2g4N5ZgouLnd_o5fBRnGRwKlUCWj1HCFLCorq1_J&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=DhpAj9y09hTA2Up__TRLGw&oh=00_AfnK2-B_VFD9g1LLesU7506x9Fs8giVmBuW_EJpG5IEU7g&oe=6934ECB1",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-026",
+    name: "Nguyễn Thị Hồng Nga",
+    nickname: "Nga",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/474791007_8677264345729885_118594519635216486_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=L3NXgZzwdugQ7kNvwHCkVv9&_nc_oc=AdlLVmIGVUZ1Ha1suKPFznB23cARj0C7kc4booMhO8YHeaO9uZDnq9jux-aIQBd9r6LZKV1b1v7DEzdhTlOK_JdM&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=ebBfCWFcEaqX__3sGegHSA&oh=00_AfnEZZ89fqUz5FakvL1iL7CdbYcPQPEjhz1K_SV3nXuvjw&oe=6934D8CF",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-027",
+    name: "Lê Thị Nhàn",
+    nickname: "Nhàn",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/431351663_1594318121321563_6889846639992407263_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=uS5BqzAQpq8Q7kNvwHg6yyJ&_nc_oc=AdmduwdErDmsXnxa7PTXFJQe-gatHWg-aryqLcCGvQ43XoHcTWPRmnQTwrYZZTPmpHVOcbrMMtfRwKuoxv1vxx19&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=1uOkbNx_93BBi-GMvBLtrg&oh=00_AflkSpcoNX9EOS6_urclY9FdJLTlBrUpX4jcTP_h3kzpPw&oe=6934D8D4",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-028",
+    name: "Hồ Thị Việt Yên",
+    nickname: "Yên",
+    photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/448251534_2272706979750327_4168142429313985966_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=TLiadAhulgwQ7kNvwFBR5RO&_nc_oc=Adm6ixqUsBppZOSWAVenuQAgwGr_v2FWas0Li6Wh4B-bmvZkkDV7i8T3xVHYEJ9FXBfebR2hZ0NF78wSGVCJfLuq&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=dbb8m4qJDrRS4q3uTSf4iA&oh=00_Afm-qUewYfAUuoM5_k1ZSIUew6FDDIizTHsBxur-Ja7egA&oe=6934CBBD",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-029",
+    name: "Nguyễn Thị Thảo Yến",
+    nickname: "Yến",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/61989314_2426611590906871_6933744513458372608_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LVAmy80i1fwQ7kNvwEOIwxV&_nc_oc=AdkpUbIwbNYYjSTkNA-X2nKKPmWB-dEwWizX4N_naNigbB5JHGsgGalvX2X9IJceml8nWu8SoeY7prvdQwHBh_Vg&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=IdsVs-5B7QZlnKhU8Zp5yw&oh=00_Afm9-9U2PSXTdkTgYrGBhin2VvSCGXVY4Rc-YgVTbV1ubw&oe=69567AC5",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-030",
+    name: "Phan Minh Hải",
+    nickname: "Hải",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/469316450_3844882542493317_8776456152770617885_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=elym3CiwtToQ7kNvwF6UGKp&_nc_oc=Adl_uDunqAZBgm-edIvORW6LTXYYKHHw-GSBXI8AfKM2wkLiICKkdNztO0QlwmZpptgJw76Aoqp-6LuzLfjlll88&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=y2x4YlB68yhvvm646d3P-g&oh=00_Afmr5v7Pg76SIJKcXN-HEKxMBZnvAUrct2UsQ8cEk8JW6g&oe=6934D2D5",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-031",
+    name: "Trần Trọng Bảo Trung",
+    nickname: "Trung",
+    photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/540210683_1599531677684578_1625834998606371815_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vVL3B9F02vUQ7kNvwFyEt9W&_nc_oc=AdmZm28mxQnNNMrqlAKCmAOk5K2ES2zirKPPHXo5eqJKtWABJ-ddO4-cHPKih-UKHsBBoT8gVT8MYDxshcxz4m1A&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=aE64xfVkbJ97XCKgf6pKrw&oh=00_AflueOF4B3bWHlnESgqD209dPIl0ubXup-QygEIZGk7ocQ&oe=6934F5CD",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-032",
+    name: "Ngô Bá Ngọc Hoàng",
+    nickname: "Hoàng",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485770461_2923836017776723_5971644428971530054_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rhJI4_GXO0cQ7kNvwGSozTb&_nc_oc=AdnjJBHxbFPUsAX8pYcxrTs7CB8F3-Zb6Yq9eY5VsuHHI35rDlncsISTwGbpSPQRp876KrSwsT26TPyo-T_i0rdD&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=pk-G5w5eijoRER7UX_TLog&oh=00_AfnHp3pFWSrdg6vlCrpSB2lKd1GpPxc4FUNwFN9oGjw4yA&oe=6934D25D",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-033",
+    name: "Lê Văn Hiếu",
+    nickname: "Hiếu",
+    photo: "images/members/default-avatar.svg",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-034",
+    name: "Lê Thanh Nam",
+    nickname: "Nam",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/561030085_3944678522331012_9165802719273519554_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ey-q11f2TyQQ7kNvwEh_i9E&_nc_oc=Adkh2SV8KXPf5nqrz8Iag7Z7goiodTLEfdpKE5dLL9eY0prgRfZHM3b01JNu-8fEI5Y685UVaDgCXkR7GbUB58lW&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=rcUDXzUlI9x-0hHicqdYgw&oh=00_AfmGbOT41eYK2ViOMCdz3iebOHjRvJwqbFu32oJ9m8Gb-Q&oe=6934F66D",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-035",
+    name: "Nguyễn Thị Linh",
+    nickname: "Linh",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/49051479_2088243844625032_677272748661145600_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=Uj_4U5Qf32kQ7kNvwGh-3l7&_nc_oc=Adl1psdLRiJCF7xZAjJjsIdfzUOzWWWb3DY83ovqHVi4gywiFnqJ5kixDHuyI0EjZzNxORIflFY7cevJkNSOEYwZ&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=JihEZG0dKwkcOjv9muSqdw&oh=00_AfnVnF0Q4OuYv67_P6QgtD9-sjdmgG0I2aBs7JzNF3Lflg&oe=69568020",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-036",
+    name: "Đoàn Thị Thu Hiệp",
+    nickname: "Hiệp",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/70882547_1410335979107098_3431221502731616256_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MoByM5JGiVoQ7kNvwEGlrGk&_nc_oc=AdlBPiynX4-la0yZrgleBkzIQv2w_8tflWekuirMMgdeYuj6phxZf4jCSMFHXodJHwiYgtaDM9K9cM3B1aY6fzgq&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=oGJgKHx8zKxGYwmRy-Q5JQ&oh=00_Afk0xmnZycUDAPtpSfF7vtM90IGbxgTFxNI_lZbwV5VFcw&oe=69567605",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-037",
+    name: "Nguyễn Thị Đức Ly",
+    nickname: "Ly",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/480565224_3094754737346878_5418936432656616522_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=U9qpspll4KAQ7kNvwEA7NkX&_nc_oc=AdnLf_xvEDN061muPn6OssTwUXilxl8-bjUbKmq2_08Od1L-SB0YYUN1wSjxxL-un-hnpB_Sr1NmkfFNn8s6_bff&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Lt_krEY_vnJ44Rj4Ne9ncQ&oh=00_AfnEqNNaGBYx1uonjDGigV-D2_15O4o6nRizDPzcLE-lHQ&oe=6934DC35",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-038",
+    name: "Nguyễn Thị Tuyết Sương",
+    nickname: "Sương",
+    photo: "images/members/default-avatar.svg",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-039",
+    name: "Lê Đình Minh Khánh",
+    nickname: "Khánh",
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
@@ -1008,6 +1161,108 @@ const Search = {
   }
 };
 
+// ==================== FILTER ====================
+
+const Filter = {
+  filterButtons: null,
+  currentSort: 'az',
+
+  init() {
+    this.filterButtons = document.querySelectorAll('.filter-btn');
+    this.setupEventListeners();
+  },
+
+  // Check if member has a real photo (not default avatar)
+  hasRealPhoto(member) {
+    return member.photo && 
+           member.photo !== 'images/members/default-avatar.svg' &&
+           member.photo.startsWith('http');
+  },
+
+  // Check if member has a role
+  hasRole(member) {
+    return member.role && member.role.trim() !== '';
+  },
+
+  // Sort members based on current sort type
+  sortMembers(members, sortType) {
+    const sorted = [...members];
+    
+    switch (sortType) {
+      case 'az':
+        // A-Z by Vietnamese name
+        return sorted.sort((a, b) => 
+          a.name.localeCompare(b.name, 'vi', { sensitivity: 'base' })
+        );
+      
+      case 'za':
+        // Z-A by Vietnamese name
+        return sorted.sort((a, b) => 
+          b.name.localeCompare(a.name, 'vi', { sensitivity: 'base' })
+        );
+      
+      case 'photo':
+        // Members with real photos first, then A-Z
+        return sorted.sort((a, b) => {
+          const aHasPhoto = this.hasRealPhoto(a);
+          const bHasPhoto = this.hasRealPhoto(b);
+          
+          if (aHasPhoto && !bHasPhoto) return -1;
+          if (!aHasPhoto && bHasPhoto) return 1;
+          return a.name.localeCompare(b.name, 'vi', { sensitivity: 'base' });
+        });
+      
+      case 'role':
+        // Members with roles first, then A-Z
+        return sorted.sort((a, b) => {
+          const aHasRole = this.hasRole(a);
+          const bHasRole = this.hasRole(b);
+          
+          if (aHasRole && !bHasRole) return -1;
+          if (!aHasRole && bHasRole) return 1;
+          return a.name.localeCompare(b.name, 'vi', { sensitivity: 'base' });
+        });
+      
+      default:
+        return sorted;
+    }
+  },
+
+  // Apply filter and re-render
+  applyFilter(sortType) {
+    this.currentSort = sortType;
+    
+    // Update button states
+    this.filterButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.sort === sortType);
+    });
+    
+    // Get current search query
+    const searchQuery = Search.searchInput ? Search.searchInput.value : '';
+    
+    // Get filtered members (from search)
+    let members = Search.searchMembers(searchQuery);
+    
+    // Apply sort
+    members = this.sortMembers(members, sortType);
+    
+    // Update Search.allMembers order for consistency
+    Search.allMembers = this.sortMembers([...membersData], sortType);
+    
+    // Re-render grid
+    Search.renderFilteredGrid(members);
+  },
+
+  setupEventListeners() {
+    this.filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sortType = btn.dataset.sort;
+        this.applyFilter(sortType);
+      });
+    });
+  }
+};
+
 // ==================== PARTICLES ====================
 
 const Particles = {
@@ -1095,6 +1350,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Navigation.init();
   Members.init();
   Search.init();  // Initialize search after members
+  Filter.init();  // Initialize filter after search
   Gallery.init();
   Animations.init();
   Particles.init();

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trang web lớp học - Nơi kết nối các thành viên và lưu giữ kỷ niệm">
-  <title>Lớp B1 Nguyễn Huệ - Trang Web Lớp Học</title>
+  <meta name="description" content="12B1 Nguyễn Huệ - Nơi kết nối các thành viên và lưu giữ kỷ niệm">
+  <title>Lớp B1 Nguyễn Huệ - Niên Khoá 2009-2011</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -143,6 +143,39 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 6L6 18M6 6l12 12"></path>
               </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Sort/Filter Buttons -->
+        <div class="members-filters" id="members-filters">
+          <span class="members-filters__label">Sắp xếp:</span>
+          <div class="members-filters__buttons">
+            <button class="filter-btn active" data-sort="az" aria-label="Sắp xếp A-Z">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 6h18M3 12h12M3 18h6"></path>
+              </svg>
+              A-Z
+            </button>
+            <button class="filter-btn" data-sort="za" aria-label="Sắp xếp Z-A">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 6h6M3 12h12M3 18h18"></path>
+              </svg>
+              Z-A
+            </button>
+            <button class="filter-btn" data-sort="photo" aria-label="Có ảnh trước">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              Có ảnh
+            </button>
+            <button class="filter-btn" data-sort="role" aria-label="Có chức vụ trước">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              Chức vụ
             </button>
           </div>
         </div>
