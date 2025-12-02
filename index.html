@@ -44,13 +44,58 @@
         </button>
       </div>
       
-      <button class="nav__toggle" id="nav-toggle" aria-label="Mở menu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-      </button>
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="search-toggle" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Mở menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
     </nav>
   </header>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal__overlay" id="search-overlay"></div>
+    <div class="search-modal__content">
+      <div class="search-modal__header">
+        <div class="search-modal__input-wrapper">
+          <svg class="search-modal__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input 
+            type="text" 
+            class="search-modal__input" 
+            id="search-input" 
+            placeholder="Tìm kiếm thành viên, kỷ niệm..."
+            autocomplete="off"
+          >
+          <button class="search-modal__clear" id="search-clear" aria-label="Xóa">×</button>
+        </div>
+        <button class="search-modal__close" id="search-close" aria-label="Đóng">
+          <span>ESC</span>
+        </button>
+      </div>
+      <div class="search-modal__results" id="search-results">
+        <div class="search-modal__hint">
+          <p>💡 Gợi ý tìm kiếm:</p>
+          <div class="search-modal__tags">
+            <span class="search-tag" data-search="Lớp trưởng">Lớp trưởng</span>
+            <span class="search-tag" data-search="Phó">Phó học tập</span>
+            <span class="search-tag" data-search="Nguyễn">Họ Nguyễn</span>
+            <span class="search-tag" data-search="Trần">Họ Trần</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main>
     <!-- Hero Section -->

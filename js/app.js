@@ -194,33 +194,44 @@ const membersData = [
     role: "Phó học tập",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
+  },
+  {
+    id: "member-022",
+    name: "Nguyễn Thị Thảo",
+    nickname: "Thảo",
+    photo: "images/members/default-avatar.svg",
+    role: "",
+    birthday: "",
+    contact: { email: "", phone: "", facebook: "" }
   }
 ];
 
 const galleryData = [
+  // TEMPORARILY HIDDEN - Uncomment when images are available
+  // {
+  //   name: "Khai giảng 2023",
+  //   date: "05/09/2023",
+  //   images: [
+  //     { id: "img-001", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lễ khai giảng năm học mới 2023-2024" },
+  //     { id: "img-002", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Cả lớp chụp ảnh kỷ niệm" },
+  //     { id: "img-003", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Thầy cô và học sinh" }
+  //   ]
+  // },
+  // {
+  //   name: "Ngày Nhà giáo Việt Nam",
+  //   date: "20/11/2023",
+  //   images: [
+  //     { id: "img-004", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tặng hoa cho thầy cô" },
+  //     { id: "img-005", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Văn nghệ chào mừng 20/11" },
+  //     { id: "img-006", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lớp chụp ảnh cùng GVCN" },
+  //     { id: "img-007", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tiết mục múa của các bạn nữ" }
+  //   ]
+  // },
   {
-    name: "Khai giảng 2023",
-    date: "05/09/2023",
-    images: [
-      { id: "img-001", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lễ khai giảng năm học mới 2023-2024" },
-      { id: "img-002", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Cả lớp chụp ảnh kỷ niệm" },
-      { id: "img-003", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Thầy cô và học sinh" }
-    ]
-  },
-  {
-    name: "Ngày Nhà giáo Việt Nam",
-    date: "20/11/2023",
-    images: [
-      { id: "img-004", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tặng hoa cho thầy cô" },
-      { id: "img-005", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Văn nghệ chào mừng 20/11" },
-      { id: "img-006", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lớp chụp ảnh cùng GVCN" },
-      { id: "img-007", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tiết mục múa của các bạn nữ" }
-    ]
-  },
-  {
-    name: "Dã ngoại cuối năm",
+    name: "Tháng năm học trò",
     date: "15/05/2024",
     images: [
+      { id: "img-000", src: "images/gallery/anhlop/fullclass.jpg", thumbnail: "images/gallery/anhlop/fullclass.jpg", caption: "Ảnh tập thể cả lớp" },
       { id: "img-008", src: "images/gallery/anhlop/DSC01667.JPG", thumbnail: "images/gallery/anhlop/DSC01667.JPG", caption: "Kỷ niệm dã ngoại" },
       { id: "img-009", src: "images/gallery/anhlop/DSC01702.JPG", thumbnail: "images/gallery/anhlop/DSC01702.JPG", caption: "Kỷ niệm dã ngoại" },
       { id: "img-010", src: "images/gallery/anhlop/DSC03209.JPG", thumbnail: "images/gallery/anhlop/DSC03209.JPG", caption: "Kỷ niệm dã ngoại" },
@@ -509,11 +520,14 @@ const Gallery = {
 
       event.images.forEach((image, index) => {
         const item = document.createElement('div');
-        item.className = 'gallery__item stagger-item';
-        item.style.transitionDelay = `${index * 50}ms`;
+        // First image is featured (larger)
+        const isFeatured = index === 0;
+        item.className = `gallery__item stagger-item${isFeatured ? ' gallery__item--featured' : ''}`;
+        item.style.transitionDelay = `${index * 80}ms`;
 
         item.innerHTML = `
           <img class="gallery__thumbnail" src="${image.thumbnail}" alt="${image.caption}" loading="lazy" data-image-id="${image.id}">
+          <div class="gallery__item-icon">🔍</div>
           <div class="gallery__item-overlay">
             <span class="gallery__item-caption">${image.caption}</span>
           </div>
