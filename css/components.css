@@ -1082,12 +1082,45 @@
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  z-index: 2;
+}
+
+/* Overlay to prevent accidental clicks - click to enable interaction */
+.fund__sheet-container::after {
+  content: 'Nhấn để tương tác với bảng tính';
+  position: absolute;
+  inset: 4px 0 0 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  pointer-events: none;
+}
+
+.fund__sheet-container:not(.active):hover::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fund__sheet-container.active::after {
+  display: none;
 }
 
 .fund__sheet {
   width: 100%;
   height: 100%;
   border: none;
+  pointer-events: none;
+}
+
+.fund__sheet-container.active .fund__sheet {
+  pointer-events: auto;
 }
 
 .fund__actions {
@@ -1628,5 +1661,149 @@
     min-width: 70px;
     padding: var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-xs);
+  }
+}
+
+
+/* ==================== CONNECT SECTION ==================== */
+.connect {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+}
+
+.connect__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.connect__intro {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.connect__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.connect-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transition: height var(--transition-fast);
+}
+
+.connect-card--messenger::before {
+  background: linear-gradient(90deg, #00B2FF, #006AFF, #9B30FF);
+}
+
+.connect-card--facebook::before {
+  background: #1877F2;
+}
+
+.connect-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.connect-card:hover::before {
+  height: 6px;
+}
+
+.connect-card__icon {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.connect-card--messenger .connect-card__icon {
+  background: linear-gradient(135deg, #00B2FF, #006AFF);
+  color: white;
+}
+
+.connect-card--facebook .connect-card__icon {
+  background: #1877F2;
+  color: white;
+}
+
+.connect-card:hover .connect-card__icon {
+  transform: scale(1.1);
+}
+
+.connect-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.connect-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.connect-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+}
+
+.connect-card__arrow {
+  color: var(--color-text-light);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.connect-card:hover .connect-card__arrow {
+  transform: translateX(5px);
+}
+
+.connect-card--messenger:hover .connect-card__arrow {
+  color: #006AFF;
+}
+
+.connect-card--facebook:hover .connect-card__arrow {
+  color: #1877F2;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .connect-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+  
+  .connect-card__arrow {
+    display: none;
+  }
+  
+  .connect-card__icon {
+    width: 60px;
+    height: 60px;
   }
 }
