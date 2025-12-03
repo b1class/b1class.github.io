@@ -15,6 +15,33 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- Birthday Banner -->
+  <div class="birthday-banner" id="birthday-banner">
+    <div class="birthday-banner__content">
+      <div class="birthday-banner__decorations">
+        <span class="balloon balloon--1">🎈</span>
+        <span class="balloon balloon--2">🎈</span>
+        <span class="balloon balloon--3">🎈</span>
+      </div>
+      <div class="birthday-banner__main">
+        <span class="birthday-banner__cake">🎂</span>
+        <div class="birthday-banner__text">
+          <span class="birthday-banner__label" id="banner-label">Sắp đến sinh nhật</span>
+          <span class="birthday-banner__name" id="banner-name"></span>
+          <span class="birthday-banner__wish" id="banner-wish"></span>
+        </div>
+        <span class="birthday-banner__date" id="banner-date"></span>
+      </div>
+      <div class="birthday-banner__decorations">
+        <span class="balloon balloon--4">🎈</span>
+        <span class="balloon balloon--5">🎈</span>
+        <span class="balloon balloon--6">🎈</span>
+      </div>
+      <button class="birthday-banner__close" id="banner-close" aria-label="Đóng">×</button>
+    </div>
+    <div class="birthday-banner__confetti"></div>
+  </div>
+
   <!-- Navigation -->
   <header class="header" id="header">
     <nav class="nav container">
@@ -36,6 +63,9 @@
           </li>
           <li class="nav__item">
             <a href="#connect" class="nav__link">Kết nối</a>
+          </li>
+          <li class="nav__item">
+            <a href="#birthdays" class="nav__link">Sinh nhật</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">Giới thiệu</a>
@@ -300,6 +330,36 @@
       </div>
     </section>
 
+    <!-- Birthdays Section -->
+    <section class="section birthdays" id="birthdays">
+      <div class="container">
+        <h2 class="section-title scroll-animate">🎂 Sinh Nhật Lớp</h2>
+        <div class="birthdays__content scroll-animate">
+          <div class="calendar-header">
+            <h3 class="calendar-year" id="calendar-year"></h3>
+            <div class="calendar-legend">
+              <span class="legend-item"><span class="legend-dot legend-dot--birthday"></span> Có sinh nhật</span>
+              <span class="legend-item"><span class="legend-dot legend-dot--today"></span> Hôm nay</span>
+            </div>
+          </div>
+          <div class="calendar-grid" id="calendar-grid">
+            <!-- 12 months will be rendered by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Box Modal -->
+    <div class="gift-modal" id="gift-modal">
+      <div class="gift-modal__overlay" id="gift-overlay"></div>
+      <div class="gift-modal__content">
+        <button class="gift-modal__close" id="gift-close" aria-label="Đóng">&times;</button>
+        <div class="gift-modal__body" id="gift-body">
+          <!-- Gift box content will be rendered by JavaScript -->
+        </div>
+      </div>
+    </div>
+
     <!-- About Section -->
     <section class="section about" id="about">
       <div class="container">
@@ -349,6 +409,7 @@
           <a href="#gallery" class="footer__link">Kỷ niệm</a>
           <a href="#fund" class="footer__link">Quỹ lớp</a>
           <a href="#connect" class="footer__link">Kết nối</a>
+          <a href="#birthdays" class="footer__link">Sinh nhật</a>
         </div>
       </div>
     </div>

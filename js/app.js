@@ -23,7 +23,7 @@ const membersData = [
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/557731513_24824089977222656_2481311300486690446_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FoTLqCuIQ0cQ7kNvwHAYN6A&_nc_oc=Adl2t2_QeF26FVm5ZXraY74ORSh3jwfGLF_zafQ-QgI1niUef64x6QqOBjA-YBiK-NYSTDMfA0nYGttQ53X16q-b&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=NsBmIronS92retBXAZ_I6w&oh=00_AfnKn0atsSwwlMZ7YTc6YkQ9BpuPeT6vrLxOlXL_Bu-iXw&oe=6934EE7A",
     role: "Lớp trưởng",
     job: "IT",
-    birthday: "20/01/1993",
+    birthday: "20/01",
     contact: { email: "itmanz.com@gmail.com", phone: "", facebook: "fb.com/itmanz" }
   },
   {
@@ -42,7 +42,7 @@ const membersData = [
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/50823698_1183582011811270_1948282549415444480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lf87znFxBM0Q7kNvwGi3TFZ&_nc_oc=Adkpg8181Iw8JHcgVFF4D6QkqvDLF5PHNgTmK8AXr2SQAcAMai8PtXmn694yEGnQrzLSd1BLqnUyF3lVHCWVh37q&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=nXJCBuM8xGpMxGAEDln53A&oh=00_AfmTJC-fCLOK3TquKAnrTJSICbbSKmwxkWBN3nSIwX62_w&oe=69566019",
     role: "",
     job: "Kinh Doanh",
-    birthday: "",
+    birthday: "04/08",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -52,7 +52,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/79749335_1454777861338486_3429765873890492416_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=A28ukiKiMIEQ7kNvwFukKHc&_nc_oc=AdmPypRu8aYi4Mh0sl2IOjmaXpqpNSUwTwiu7krxmyqDaiu4n8ICRn5g8lV2q55vDLseAG4xSxnXVsOLSjAu_uZL&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=VOdLCaCfpMM64_GpYOnQFw&oh=00_AfnLcQaAmg3giZ5spdWxcAbmhIQfLrnxqxcAf1xee2Fdbg&oe=69568B78",
     role: "",
     job: "Quân Nhân",
-    birthday: "",
+    birthday: "04/10",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -1712,6 +1712,528 @@ const CounterAnimation = {
   }
 };
 
+// ==================== BIRTHDAY CALENDAR ====================
+
+const BirthdayCalendar = {
+  vietnameseMonths: [
+    'Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6',
+    'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'
+  ],
+  weekdays: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
+  audioContext: null,
+  
+  birthdayWishes: [
+    'Chúc bạn sinh nhật vui vẻ! 🎂 Mong bạn luôn hạnh phúc và thành công!',
+    'Happy Birthday! 🎉 Chúc bạn một tuổi mới tràn đầy niềm vui và may mắn!',
+    'Sinh nhật vui vẻ nha! 🎈 Chúc bạn luôn khỏe mạnh, gặp nhiều điều tốt đẹp!',
+    'Chúc mừng sinh nhật! 🌟 Mong mọi ước mơ của bạn đều thành hiện thực!',
+    'HBD! 🎁 Chúc bạn tuổi mới nhiều niềm vui, công việc thuận lợi!',
+    'Sinh nhật hạnh phúc! 💖 Chúc bạn luôn tươi trẻ và tràn đầy năng lượng!',
+    'Chúc bạn sinh nhật thật ý nghĩa! 🥳 Mong bạn luôn được yêu thương!',
+    'Happy Birthday bạn ơi! 🎊 Chúc bạn một năm mới thật tuyệt vời!'
+  ],
+
+  init() {
+    this.calendarGrid = document.getElementById('calendar-grid');
+    this.calendarYear = document.getElementById('calendar-year');
+    this.giftModal = document.getElementById('gift-modal');
+    this.giftOverlay = document.getElementById('gift-overlay');
+    this.giftClose = document.getElementById('gift-close');
+    this.giftBody = document.getElementById('gift-body');
+    
+    // Banner elements
+    this.banner = document.getElementById('birthday-banner');
+    this.bannerLabel = document.getElementById('banner-label');
+    this.bannerName = document.getElementById('banner-name');
+    this.bannerDate = document.getElementById('banner-date');
+    this.bannerClose = document.getElementById('banner-close');
+    
+    this.currentYear = new Date().getFullYear();
+    this.today = new Date();
+    this.birthdayMap = this.buildBirthdayMap();
+    
+    // Check for upcoming birthdays and show banner
+    this.checkUpcomingBirthdays();
+    
+    if (!this.calendarGrid) return;
+    
+    this.render();
+    this.bindEvents();
+  },
+
+  buildBirthdayMap() {
+    const map = {};
+    membersData.forEach(member => {
+      if (member.birthday) {
+        const parts = member.birthday.split('/');
+        if (parts.length >= 2) {
+          const day = parseInt(parts[0]);
+          const month = parseInt(parts[1]);
+          const key = `${month}-${day}`;
+          if (!map[key]) map[key] = [];
+          map[key].push(member);
+        }
+      }
+    });
+    return map;
+  },
+
+  render() {
+    this.calendarYear.textContent = `Năm ${this.currentYear}`;
+    this.calendarGrid.innerHTML = '';
+    
+    for (let month = 1; month <= 12; month++) {
+      const monthCard = this.createMonthCard(month);
+      this.calendarGrid.appendChild(monthCard);
+    }
+  },
+
+  createMonthCard(month) {
+    const card = document.createElement('div');
+    card.className = 'month-card';
+    
+    const header = document.createElement('div');
+    header.className = 'month-card__header';
+    header.textContent = this.vietnameseMonths[month - 1];
+    
+    const body = document.createElement('div');
+    body.className = 'month-card__body';
+    
+    // Weekday headers
+    const weekdaysRow = document.createElement('div');
+    weekdaysRow.className = 'month-card__weekdays';
+    this.weekdays.forEach(day => {
+      const wd = document.createElement('span');
+      wd.className = 'weekday';
+      wd.textContent = day;
+      weekdaysRow.appendChild(wd);
+    });
+    
+    // Days grid
+    const daysGrid = document.createElement('div');
+    daysGrid.className = 'month-card__days';
+    
+    const firstDay = new Date(this.currentYear, month - 1, 1).getDay();
+    const daysInMonth = new Date(this.currentYear, month, 0).getDate();
+    
+    // Empty cells for days before first day
+    for (let i = 0; i < firstDay; i++) {
+      const empty = document.createElement('div');
+      empty.className = 'day-cell day-cell--empty';
+      daysGrid.appendChild(empty);
+    }
+    
+    // Day cells
+    for (let day = 1; day <= daysInMonth; day++) {
+      const cell = document.createElement('div');
+      cell.className = 'day-cell';
+      
+      const key = `${month}-${day}`;
+      const isToday = this.today.getDate() === day && 
+                      this.today.getMonth() === month - 1 && 
+                      this.today.getFullYear() === this.currentYear;
+      
+      if (isToday) {
+        cell.classList.add('day-cell--today');
+      }
+      
+      if (this.birthdayMap[key]) {
+        cell.classList.add('day-cell--birthday');
+        const names = this.birthdayMap[key].map(m => m.nickname || m.name).join(', ');
+        cell.setAttribute('data-names', `🎂 ${names}`);
+        cell.setAttribute('data-key', key);
+        // Show cake emoji instead of day number for birthdays
+        cell.innerHTML = `<span class="day-number">${day}</span><span class="birthday-cake">🎂</span>`;
+      } else {
+        cell.textContent = day;
+      }
+      
+      daysGrid.appendChild(cell);
+    }
+    
+    body.appendChild(weekdaysRow);
+    body.appendChild(daysGrid);
+    card.appendChild(header);
+    card.appendChild(body);
+    
+    return card;
+  },
+
+  bindEvents() {
+    // Click on birthday cells
+    this.calendarGrid.addEventListener('click', (e) => {
+      const cell = e.target.closest('.day-cell--birthday');
+      if (cell) {
+        const key = cell.getAttribute('data-key');
+        const members = this.birthdayMap[key];
+        if (members && members.length > 0) {
+          this.openGiftModal(members[0], key);
+        }
+      }
+    });
+    
+    // Close gift modal
+    if (this.giftClose) {
+      this.giftClose.addEventListener('click', () => this.closeGiftModal());
+    }
+    if (this.giftOverlay) {
+      this.giftOverlay.addEventListener('click', () => this.closeGiftModal());
+    }
+    
+    // Close birthday banner
+    if (this.bannerClose) {
+      this.bannerClose.addEventListener('click', () => this.closeBanner());
+    }
+    
+    // ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.giftModal?.classList.contains('active')) {
+        this.closeGiftModal();
+      }
+    });
+  },
+
+  // Check for upcoming birthdays (within 7 days)
+  checkUpcomingBirthdays() {
+    if (!this.banner) return;
+    
+    const today = new Date();
+    const upcomingBirthdays = [];
+    
+    membersData.forEach(member => {
+      if (member.birthday) {
+        const parts = member.birthday.split('/');
+        if (parts.length >= 2) {
+          const day = parseInt(parts[0]);
+          const month = parseInt(parts[1]) - 1; // JS months are 0-indexed
+          
+          // Create birthday date for this year
+          const birthdayThisYear = new Date(today.getFullYear(), month, day);
+          
+          // Calculate days until birthday
+          const timeDiff = birthdayThisYear.getTime() - today.getTime();
+          const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+          
+          // Check if birthday is today or within next 7 days
+          if (daysDiff >= 0 && daysDiff <= 7) {
+            upcomingBirthdays.push({
+              member,
+              day,
+              month: month + 1,
+              daysUntil: daysDiff
+            });
+          }
+        }
+      }
+    });
+    
+    // Sort by days until birthday (closest first)
+    upcomingBirthdays.sort((a, b) => a.daysUntil - b.daysUntil);
+    
+    if (upcomingBirthdays.length > 0) {
+      this.showBanner(upcomingBirthdays[0]);
+    }
+  },
+
+  // Long banner wishes for the banner display
+  bannerWishes: [
+    '🎉 Chúc bạn một ngày sinh nhật thật vui vẻ và tràn đầy tiếng cười!',
+    '🥳 Mong bạn luôn hạnh phúc, khỏe mạnh và gặp nhiều may mắn trong cuộc sống!',
+    '🎈 Tuổi mới chúc bạn thành công trong công việc và hạnh phúc trong tình yêu!',
+    '💖 Sinh nhật vui vẻ! Mong mọi ước mơ của bạn đều trở thành hiện thực!',
+    '⭐ Chúc bạn một tuổi mới rực rỡ như những vì sao trên bầu trời!',
+    '🌟 Happy Birthday! Mong bạn luôn tỏa sáng và lan tỏa năng lượng tích cực!',
+    '🎁 Chúc bạn nhận được thật nhiều quà và lời chúc tốt đẹp từ mọi người!',
+    '💫 Tuổi mới, hành trình mới! Chúc bạn luôn vững bước trên con đường phía trước!',
+    '🌈 Mong cuộc sống của bạn luôn tươi đẹp như cầu vồng sau cơn mưa!',
+    '🎊 Cả lớp chúc bạn sinh nhật hạnh phúc! Mãi là thành viên tuyệt vời của lớp mình!',
+    '🎂 Thêm một tuổi, thêm nhiều niềm vui! Chúc bạn luôn trẻ trung và năng động!',
+    '🥰 Sinh nhật là ngày đặc biệt, chúc bạn có những khoảnh khắc đáng nhớ bên người thân!'
+  ],
+
+  showBanner(birthdayInfo) {
+    const { member, day, month, daysUntil } = birthdayInfo;
+    
+    // Get banner wish element
+    this.bannerWish = document.getElementById('banner-wish');
+    
+    // Set banner content
+    this.bannerName.textContent = member.nickname || member.name;
+    this.bannerDate.textContent = `${day}/${month}`;
+    
+    if (daysUntil === 0) {
+      this.bannerLabel.textContent = '🎉 Hôm nay là sinh nhật của';
+      this.banner.classList.add('today');
+    } else if (daysUntil === 1) {
+      this.bannerLabel.textContent = '⏰ Ngày mai là sinh nhật của';
+    } else {
+      this.bannerLabel.textContent = `📅 Còn ${daysUntil} ngày nữa là sinh nhật của`;
+    }
+    
+    // Set initial random wish
+    this.updateBannerWish();
+    
+    // Rotate wishes every 3 seconds
+    this.wishInterval = setInterval(() => this.updateBannerWish(), 3000);
+    
+    // Add confetti to banner
+    this.createBannerConfetti();
+    
+    // Show banner with delay for page load
+    setTimeout(() => {
+      this.banner.classList.add('active');
+      
+      // Play a subtle notification sound for today's birthday
+      if (daysUntil === 0) {
+        setTimeout(() => this.playCheerSound(), 500);
+      }
+    }, 1000);
+  },
+
+  updateBannerWish() {
+    if (this.bannerWish) {
+      // Fade out
+      this.bannerWish.style.opacity = '0';
+      this.bannerWish.style.transform = 'translateY(-5px)';
+      
+      setTimeout(() => {
+        // Change text
+        const randomWish = this.bannerWishes[Math.floor(Math.random() * this.bannerWishes.length)];
+        this.bannerWish.textContent = randomWish;
+        
+        // Fade in
+        this.bannerWish.style.opacity = '1';
+        this.bannerWish.style.transform = 'translateY(0)';
+      }, 200);
+    }
+  },
+
+  closeBanner() {
+    this.banner.classList.remove('active');
+    // Clear wish rotation interval
+    if (this.wishInterval) {
+      clearInterval(this.wishInterval);
+    }
+    // Store in session so it doesn't show again
+    sessionStorage.setItem('birthdayBannerClosed', 'true');
+  },
+
+  createBannerConfetti() {
+    const container = this.banner.querySelector('.birthday-banner__confetti');
+    if (!container) return;
+    
+    const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff6b9d', '#c44dff', '#fff'];
+    
+    for (let i = 0; i < 20; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'banner-confetti';
+      confetti.style.cssText = `
+        left: ${Math.random() * 100}%;
+        background: ${colors[Math.floor(Math.random() * colors.length)]};
+        animation-delay: ${Math.random() * 3}s;
+        border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+      `;
+      container.appendChild(confetti);
+    }
+  },
+
+  openGiftModal(member, key) {
+    const [month, day] = key.split('-');
+    const dateStr = `${day}/${month}`;
+    const wish = this.birthdayWishes[Math.floor(Math.random() * this.birthdayWishes.length)];
+    
+    this.giftBody.innerHTML = `
+      <div class="gift-box" id="gift-box">
+        <div class="gift-box__lid">
+          <div class="gift-box__bow"></div>
+        </div>
+        <div class="gift-box__base">
+          <div class="gift-box__ribbon-v"></div>
+          <div class="gift-box__ribbon-h"></div>
+        </div>
+      </div>
+      <p class="gift-instruction">👆 Nhấn vào hộp quà để mở!</p>
+      <div class="gift-content" id="gift-content">
+        <div class="gift-content__confetti" id="confetti-container"></div>
+        <img class="gift-content__avatar" src="${member.photo}" alt="${member.name}" 
+             onerror="this.src='images/members/default-avatar.svg'">
+        <h3 class="gift-content__name">${member.name}</h3>
+        <p class="gift-content__date">🎂 Sinh nhật: ${dateStr}</p>
+        <div class="gift-content__wish">${wish}</div>
+      </div>
+    `;
+    
+    this.giftModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Gift box click handler
+    const giftBox = document.getElementById('gift-box');
+    const giftContent = document.getElementById('gift-content');
+    const instruction = this.giftBody.querySelector('.gift-instruction');
+    
+    giftBox.addEventListener('click', () => {
+      if (!giftBox.classList.contains('opened')) {
+        giftBox.classList.add('opened');
+        instruction.style.display = 'none';
+        // Play pop sound when opening
+        this.playCheerSound();
+        setTimeout(() => {
+          giftContent.classList.add('visible');
+          this.createConfetti();
+          // Play birthday melody when content appears
+          this.playBirthdaySound();
+        }, 300);
+      }
+    });
+  },
+
+  closeGiftModal() {
+    this.giftModal.classList.remove('active');
+    document.body.style.overflow = '';
+  },
+
+  createConfetti() {
+    const container = document.getElementById('confetti-container');
+    if (!container) return;
+    
+    const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff6b9d', '#c44dff'];
+    
+    for (let i = 0; i < 50; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.style.cssText = `
+        left: ${Math.random() * 100}%;
+        background: ${colors[Math.floor(Math.random() * colors.length)]};
+        animation-delay: ${Math.random() * 0.5}s;
+        transform: rotate(${Math.random() * 360}deg);
+      `;
+      container.appendChild(confetti);
+      
+      setTimeout(() => confetti.classList.add('animate'), 10);
+    }
+  },
+
+  // Birthday sound effects using Web Audio API
+  playBirthdaySound() {
+    try {
+      if (!this.audioContext) {
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      
+      const ctx = this.audioContext;
+      const now = ctx.currentTime;
+      
+      // Play a cheerful birthday melody
+      const notes = [
+        { freq: 523.25, start: 0, duration: 0.15 },     // C5
+        { freq: 523.25, start: 0.2, duration: 0.15 },   // C5
+        { freq: 587.33, start: 0.4, duration: 0.3 },    // D5
+        { freq: 523.25, start: 0.8, duration: 0.3 },    // C5
+        { freq: 698.46, start: 1.2, duration: 0.3 },    // F5
+        { freq: 659.25, start: 1.6, duration: 0.5 },    // E5
+      ];
+      
+      notes.forEach(note => {
+        this.playNote(ctx, note.freq, now + note.start, note.duration);
+      });
+      
+      // Play party popper sound effect
+      this.playPopSound(ctx, now);
+      
+    } catch (e) {
+      console.log('Audio not supported');
+    }
+  },
+
+  playNote(ctx, frequency, startTime, duration) {
+    const oscillator = ctx.createOscillator();
+    const gainNode = ctx.createGain();
+    
+    oscillator.connect(gainNode);
+    gainNode.connect(ctx.destination);
+    
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(frequency, startTime);
+    
+    // Envelope for smoother sound
+    gainNode.gain.setValueAtTime(0, startTime);
+    gainNode.gain.linearRampToValueAtTime(0.3, startTime + 0.02);
+    gainNode.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
+    
+    oscillator.start(startTime);
+    oscillator.stop(startTime + duration + 0.1);
+  },
+
+  playPopSound(ctx, startTime) {
+    // Create a "pop" sound for party effect
+    const oscillator = ctx.createOscillator();
+    const gainNode = ctx.createGain();
+    
+    oscillator.connect(gainNode);
+    gainNode.connect(ctx.destination);
+    
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(800, startTime);
+    oscillator.frequency.exponentialRampToValueAtTime(200, startTime + 0.1);
+    
+    gainNode.gain.setValueAtTime(0.4, startTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.01, startTime + 0.15);
+    
+    oscillator.start(startTime);
+    oscillator.stop(startTime + 0.2);
+    
+    // Add some sparkle sounds
+    for (let i = 0; i < 5; i++) {
+      const sparkle = ctx.createOscillator();
+      const sparkleGain = ctx.createGain();
+      
+      sparkle.connect(sparkleGain);
+      sparkleGain.connect(ctx.destination);
+      
+      sparkle.type = 'sine';
+      const sparkleFreq = 1000 + Math.random() * 2000;
+      sparkle.frequency.setValueAtTime(sparkleFreq, startTime + 0.1 + i * 0.08);
+      
+      sparkleGain.gain.setValueAtTime(0.1, startTime + 0.1 + i * 0.08);
+      sparkleGain.gain.exponentialRampToValueAtTime(0.01, startTime + 0.2 + i * 0.08);
+      
+      sparkle.start(startTime + 0.1 + i * 0.08);
+      sparkle.stop(startTime + 0.3 + i * 0.08);
+    }
+  },
+
+  playCheerSound() {
+    try {
+      if (!this.audioContext) {
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      
+      const ctx = this.audioContext;
+      const now = ctx.currentTime;
+      
+      // Rising celebratory sound
+      const oscillator = ctx.createOscillator();
+      const gainNode = ctx.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(ctx.destination);
+      
+      oscillator.type = 'triangle';
+      oscillator.frequency.setValueAtTime(400, now);
+      oscillator.frequency.exponentialRampToValueAtTime(800, now + 0.2);
+      
+      gainNode.gain.setValueAtTime(0.2, now);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+      
+      oscillator.start(now);
+      oscillator.stop(now + 0.4);
+      
+    } catch (e) {
+      console.log('Audio not supported');
+    }
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   Navigation.init();
   Members.init();
@@ -1723,5 +2245,6 @@ document.addEventListener('DOMContentLoaded', () => {
   CounterAnimation.init();
   FundIframe.init();  // Initialize fund iframe click handler
   AvatarViewer.init();  // Initialize avatar viewer for zoom
+  BirthdayCalendar.init();  // Initialize birthday calendar
   console.log('Class Webpage initialized!');
 });
