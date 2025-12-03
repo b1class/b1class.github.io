@@ -12,6 +12,7 @@ const membersData = [
     nickname: "Huyền",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/438240377_3194018950733477_6034067467652695982_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GkloBvgiflgQ7kNvwEhmMDH&_nc_oc=AdkZz9_3XvYMsaKaIlAmxcc4A9p4c8RF7r4zdLb-W_3t8MRaAkFSI487pZ0sjXAnQInlrX2mS4wv-1Cul4aVixss&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=TfssE1m2DA4WjzjUtBSr_w&oh=00_Afl1k9OkOP1eSvVwAPw1_hrXNUQsgM5UJERAp63hlY8d1g&oe=6934EE2D",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -21,8 +22,9 @@ const membersData = [
     nickname: "Vũ LT",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/557731513_24824089977222656_2481311300486690446_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FoTLqCuIQ0cQ7kNvwHAYN6A&_nc_oc=Adl2t2_QeF26FVm5ZXraY74ORSh3jwfGLF_zafQ-QgI1niUef64x6QqOBjA-YBiK-NYSTDMfA0nYGttQ53X16q-b&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=NsBmIronS92retBXAZ_I6w&oh=00_AfnKn0atsSwwlMZ7YTc6YkQ9BpuPeT6vrLxOlXL_Bu-iXw&oe=6934EE7A",
     role: "Lớp trưởng",
-    birthday: "",
-    contact: { email: "", phone: "", facebook: "" }
+    job: "IT",
+    birthday: "20/01/1993",
+    contact: { email: "itmanz.com@gmail.com", phone: "", facebook: "fb.com/itmanz" }
   },
   {
     id: "member-003",
@@ -39,6 +41,7 @@ const membersData = [
     nickname: "Trinh",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/50823698_1183582011811270_1948282549415444480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lf87znFxBM0Q7kNvwGi3TFZ&_nc_oc=Adkpg8181Iw8JHcgVFF4D6QkqvDLF5PHNgTmK8AXr2SQAcAMai8PtXmn694yEGnQrzLSd1BLqnUyF3lVHCWVh37q&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=nXJCBuM8xGpMxGAEDln53A&oh=00_AfmTJC-fCLOK3TquKAnrTJSICbbSKmwxkWBN3nSIwX62_w&oe=69566019",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -48,6 +51,7 @@ const membersData = [
     nickname: "Hưng",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/79749335_1454777861338486_3429765873890492416_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=A28ukiKiMIEQ7kNvwFukKHc&_nc_oc=AdmPypRu8aYi4Mh0sl2IOjmaXpqpNSUwTwiu7krxmyqDaiu4n8ICRn5g8lV2q55vDLseAG4xSxnXVsOLSjAu_uZL&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=VOdLCaCfpMM64_GpYOnQFw&oh=00_AfnLcQaAmg3giZ5spdWxcAbmhIQfLrnxqxcAf1xee2Fdbg&oe=69568B78",
     role: "",
+    job: "Quân Nhân",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -57,6 +61,7 @@ const membersData = [
     nickname: "Hồng",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/588141181_4318671631702248_7233124361324962335_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gjQYxK60ozMQ7kNvwHM6vaM&_nc_oc=AdnK994Mw97MtQ0EzjBjVqGuiLtzjdwqjSkujOH5nOvrXv0up2lXAXYG8D68ck7fROKa0EqBCI7hHvU33q60lxFd&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=gL4pzFmasUCoQYkwqrioBg&oh=00_Afllrjz3K7BwMS3N7ZrbvFJ7s7UfOx-jjd7vkHDI0xV03w&oe=6934C95D",
     role: "",
+    job: "Giáo Viên",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -75,6 +80,7 @@ const membersData = [
     nickname: "Bò",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/518297354_10070924489682307_2049836912380718212_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=pcmc5n2iBuIQ7kNvwFK4cQf&_nc_oc=Adm256n5bmxJo1NBVRKbF-SVbEPG0yNFdYwKXCr72fmS3K8_gYt3n_6KshtLFQ63pLT3hLq9aH2YkRyxlCQNoUvQ&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=h4kcXDzHqI8hDI8dH3phWA&oh=00_AfmtgbasOl8u3uTDEbFc7jwLHXsvDH0ZIVAFXYu-pNDpqw&oe=6934BEC8",
     role: "",
+    job: "Designer",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -84,6 +90,7 @@ const membersData = [
     nickname: "Hà",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/527986925_3912840735533900_8127659940529731438_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=m-dfuIfyN6EQ7kNvwHz3BtV&_nc_oc=Adk_p1Y2k3y34iSEw-nbXv8HXRkb1ArN1gcfvEEXhCUD84BnbQMbcxr0cZr4aIyb8pJnxVZPZOGtyP5MgF407yA0&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=fmAYgvX24X9x7I1SIeotbQ&oh=00_AflI5qcLQMExOmNf2WCcU4DpYG2Ue5rYnIIQC3JFvAw4Gw&oe=6934CF9A",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -93,6 +100,7 @@ const membersData = [
     nickname: "Thành Heo",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/45186808_1092750044222431_3249275430963773440_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=2UiszPeDymQQ7kNvwES5uW1&_nc_oc=Adk6Qs7fMqfJrb2uOsvbFAM_qkL_ZhBvpX-peLkI8CQiJwoD6IPw7ghKeT13Gh8tSHOAcQ2Y2-AQRFIVdbdVSHmN&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Ow7cND5T3gDRy8q6Xehf_Q&oh=00_Afm9XWtBsygmlvkiv9fwi07LlmR9UhDoDnCMjKObpecZuQ&oe=69567169",
     role: "",
+    job: "Công An",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -102,6 +110,7 @@ const membersData = [
     nickname: "Linh",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/74888329_2570078939773916_4648610079904366592_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=fSexLKc3qmIQ7kNvwHkIxUP&_nc_oc=AdkgF_w4mnxE7SbExyfxeCvXRP9lORsNS0du-mW-4h8IAKPA_3STFP5m2-FSPj1Ew58ObiV69KwOn_xL04MKVYBe&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=gPkLUoUbIcf6kZItpUU8wg&oh=00_AfkkCEr3lIccGnBr78uQ5vhHMGD2Uyf9FYuqZNCWY2AI2g&oe=69568211",
     role: "",
+    job: "Nhà Nước",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -120,6 +129,7 @@ const membersData = [
     nickname: "Nghĩa",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/504478254_2831132177072073_6895867528211320313_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_koIXS7yPusQ7kNvwGWGWCs&_nc_oc=Adm1ZjMXPXGqAOSKmlpqkr1d8IEfTKfy_hnIBp34NUPnPT08f-qB6Y8DRPluHzsQV0nJvlgfPx1pqW3GZMhi5z1D&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=X8TKgS97Oe6wYL18UdIzow&oh=00_AfnH70gQH3WXCuylQxhRejb11huatfWxgwAlQmmLwPulbQ&oe=6934C2B9",
     role: "",
+    job: "Quân Nhân",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -129,6 +139,7 @@ const membersData = [
     nickname: "Oanh",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/475791911_495340846936439_4419701785029688488_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PsUSI7MacPAQ7kNvwFI4TqY&_nc_oc=AdlkduqCOPYEzwuMXAqW3RD29MikuTEYrkLgZwu3nd0_-6G1uzA7ixBrLTkcRiIDCKMDzNVl_ohu6sB0Fsr5n6pV&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=BHt-x93XcqtChg5xhDyMIQ&oh=00_Afnub06pzunOHWcz6KjMJPWvJJadzbsfG3tY07vF9KbGBQ&oe=6934E3FF",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -138,6 +149,7 @@ const membersData = [
     nickname: "Ben",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/491007764_3022053597956818_240798978542083177_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5d1kQClTT9MQ7kNvwG4cGNy&_nc_oc=AdmOKfGUcBBLBjibbUK69HDgRJ-kr_pre3kdxFHKnr9kJMyDLSGuUr1RYs8kjjS4qExqtFLNCpWZHISEo1rnEZ5X&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUbmNHpOkiMT072f9uUcug&oh=00_Afkc7KHXoMMAO7ta5l09E1_SnwsgOh8_c5zCq0BHpov1_Q&oe=6934E331",
     role: "",
+    job: "Airport",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -147,6 +159,7 @@ const membersData = [
     nickname: "Duy",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/509426656_9929654580487169_5673977849734755451_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=4wU0Do6XxXMQ7kNvwGn29jF&_nc_oc=AdlZIo_LfuW_lB30ts07mI8DEnG4ZT5IF-SE4z4hOc9AM5ZZcmFPivBerdqJVnLa_alvb76W3VS6WZ9nhiZu6MVn&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=SfkgpavrUeeiDGIQALDNvQ&oh=00_Afkyv8YZejsPncNhrqwt4TtxhyWP_GlKtgRE2UmG2fW99g&oe=6934EBB2",
     role: "",
+    job: "Kỹ Sư Điện",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -156,6 +169,7 @@ const membersData = [
     nickname: "Hụ Be",
     photo: "images/members/default-avatar.svg",
     role: "",
+    job: "Thu Y",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -165,6 +179,7 @@ const membersData = [
     nickname: "Kệ",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/556302338_3198133417029874_1665301481801193711_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OWvy0ENq8KQQ7kNvwFl-FES&_nc_oc=AdlRoW2fMVuMBQrRgjyRv5riIUw-wD4zeeXssAF8-zlAHx3cZ2_E_kGO1-xNBmt5qcH8r8tyBoWOstne9AQGlOTM&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=9_hbWdsJo3QXmO8ExrdHvw&oh=00_Aflb7Fm2AJ9fgcts1yzSgr7GPSA-miqfETgo4Cc4rzOjaA&oe=6934CC3E",
     role: "",
+    job: "IT",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -174,6 +189,7 @@ const membersData = [
     nickname: "Thảo Chuột",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485910029_9143197962475817_6741619377461411286_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oXD8Gd727zcQ7kNvwHsKLXK&_nc_oc=AdnU2MQGNWvIT7CaltAYZNzqG7pGKbplHaHK2P-RHRQA-xnOejgMXlY6DVkkRTXLHwTJifW537tSQsafpmx6IXAc&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Tw4uqAVuWzilUHW3e-u3sA&oh=00_Afl6PTbIGb645Nft9YdKd3wLx6oITn-02yOxknF7shoDYg&oe=6934DDFA",
     role: "",
+    job: "Giảng Viên",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -183,6 +199,7 @@ const membersData = [
     nickname: "Vũ Dê",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/554096748_2933116140228527_5230965230468608967_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=finQ7HjkZyEQ7kNvwEkJG6v&_nc_oc=AdmuHsSc42QpMsG_nuVAzx314hCSFUU3WqMQWOdN1OgKo2BjpoemNZSJilzjSy6RwNAfAXQNqXURqR2vOLN3SYsQ&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUmsh2SUdnuUIioo5j33tg&oh=00_AfkKi-s_VVk4TdlAV2fyEW5LIeb4Z73CtKawYLn1a73cKQ&oe=6934F22D",
     role: "",
+    job: "Kiến Trúc Sư",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -210,6 +227,7 @@ const membersData = [
     nickname: "Trang",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/499226950_2965896520244857_1341679373321606779_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BODPXyLYAFEQ7kNvwEEyTlE&_nc_oc=AdmLLjrwUyUxxXx1b33mjNClR-oi_VYzpYxfKy9tcklaoD-NFVOE-quVxjEOaz-R3jixkFej8buA_AUweXOapnU8&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=yyVK79t6gNS45JxVcw500w&oh=00_AfnmyAmvCv8aDRd3JUocuNhjMzaXZc7VKSSunD4384zPQQ&oe=6934D95F",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -228,6 +246,7 @@ const membersData = [
     nickname: "Nhi",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/497823232_122105914100865050_5794639936240419975_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=K7vAvfGwo4cQ7kNvwHRlegY&_nc_oc=Adliz1lVvk-IHXi6OmMz2fwtOSQwLum7pJphZhZw9bl6By-G2g4N5ZgouLnd_o5fBRnGRwKlUCWj1HCFLCorq1_J&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=DhpAj9y09hTA2Up__TRLGw&oh=00_AfnK2-B_VFD9g1LLesU7506x9Fs8giVmBuW_EJpG5IEU7g&oe=6934ECB1",
     role: "",
+    job: "Giáo Viên",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -255,6 +274,7 @@ const membersData = [
     nickname: "Yên",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/448251534_2272706979750327_4168142429313985966_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=TLiadAhulgwQ7kNvwFBR5RO&_nc_oc=Adm6ixqUsBppZOSWAVenuQAgwGr_v2FWas0Li6Wh4B-bmvZkkDV7i8T3xVHYEJ9FXBfebR2hZ0NF78wSGVCJfLuq&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=dbb8m4qJDrRS4q3uTSf4iA&oh=00_Afm-qUewYfAUuoM5_k1ZSIUew6FDDIizTHsBxur-Ja7egA&oe=6934CBBD",
     role: "",
+    job: "Điều Dưỡng",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -264,6 +284,7 @@ const membersData = [
     nickname: "Yến",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/61989314_2426611590906871_6933744513458372608_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LVAmy80i1fwQ7kNvwEOIwxV&_nc_oc=AdkpUbIwbNYYjSTkNA-X2nKKPmWB-dEwWizX4N_naNigbB5JHGsgGalvX2X9IJceml8nWu8SoeY7prvdQwHBh_Vg&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=IdsVs-5B7QZlnKhU8Zp5yw&oh=00_Afm9-9U2PSXTdkTgYrGBhin2VvSCGXVY4Rc-YgVTbV1ubw&oe=69567AC5",
     role: "",
+    job: "Kế Toán",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -273,6 +294,7 @@ const membersData = [
     nickname: "Hải",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/469316450_3844882542493317_8776456152770617885_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=elym3CiwtToQ7kNvwF6UGKp&_nc_oc=Adl_uDunqAZBgm-edIvORW6LTXYYKHHw-GSBXI8AfKM2wkLiICKkdNztO0QlwmZpptgJw76Aoqp-6LuzLfjlll88&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=y2x4YlB68yhvvm646d3P-g&oh=00_Afmr5v7Pg76SIJKcXN-HEKxMBZnvAUrct2UsQ8cEk8JW6g&oe=6934D2D5",
     role: "",
+    job: "Kinh Doanh",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -282,6 +304,7 @@ const membersData = [
     nickname: "Trung",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/540210683_1599531677684578_1625834998606371815_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vVL3B9F02vUQ7kNvwFyEt9W&_nc_oc=AdmZm28mxQnNNMrqlAKCmAOk5K2ES2zirKPPHXo5eqJKtWABJ-ddO4-cHPKih-UKHsBBoT8gVT8MYDxshcxz4m1A&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=aE64xfVkbJ97XCKgf6pKrw&oh=00_AflueOF4B3bWHlnESgqD209dPIl0ubXup-QygEIZGk7ocQ&oe=6934F5CD",
     role: "",
+    job: "Công An",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -309,6 +332,7 @@ const membersData = [
     nickname: "Nam",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/561030085_3944678522331012_9165802719273519554_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ey-q11f2TyQQ7kNvwEh_i9E&_nc_oc=Adkh2SV8KXPf5nqrz8Iag7Z7goiodTLEfdpKE5dLL9eY0prgRfZHM3b01JNu-8fEI5Y685UVaDgCXkR7GbUB58lW&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=rcUDXzUlI9x-0hHicqdYgw&oh=00_AfmGbOT41eYK2ViOMCdz3iebOHjRvJwqbFu32oJ9m8Gb-Q&oe=6934F66D",
     role: "",
+    job: "Ca Sỹ",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -381,6 +405,7 @@ const membersData = [
     nickname: "Chung",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/490094181_3371201626343118_2971127715698679869_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Tjj4_A2rlPEQ7kNvwEpAajt&_nc_oc=AdmU4mrfRtplxcdpEgeYwbxNNHoV34VlHt1cUXOA-K9pyWCgwPLJrMKRVf9THfMdjg1vTpJr9dQEm9zv6-S5IeaU&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=6NzW0Mv44VKt-t7FAi0FEw&oh=00_AfkLvHoMQMX5z1Aosq3e1ucSBlYyonTAWsiLvrOp-k3v1Q&oe=693580C6",
     role: "",
+    job: "Kỹ Sư",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -399,6 +424,7 @@ const membersData = [
     nickname: "Định",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/480440512_8932097940249665_9005704797796219434_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=q4585gBHtc8Q7kNvwEDqyW1&_nc_oc=AdlLA4fLfoW8APatZ8o6c3-gX5TFZxw53w3FyyiUQUvYfqKn2E6pOQNIzQeodUSGCgFqgdneeUalohPNLPdf-XYt&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=pqhunZQdi90zvhM127AyyA&oh=00_AflhmWn-ftkdDsD-5lXFyoIIYyOmjoJSLb0v0v8585hd4Q&oe=69355FD5",
     role: "",
+    job: "Ngân Hàng",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -699,9 +725,14 @@ const Members = {
       </div>
     ` : '';
 
+    const jobText = member.job || 'Chưa cập nhật';
+    
     this.modalBody.innerHTML = `
       <div class="modal__header">
-        <img class="modal__image" src="${member.photo}" alt="Ảnh ${member.name}" onerror="this.src='images/members/default-avatar.svg'">
+        <div class="modal__image-wrapper" data-photo="${member.photo}">
+          <img class="modal__image" src="${member.photo}" alt="Ảnh ${member.name}" onerror="this.src='images/members/default-avatar.svg'">
+          <div class="modal__image-zoom-hint">🔍 Nhấn để xem ảnh lớn</div>
+        </div>
         <div class="modal__title-group">
           <h3 class="modal__name">${member.name}</h3>
           ${member.nickname ? `<p class="modal__nickname">Biệt danh: ${member.nickname}</p>` : ''}
@@ -709,10 +740,20 @@ const Members = {
         </div>
       </div>
       <div class="modal__details">
-        ${member.birthday ? `<p><strong>Ngày sinh:</strong> ${member.birthday}</p>` : ''}
+        <p><strong>💼 Nghề nghiệp:</strong> ${jobText}</p>
+        ${member.birthday ? `<p><strong>🎂 Ngày sinh:</strong> ${member.birthday}</p>` : ''}
         ${contactHtml}
       </div>
     `;
+    
+    // Add click event for avatar zoom
+    const imageWrapper = this.modalBody.querySelector('.modal__image-wrapper');
+    if (imageWrapper) {
+      imageWrapper.addEventListener('click', (e) => {
+        e.stopPropagation();
+        AvatarViewer.open(member.photo, member.name);
+      });
+    }
   },
 
   setupModalEvents() {
@@ -1380,6 +1421,162 @@ const Filter = {
   }
 };
 
+// ==================== AVATAR VIEWER ====================
+
+const AvatarViewer = {
+  viewer: null,
+  image: null,
+  closeBtn: null,
+  zoomInBtn: null,
+  zoomOutBtn: null,
+  resetBtn: null,
+  currentZoom: 1,
+  minZoom: 0.5,
+  maxZoom: 4,
+  zoomStep: 0.5,
+
+  init() {
+    this.createViewer();
+    this.setupEventListeners();
+  },
+
+  createViewer() {
+    // Create avatar viewer HTML
+    const viewerHtml = `
+      <div class="avatar-viewer" id="avatar-viewer">
+        <div class="avatar-viewer__overlay" id="avatar-viewer-overlay"></div>
+        <div class="avatar-viewer__content">
+          <button class="avatar-viewer__close" id="avatar-viewer-close" aria-label="Đóng">&times;</button>
+          <div class="avatar-viewer__controls">
+            <button class="avatar-viewer__btn" id="avatar-zoom-out" aria-label="Thu nhỏ">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35M8 11h6"></path>
+              </svg>
+            </button>
+            <button class="avatar-viewer__btn" id="avatar-zoom-reset" aria-label="Đặt lại">100%</button>
+            <button class="avatar-viewer__btn" id="avatar-zoom-in" aria-label="Phóng to">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35M11 8v6M8 11h6"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="avatar-viewer__image-container" id="avatar-image-container">
+            <img class="avatar-viewer__image" id="avatar-viewer-image" src="" alt="" draggable="false">
+          </div>
+          <p class="avatar-viewer__caption" id="avatar-viewer-caption"></p>
+        </div>
+      </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', viewerHtml);
+
+    // Get elements
+    this.viewer = document.getElementById('avatar-viewer');
+    this.image = document.getElementById('avatar-viewer-image');
+    this.closeBtn = document.getElementById('avatar-viewer-close');
+    this.zoomInBtn = document.getElementById('avatar-zoom-in');
+    this.zoomOutBtn = document.getElementById('avatar-zoom-out');
+    this.resetBtn = document.getElementById('avatar-zoom-reset');
+    this.overlay = document.getElementById('avatar-viewer-overlay');
+    this.caption = document.getElementById('avatar-viewer-caption');
+    this.imageContainer = document.getElementById('avatar-image-container');
+  },
+
+  open(photoUrl, name) {
+    if (!this.viewer || !this.image) return;
+    
+    this.image.src = photoUrl;
+    this.image.alt = `Ảnh ${name}`;
+    this.caption.textContent = name;
+    this.currentZoom = 1;
+    this.updateZoom();
+    this.viewer.classList.add('show');
+    document.body.classList.add('no-scroll');
+  },
+
+  close() {
+    if (!this.viewer) return;
+    this.viewer.classList.remove('show');
+    document.body.classList.remove('no-scroll');
+    this.currentZoom = 1;
+    this.updateZoom();
+  },
+
+  zoomIn() {
+    if (this.currentZoom < this.maxZoom) {
+      this.currentZoom += this.zoomStep;
+      this.updateZoom();
+    }
+  },
+
+  zoomOut() {
+    if (this.currentZoom > this.minZoom) {
+      this.currentZoom -= this.zoomStep;
+      this.updateZoom();
+    }
+  },
+
+  resetZoom() {
+    this.currentZoom = 1;
+    this.updateZoom();
+  },
+
+  updateZoom() {
+    if (this.image) {
+      this.image.style.transform = `scale(${this.currentZoom})`;
+    }
+    if (this.resetBtn) {
+      this.resetBtn.textContent = `${Math.round(this.currentZoom * 100)}%`;
+    }
+  },
+
+  setupEventListeners() {
+    if (this.closeBtn) {
+      this.closeBtn.addEventListener('click', () => this.close());
+    }
+    if (this.overlay) {
+      this.overlay.addEventListener('click', () => this.close());
+    }
+    if (this.zoomInBtn) {
+      this.zoomInBtn.addEventListener('click', () => this.zoomIn());
+    }
+    if (this.zoomOutBtn) {
+      this.zoomOutBtn.addEventListener('click', () => this.zoomOut());
+    }
+    if (this.resetBtn) {
+      this.resetBtn.addEventListener('click', () => this.resetZoom());
+    }
+
+    // Keyboard controls
+    document.addEventListener('keydown', (e) => {
+      if (!this.viewer || !this.viewer.classList.contains('show')) return;
+      
+      if (e.key === 'Escape') this.close();
+      else if (e.key === '+' || e.key === '=') this.zoomIn();
+      else if (e.key === '-') this.zoomOut();
+      else if (e.key === '0') this.resetZoom();
+    });
+
+    // Mouse wheel zoom
+    if (this.imageContainer) {
+      this.imageContainer.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        if (e.deltaY < 0) {
+          this.zoomIn();
+        } else {
+          this.zoomOut();
+        }
+      }, { passive: false });
+    }
+
+    // Double click to reset
+    if (this.image) {
+      this.image.addEventListener('dblclick', () => this.resetZoom());
+    }
+  }
+};
+
 // ==================== FUND IFRAME ====================
 
 const FundIframe = {
@@ -1525,5 +1722,6 @@ document.addEventListener('DOMContentLoaded', () => {
   Particles.init();
   CounterAnimation.init();
   FundIframe.init();  // Initialize fund iframe click handler
+  AvatarViewer.init();  // Initialize avatar viewer for zoom
   console.log('Class Webpage initialized!');
 });
