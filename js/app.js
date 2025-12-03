@@ -13,7 +13,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/438240377_3194018950733477_6034067467652695982_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GkloBvgiflgQ7kNvwEhmMDH&_nc_oc=AdkZz9_3XvYMsaKaIlAmxcc4A9p4c8RF7r4zdLb-W_3t8MRaAkFSI487pZ0sjXAnQInlrX2mS4wv-1Cul4aVixss&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=TfssE1m2DA4WjzjUtBSr_w&oh=00_Afl1k9OkOP1eSvVwAPw1_hrXNUQsgM5UJERAp63hlY8d1g&oe=6934EE2D",
     role: "",
     job: "Kinh Doanh",
-    birthday: "",
+    birthday: "20/11",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -101,7 +101,7 @@ const membersData = [
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/45186808_1092750044222431_3249275430963773440_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=2UiszPeDymQQ7kNvwES5uW1&_nc_oc=Adk6Qs7fMqfJrb2uOsvbFAM_qkL_ZhBvpX-peLkI8CQiJwoD6IPw7ghKeT13Gh8tSHOAcQ2Y2-AQRFIVdbdVSHmN&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Ow7cND5T3gDRy8q6Xehf_Q&oh=00_Afm9XWtBsygmlvkiv9fwi07LlmR9UhDoDnCMjKObpecZuQ&oe=69567169",
     role: "",
     job: "Công An",
-    birthday: "",
+    birthday: "01/11",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -110,7 +110,7 @@ const membersData = [
     nickname: "Linh",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/74888329_2570078939773916_4648610079904366592_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=fSexLKc3qmIQ7kNvwHkIxUP&_nc_oc=AdkgF_w4mnxE7SbExyfxeCvXRP9lORsNS0du-mW-4h8IAKPA_3STFP5m2-FSPj1Ew58ObiV69KwOn_xL04MKVYBe&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=gPkLUoUbIcf6kZItpUU8wg&oh=00_AfkkCEr3lIccGnBr78uQ5vhHMGD2Uyf9FYuqZNCWY2AI2g&oe=69568211",
     role: "",
-    job: "Nhà Nước",
+    job: "Cán Bộ",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -120,7 +120,7 @@ const membersData = [
     nickname: "Hằng",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/89151439_527185354844542_8065962390207856640_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BXUSOG0QoxEQ7kNvwFWbr4R&_nc_oc=AdmgmIIpmC36nYnUFQKI03h0dR40kgXld1GY9TJM4743u4NbPvv3f3EsPzmP_jF8iGv6Y3OGjrSYgV8xTXm0_h4N&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=UwHNo5YWxIdfgchd2R4DXg&oh=00_AfmM4f8SPWl6e9xKP8mh2nigBlXj0p6HkWpcHCbxFeGcxg&oe=69566B1D",
     role: "",
-    birthday: "",
+    birthday: "16/06",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -160,7 +160,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/509426656_9929654580487169_5673977849734755451_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=4wU0Do6XxXMQ7kNvwGn29jF&_nc_oc=AdlZIo_LfuW_lB30ts07mI8DEnG4ZT5IF-SE4z4hOc9AM5ZZcmFPivBerdqJVnLa_alvb76W3VS6WZ9nhiZu6MVn&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=SfkgpavrUeeiDGIQALDNvQ&oh=00_Afkyv8YZejsPncNhrqwt4TtxhyWP_GlKtgRE2UmG2fW99g&oe=6934EBB2",
     role: "",
     job: "Kỹ Sư Điện",
-    birthday: "",
+    birthday: "11/04",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -170,7 +170,7 @@ const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     job: "Thu Y",
-    birthday: "",
+    birthday: "15/09",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -180,7 +180,7 @@ const membersData = [
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/556302338_3198133417029874_1665301481801193711_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OWvy0ENq8KQQ7kNvwFl-FES&_nc_oc=AdlRoW2fMVuMBQrRgjyRv5riIUw-wD4zeeXssAF8-zlAHx3cZ2_E_kGO1-xNBmt5qcH8r8tyBoWOstne9AQGlOTM&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=9_hbWdsJo3QXmO8ExrdHvw&oh=00_Aflb7Fm2AJ9fgcts1yzSgr7GPSA-miqfETgo4Cc4rzOjaA&oe=6934CC3E",
     role: "",
     job: "IT",
-    birthday: "",
+    birthday: "05/03",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -189,7 +189,7 @@ const membersData = [
     nickname: "Thảo Chuột",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485910029_9143197962475817_6741619377461411286_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oXD8Gd727zcQ7kNvwHsKLXK&_nc_oc=AdnU2MQGNWvIT7CaltAYZNzqG7pGKbplHaHK2P-RHRQA-xnOejgMXlY6DVkkRTXLHwTJifW537tSQsafpmx6IXAc&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Tw4uqAVuWzilUHW3e-u3sA&oh=00_Afl6PTbIGb645Nft9YdKd3wLx6oITn-02yOxknF7shoDYg&oe=6934DDFA",
     role: "",
-    job: "Giảng Viên",
+    job: "Giáo Viên",
     birthday: "",
     contact: { email: "", phone: "", facebook: "" }
   },
@@ -200,7 +200,7 @@ const membersData = [
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/554096748_2933116140228527_5230965230468608967_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=finQ7HjkZyEQ7kNvwEkJG6v&_nc_oc=AdmuHsSc42QpMsG_nuVAzx314hCSFUU3WqMQWOdN1OgKo2BjpoemNZSJilzjSy6RwNAfAXQNqXURqR2vOLN3SYsQ&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUmsh2SUdnuUIioo5j33tg&oh=00_AfkKi-s_VVk4TdlAV2fyEW5LIeb4Z73CtKawYLn1a73cKQ&oe=6934F22D",
     role: "",
     job: "Kiến Trúc Sư",
-    birthday: "",
+    birthday: "01/01",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -247,7 +247,7 @@ const membersData = [
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/497823232_122105914100865050_5794639936240419975_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=K7vAvfGwo4cQ7kNvwHRlegY&_nc_oc=Adliz1lVvk-IHXi6OmMz2fwtOSQwLum7pJphZhZw9bl6By-G2g4N5ZgouLnd_o5fBRnGRwKlUCWj1HCFLCorq1_J&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=DhpAj9y09hTA2Up__TRLGw&oh=00_AfnK2-B_VFD9g1LLesU7506x9Fs8giVmBuW_EJpG5IEU7g&oe=6934ECB1",
     role: "",
     job: "Giáo Viên",
-    birthday: "",
+    birthday: "15/09",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -319,11 +319,11 @@ const membersData = [
   },
   {
     id: "member-033",
-    name: "Lê Văn Hiếu",
+    name: "Lê Đức Hiếu",
     nickname: "Hiếu",
     photo: "images/members/default-avatar.svg",
     role: "",
-    birthday: "",
+    birthday: "17/11",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -503,26 +503,17 @@ const membersData = [
 ];
 
 const galleryData = [
-  // TEMPORARILY HIDDEN - Uncomment when images are available
-  // {
-  //   name: "Khai giảng 2023",
-  //   date: "05/09/2023",
-  //   images: [
-  //     { id: "img-001", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lễ khai giảng năm học mới 2023-2024" },
-  //     { id: "img-002", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Cả lớp chụp ảnh kỷ niệm" },
-  //     { id: "img-003", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Thầy cô và học sinh" }
-  //   ]
-  // },
-  // {
-  //   name: "Ngày Nhà giáo Việt Nam",
-  //   date: "20/11/2023",
-  //   images: [
-  //     { id: "img-004", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tặng hoa cho thầy cô" },
-  //     { id: "img-005", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Văn nghệ chào mừng 20/11" },
-  //     { id: "img-006", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Lớp chụp ảnh cùng GVCN" },
-  //     { id: "img-007", src: "images/gallery/placeholder.svg", thumbnail: "images/gallery/placeholder.svg", caption: "Tiết mục múa của các bạn nữ" }
-  //   ]
-  // },
+  {
+    name: "🧧 Tết 2019",
+    date: "Xuân Kỷ Hợi 2019",
+    externalAlbum: "https://photos.google.com/share/AF1QipMvDDocjWiOhweZoOKrU4XyFps86-V_fpjTMQ5vonHsnJwvDvTcTY53NXWFK58GuA?key=dmZlMHpBRWhkclNhZkYzWHFETnlScnBwTzFoWWRn",
+    images: [
+      { id: "tet-001", src: "images/gallery/tet2019/DSC_3655.JPG", thumbnail: "images/gallery/tet2019/DSC_3655.JPG", caption: "Tết 2019 - Xuân Kỷ Hợi" },
+      { id: "tet-002", src: "images/gallery/tet2019/DSC_3805.JPG", thumbnail: "images/gallery/tet2019/DSC_3805.JPG", caption: "Tết 2019 - Xuân Kỷ Hợi" },
+      { id: "tet-003", src: "images/gallery/tet2019/DSC_3863.JPG", thumbnail: "images/gallery/tet2019/DSC_3863.JPG", caption: "Tết 2019 - Xuân Kỷ Hợi" },
+      { id: "tet-004", src: "images/gallery/tet2019/DSC_3883.JPG", thumbnail: "images/gallery/tet2019/DSC_3883.JPG", caption: "Tết 2019 - Xuân Kỷ Hợi" }
+    ]
+  },
   {
     name: "Tháng năm học trò",
     date: "15/05/2024",
@@ -819,10 +810,25 @@ const Gallery = {
       const section = document.createElement('div');
       section.className = 'gallery__event scroll-animate';
 
+      // Check if event has external album link
+      const externalLink = event.externalAlbum ? `
+        <a href="${event.externalAlbum}" target="_blank" rel="noopener noreferrer" class="gallery__event-more">
+          <span>Xem thêm ảnh</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      ` : '';
+
       section.innerHTML = `
         <div class="gallery__event-header">
-          <h3 class="gallery__event-title">${event.name}</h3>
-          <span class="gallery__event-date">${event.date}</span>
+          <div class="gallery__event-info">
+            <h3 class="gallery__event-title">${event.name}</h3>
+            <span class="gallery__event-date">${event.date}</span>
+          </div>
+          ${externalLink}
         </div>
         <div class="gallery__grid"></div>
       `;
@@ -2246,5 +2252,6 @@ document.addEventListener('DOMContentLoaded', () => {
   FundIframe.init();  // Initialize fund iframe click handler
   AvatarViewer.init();  // Initialize avatar viewer for zoom
   BirthdayCalendar.init();  // Initialize birthday calendar
+
   console.log('Class Webpage initialized!');
 });

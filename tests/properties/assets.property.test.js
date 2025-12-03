@@ -78,6 +78,7 @@ function extractAssetPaths(html) {
 function isAllowedExternalUrl(url) {
   const allowedDomains = [
     'docs.google.com',      // Google Sheets embeds
+    'photos.google.com',    // Google Photos embeds
     'fonts.googleapis.com', // Google Fonts
     'fonts.gstatic.com',    // Google Fonts assets
     'cdn.jsdelivr.net',     // CDN resources
