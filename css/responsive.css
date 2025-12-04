@@ -460,3 +460,51 @@
   }
   */
 }
+
+
+/* ==================== Member Map Responsive ==================== */
+@media screen and (max-width: 968px) {
+  .member-map__content {
+    grid-template-columns: 1fr;
+  }
+  
+  .member-map__container {
+    min-height: 450px;
+  }
+  
+  .member-map__sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .member-map__legend,
+  .member-map__city-list {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .member-map__container {
+    padding: 1rem;
+    min-height: 350px;
+    border-radius: 16px;
+  }
+  
+  .member-map__sidebar {
+    flex-direction: column;
+  }
+  
+  .member-map__legend,
+  .member-map__city-list {
+    min-width: 100%;
+  }
+  
+  .city-marker__label {
+    font-size: 9px;
+  }
+  
+  .legend-item {
+    padding: 0.5rem;
+  }
+}

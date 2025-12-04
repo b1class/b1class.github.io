@@ -11,6 +11,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "Lớp trưởng",
     birthday: "15/03/2006",
+    location: { city: "Hà Nội", region: "north" },
     contact: {
       email: "nguyenvanan@email.com",
       phone: "0901234567",
@@ -24,6 +25,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "Lớp phó học tập",
     birthday: "22/07/2006",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: {
       email: "tranthibinh@email.com",
       phone: "0912345678",
@@ -37,6 +39,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "08/11/2006",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: {
       email: "lehoangcuong@email.com",
       phone: "0923456789",
@@ -50,6 +53,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "Bí thư",
     birthday: "30/01/2006",
+    location: { city: "Hà Nội", region: "north" },
     contact: {
       email: "phammindung@email.com",
       phone: "0934567890",
@@ -63,6 +67,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "12/05/2006",
+    location: { city: "Huế", region: "central" },
     contact: {
       email: "hoangthiha@email.com",
       phone: "0945678901",
@@ -76,6 +81,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "Lớp phó văn thể",
     birthday: "25/09/2006",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: {
       email: "doquanghuy@email.com",
       phone: "0956789012",
@@ -89,6 +95,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "18/02/2006",
+    location: { city: "Hải Phòng", region: "north" },
     contact: {
       email: "vuthilan@email.com",
       phone: "0967890123",
@@ -102,6 +109,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "03/08/2006",
+    location: { city: "Cần Thơ", region: "south" },
     contact: {
       email: "buiducminh@email.com",
       phone: "0978901234",
@@ -115,6 +123,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "Thủ quỹ",
     birthday: "27/12/2006",
+    location: { city: "Nha Trang", region: "central" },
     contact: {
       email: "ngothingoc@email.com",
       phone: "0989012345",
@@ -128,6 +137,7 @@ export const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "14/06/2006",
+    location: { city: "Đà Lạt", region: "central" },
     contact: {
       email: "dinhvanphong@email.com",
       phone: "0990123456",

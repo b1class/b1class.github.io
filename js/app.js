@@ -14,6 +14,7 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "20/11",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -24,6 +25,7 @@ const membersData = [
     role: "Lớp trưởng",
     job: "IT",
     birthday: "20/01",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "itmanz.com@gmail.com", phone: "", facebook: "fb.com/itmanz" }
   },
   {
@@ -33,6 +35,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/80388618_2546071995488125_1742180825660653568_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lInlNHqw5iEQ7kNvwFB3Mz_&_nc_oc=AdmxsmGwwPz6JEbQxeKp8Q0rFx4j234JXCL11DIltc2MUDRntaVFRH8hYcjZvl23VmrF1VdNgWAOfjeD7bLT3Yre&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=J6jYraf74BwbQ2X0OREqvw&oh=00_AfnOSRqZmkac5n9dSbF-ssBwnFZ1iH_7ZzyPi9oxudSASw&oe=69565C1D",
     role: "",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -43,6 +46,7 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "04/08",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -53,6 +57,7 @@ const membersData = [
     role: "",
     job: "Quân Nhân",
     birthday: "04/10",
+    location: { city: "Hà Nội", region: "north" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -63,6 +68,7 @@ const membersData = [
     role: "",
     job: "Giáo Viên",
     birthday: "",
+    location: { city: "Huế", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -72,6 +78,7 @@ const membersData = [
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/583098965_3749244548553128_5926935321485392248_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=edCa15RbJKwQ7kNvwGLS61l&_nc_oc=Adlnxxl9Rxm5E7gLDnt9b6R1nuOq1gAnmbk37ibIQENFyzCJ1FiTDkVM-ch2pzr25VSkNejk30yx24rCmpLf4HGO&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=CPK8dPyqCZRyx5il2H0Kxw&oh=00_AfmATzGJMUBL1h3X6UMwSFkjOiHcorxOlo3tJ3VT8sv-9A&oe=6934F183",
     role: "",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -82,6 +89,7 @@ const membersData = [
     role: "",
     job: "Designer",
     birthday: "",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -92,6 +100,7 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "",
+    location: { city: "Nha Trang", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -102,6 +111,7 @@ const membersData = [
     role: "",
     job: "Công An",
     birthday: "01/11",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -112,6 +122,7 @@ const membersData = [
     role: "",
     job: "Cán Bộ",
     birthday: "",
+    location: { city: "Hà Nội", region: "north" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -121,6 +132,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/89151439_527185354844542_8065962390207856640_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BXUSOG0QoxEQ7kNvwFWbr4R&_nc_oc=AdmgmIIpmC36nYnUFQKI03h0dR40kgXld1GY9TJM4743u4NbPvv3f3EsPzmP_jF8iGv6Y3OGjrSYgV8xTXm0_h4N&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=UwHNo5YWxIdfgchd2R4DXg&oh=00_AfmM4f8SPWl6e9xKP8mh2nigBlXj0p6HkWpcHCbxFeGcxg&oe=69566B1D",
     role: "",
     birthday: "16/06",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -131,6 +143,7 @@ const membersData = [
     role: "",
     job: "Quân Nhân",
     birthday: "",
+    location: { city: "Hà Nội", region: "north" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -141,6 +154,7 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -150,7 +164,8 @@ const membersData = [
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/491007764_3022053597956818_240798978542083177_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5d1kQClTT9MQ7kNvwG4cGNy&_nc_oc=AdmOKfGUcBBLBjibbUK69HDgRJ-kr_pre3kdxFHKnr9kJMyDLSGuUr1RYs8kjjS4qExqtFLNCpWZHISEo1rnEZ5X&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUbmNHpOkiMT072f9uUcug&oh=00_Afkc7KHXoMMAO7ta5l09E1_SnwsgOh8_c5zCq0BHpov1_Q&oe=6934E331",
     role: "",
     job: "Airport",
-    birthday: "",
+    birthday: "05/08",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -161,6 +176,7 @@ const membersData = [
     role: "",
     job: "Kỹ Sư Điện",
     birthday: "11/04",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -171,6 +187,7 @@ const membersData = [
     role: "",
     job: "Thu Y",
     birthday: "15/09",
+    location: { city: "Huế", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -181,6 +198,7 @@ const membersData = [
     role: "",
     job: "IT",
     birthday: "05/03",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -191,6 +209,7 @@ const membersData = [
     role: "",
     job: "Giáo Viên",
     birthday: "",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -201,6 +220,7 @@ const membersData = [
     role: "",
     job: "Kiến Trúc Sư",
     birthday: "01/01",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -209,7 +229,8 @@ const membersData = [
     nickname: "Ngọc",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/430986969_3038715566270746_1724521696039631767_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oy1d8FWlk1IQ7kNvwErbE-q&_nc_oc=AdnKIF6yOPO6GMbbBU1yMOXWAL7Q6g3aG5JSmLT0dkSpqUGAej3omxevijA5QfdilJKksilTbwbaxXsGPZGkAReo&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=c9e8eS9tksJlqykITZ1vNA&oh=00_Afm5v72O_jK7V8o-H9BBz-7pqTRbK3EiUplE0agTwwE6Qg&oe=6934E1E9",
     role: "Phó học tập",
-    birthday: "",
+    birthday: "16/05",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -228,7 +249,7 @@ const membersData = [
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/499226950_2965896520244857_1341679373321606779_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BODPXyLYAFEQ7kNvwEEyTlE&_nc_oc=AdmLLjrwUyUxxXx1b33mjNClR-oi_VYzpYxfKy9tcklaoD-NFVOE-quVxjEOaz-R3jixkFej8buA_AUweXOapnU8&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=yyVK79t6gNS45JxVcw500w&oh=00_AfnmyAmvCv8aDRd3JUocuNhjMzaXZc7VKSSunD4384zPQQ&oe=6934D95F",
     role: "",
     job: "Kinh Doanh",
-    birthday: "",
+    birthday: "21/07",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -565,18 +586,18 @@ const timelineData = [
     image: "images/gallery/tet2019/DSC_3655.JPG"
   },
   {
-    year: "2024",
+    year: "12/2025",
     title: "Kết nối trực tuyến",
-    description: "Ra mắt trang web của lớp, nơi lưu giữ kỷ niệm và kết nối các thành viên dù ở bất cứ đâu.",
+    description: "Ra mắt trang web của lớp vào tháng 12/2025, nơi lưu giữ kỷ niệm và kết nối các thành viên dù ở bất cứ đâu.",
     icon: "🌐",
     tags: ["Website", "Kết nối"]
   },
   {
-    year: "2025",
-    title: "Họp lớp 14 năm",
-    description: "Dự kiến tổ chức họp lớp kỷ niệm 14 năm ra trường. Hãy cùng chờ đón!",
+    year: "2026",
+    title: "Họp lớp 15 năm",
+    description: "Tổ chức họp lớp Tết Bính Ngọ, kỷ niệm 15 năm ra trường tại Thị Xã Quảng Trị.",
     icon: "🎉",
-    tags: ["Sắp tới", "Họp lớp"]
+    tags: ["Mồng 2 Tết", "Họp lớp"]
   }
 ];
 
@@ -2129,18 +2150,18 @@ const BirthdayCalendar = {
     const wish = this.birthdayWishes[Math.floor(Math.random() * this.birthdayWishes.length)];
     
     this.giftBody.innerHTML = `
-      <div class="gift-box" id="gift-box">
-        <div class="gift-box__lid">
-          <div class="gift-box__bow"></div>
+      <div class="gift-box-wrapper" id="gift-box-wrapper">
+        <div class="gift-box" id="gift-box">
+          <div class="gift-box__bow">🎀</div>
+          <div class="gift-box__lid"></div>
+          <div class="gift-box__base">
+            <div class="gift-box__ribbon-v"></div>
+            <div class="gift-box__ribbon-h"></div>
+          </div>
         </div>
-        <div class="gift-box__base">
-          <div class="gift-box__ribbon-v"></div>
-          <div class="gift-box__ribbon-h"></div>
-        </div>
+        <p class="gift-box-instruction">✨ Nhấn vào hộp quà để mở ✨</p>
       </div>
-      <p class="gift-instruction">👆 Nhấn vào hộp quà để mở!</p>
       <div class="gift-content" id="gift-content">
-        <div class="gift-content__confetti" id="confetti-container"></div>
         <img class="gift-content__avatar" src="${member.photo}" alt="${member.name}" 
              onerror="this.src='images/members/default-avatar.svg'">
         <h3 class="gift-content__name">${member.name}</h3>
@@ -2154,23 +2175,114 @@ const BirthdayCalendar = {
     
     // Gift box click handler
     const giftBox = document.getElementById('gift-box');
+    const giftBoxWrapper = document.getElementById('gift-box-wrapper');
     const giftContent = document.getElementById('gift-content');
-    const instruction = this.giftBody.querySelector('.gift-instruction');
+    const modalContent = this.giftModal.querySelector('.gift-modal__content');
     
     giftBox.addEventListener('click', () => {
       if (!giftBox.classList.contains('opened')) {
         giftBox.classList.add('opened');
-        instruction.style.display = 'none';
+        giftBoxWrapper.classList.add('opened');
+        if (modalContent) modalContent.classList.add('gift-opened');
+        
         // Play pop sound when opening
         this.playCheerSound();
+        
+        // Create fireworks effect
+        this.createFireworks();
+        
         setTimeout(() => {
           giftContent.classList.add('visible');
-          this.createConfetti();
           // Play birthday melody when content appears
           this.playBirthdaySound();
-        }, 300);
+        }, 400);
       }
     });
+  },
+  
+  createFireworks() {
+    // Create fireworks container
+    let fireworksContainer = document.querySelector('.gift-fireworks');
+    if (!fireworksContainer) {
+      fireworksContainer = document.createElement('div');
+      fireworksContainer.className = 'gift-fireworks';
+      document.body.appendChild(fireworksContainer);
+    }
+    fireworksContainer.innerHTML = '';
+    
+    const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff6b9d', '#c44dff', '#fff'];
+    
+    // Create multiple firework bursts
+    const createBurst = (x, y, delay) => {
+      setTimeout(() => {
+        // Create particles for this burst
+        for (let i = 0; i < 30; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'firework';
+          const angle = (i / 30) * Math.PI * 2;
+          const velocity = 50 + Math.random() * 100;
+          const tx = Math.cos(angle) * velocity;
+          const ty = Math.sin(angle) * velocity;
+          
+          particle.style.cssText = `
+            left: ${x}%;
+            top: ${y}%;
+            background: ${colors[Math.floor(Math.random() * colors.length)]};
+            --tx: ${tx}px;
+            --ty: ${ty}px;
+            animation-duration: ${0.8 + Math.random() * 0.4}s;
+          `;
+          fireworksContainer.appendChild(particle);
+        }
+        
+        // Play firework sound
+        this.playFireworkSound();
+      }, delay);
+    };
+    
+    // Create multiple bursts at different positions
+    createBurst(50, 30, 0);
+    createBurst(25, 40, 200);
+    createBurst(75, 35, 400);
+    createBurst(40, 50, 600);
+    createBurst(60, 45, 800);
+    
+    // Clean up after animation
+    setTimeout(() => {
+      if (fireworksContainer) {
+        fireworksContainer.innerHTML = '';
+      }
+    }, 2500);
+  },
+  
+  playFireworkSound() {
+    try {
+      if (!this.audioContext) {
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      
+      const ctx = this.audioContext;
+      const now = ctx.currentTime;
+      
+      // Create a "pop" sound
+      const oscillator = ctx.createOscillator();
+      const gainNode = ctx.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(ctx.destination);
+      
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(600 + Math.random() * 400, now);
+      oscillator.frequency.exponentialRampToValueAtTime(100, now + 0.1);
+      
+      gainNode.gain.setValueAtTime(0.15, now);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+      
+      oscillator.start(now);
+      oscillator.stop(now + 0.2);
+    } catch (e) {
+      // Audio not supported
+    }
   },
 
   closeGiftModal() {
@@ -2983,6 +3095,485 @@ const Statistics = {
   }
 };
 
+// ==================== MEMBER MAP ====================
+
+const MemberMap = {
+  container: null,
+  map: null,
+  markers: [],
+  
+  // Vietnam cities with real geographic coordinates [lat, lng]
+  cityCoords: {
+    'Hà Nội': { lat: 21.0285, lng: 105.8542, region: 'north' },
+    'Hải Phòng': { lat: 20.8449, lng: 106.6881, region: 'north' },
+    'Quảng Ninh': { lat: 21.0064, lng: 107.2925, region: 'north' },
+    'Đà Nẵng': { lat: 16.0544, lng: 108.2022, region: 'central' },
+    'Huế': { lat: 16.4637, lng: 107.5909, region: 'central' },
+    'Nha Trang': { lat: 12.2388, lng: 109.1967, region: 'central' },
+    'Đà Lạt': { lat: 11.9404, lng: 108.4583, region: 'central' },
+    'Quy Nhơn': { lat: 13.7830, lng: 109.2197, region: 'central' },
+    'TP. Hồ Chí Minh': { lat: 10.8231, lng: 106.6297, region: 'south' },
+    'Cần Thơ': { lat: 10.0452, lng: 105.7469, region: 'south' },
+    'Vũng Tàu': { lat: 10.4114, lng: 107.1362, region: 'south' },
+    'Biên Hòa': { lat: 10.9574, lng: 106.8426, region: 'south' },
+    'Bình Dương': { lat: 10.9804, lng: 106.6519, region: 'south' },
+    'Phú Quốc': { lat: 10.2899, lng: 103.9840, region: 'south' }
+  },
+  
+  // Region colors
+  regionColors: {
+    north: '#3b82f6',    // Blue
+    central: '#f59e0b',  // Orange  
+    south: '#10b981'     // Green
+  },
+  
+  init() {
+    this.container = document.getElementById('vietnam-map-container');
+    if (!this.container) return;
+    
+    // Check if Leaflet is loaded
+    if (typeof L === 'undefined') {
+      this.loadLeaflet().then(() => {
+        this.initMap();
+      });
+    } else {
+      this.initMap();
+    }
+    
+    this.updateCounts();
+    this.renderCityList();
+  },
+  
+  loadLeaflet() {
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+      script.crossOrigin = '';
+      script.onload = resolve;
+      document.head.appendChild(script);
+    });
+  },
+  
+  initMap() {
+    // Create map div
+    this.container.innerHTML = '<div id="leaflet-map" style="width: 100%; height: 100%; min-height: 500px; border-radius: 16px;"></div>';
+    
+    // Initialize Leaflet map centered on Vietnam
+    this.map = L.map('leaflet-map', {
+      center: [16.0, 106.0],
+      zoom: 6,
+      minZoom: 5,
+      maxZoom: 12,
+      zoomControl: true,
+      attributionControl: true
+    });
+    
+    // Add CartoDB Voyager tiles (clean, English labels)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(this.map);
+    
+    // Add Vietnam islands
+    this.addVietnamIslands();
+    
+    // Add city markers
+    this.addCityMarkers();
+    
+    // Fit bounds to Vietnam (including islands)
+    this.map.fitBounds([
+      [6.0, 102.0],   // Southwest (include Trường Sa)
+      [23.5, 118.0]   // Northeast (include Hoàng Sa)
+    ]);
+    
+    // Setup legend interactions
+    this.setupLegendInteractions();
+  },
+  
+  addVietnamIslands() {
+    // Hoàng Sa (Paracel Islands) - Vietnam's sovereignty
+    const hoangSaCenter = [16.5, 112.0];
+    const hoangSaCircle = L.circle(hoangSaCenter, {
+      color: '#dc2626',
+      fillColor: '#fecaca',
+      fillOpacity: 0.4,
+      radius: 80000,
+      weight: 2,
+      dashArray: '5, 5'
+    }).addTo(this.map);
+    
+    // Add Hoàng Sa marker
+    const hoangSaIcon = L.divIcon({
+      className: 'island-marker',
+      html: `
+        <div class="island-pin">
+          <span>🏝️</span>
+        </div>
+        <div class="island-label">Hoàng Sa<br><small>(Paracel Islands)</small></div>
+      `,
+      iconSize: [100, 50],
+      iconAnchor: [50, 25]
+    });
+    L.marker(hoangSaCenter, { icon: hoangSaIcon }).addTo(this.map)
+      .bindPopup('<b>🇻🇳 Quần đảo Hoàng Sa</b><br>Paracel Islands<br><small>Chủ quyền Việt Nam</small>');
+    
+    // Trường Sa (Spratly Islands) - Vietnam's sovereignty
+    const truongSaCenter = [10.0, 114.5];
+    const truongSaCircle = L.circle(truongSaCenter, {
+      color: '#dc2626',
+      fillColor: '#fecaca',
+      fillOpacity: 0.4,
+      radius: 150000,
+      weight: 2,
+      dashArray: '5, 5'
+    }).addTo(this.map);
+    
+    // Add Trường Sa marker
+    const truongSaIcon = L.divIcon({
+      className: 'island-marker',
+      html: `
+        <div class="island-pin">
+          <span>🏝️</span>
+        </div>
+        <div class="island-label">Trường Sa<br><small>(Spratly Islands)</small></div>
+      `,
+      iconSize: [100, 50],
+      iconAnchor: [50, 25]
+    });
+    L.marker(truongSaCenter, { icon: truongSaIcon }).addTo(this.map)
+      .bindPopup('<b>🇻🇳 Quần đảo Trường Sa</b><br>Spratly Islands<br><small>Chủ quyền Việt Nam</small>');
+    
+    // Phú Quốc Island
+    const phuQuocCenter = [10.22, 103.97];
+    L.marker(phuQuocCenter, {
+      icon: L.divIcon({
+        className: 'island-marker small',
+        html: '<div class="island-label-small">Phú Quốc</div>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 10]
+      })
+    }).addTo(this.map);
+    
+    // Côn Đảo Islands
+    const conDaoCenter = [8.68, 106.6];
+    L.marker(conDaoCenter, {
+      icon: L.divIcon({
+        className: 'island-marker small',
+        html: '<div class="island-label-small">Côn Đảo</div>',
+        iconSize: [60, 20],
+        iconAnchor: [30, 10]
+      })
+    }).addTo(this.map);
+  },
+  
+  getMembersByCity() {
+    const cityMembers = {};
+    membersData.forEach(member => {
+      if (member.location && member.location.city) {
+        const city = member.location.city;
+        if (!cityMembers[city]) {
+          cityMembers[city] = [];
+        }
+        cityMembers[city].push(member);
+      }
+    });
+    return cityMembers;
+  },
+  
+  addCityMarkers() {
+    const cityMembers = this.getMembersByCity();
+    
+    Object.entries(cityMembers).forEach(([city, members]) => {
+      const coords = this.cityCoords[city];
+      if (!coords) return;
+      
+      const color = this.regionColors[coords.region];
+      const size = Math.min(20 + members.length * 5, 45);
+      
+      // Create custom icon with member count
+      const icon = L.divIcon({
+        className: 'custom-marker',
+        html: `
+          <div class="marker-pin" style="background-color: ${color}; width: ${size}px; height: ${size}px;">
+            <span class="marker-count">${members.length}</span>
+          </div>
+          <div class="marker-label">${city}</div>
+        `,
+        iconSize: [size, size + 20],
+        iconAnchor: [size/2, size/2]
+      });
+      
+      // Create marker
+      const marker = L.marker([coords.lat, coords.lng], { icon })
+        .addTo(this.map);
+      
+      // Create popup content
+      const popupContent = `
+        <div class="map-popup">
+          <h4>📍 ${city}</h4>
+          <div class="popup-members">
+            ${members.map(m => `
+              <div class="popup-member">
+                <img src="${m.photo}" alt="${m.name}" onerror="this.src='images/members/default-avatar.svg'">
+                <span>${m.nickname || m.name.split(' ').pop()}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+      
+      marker.bindPopup(popupContent, {
+        maxWidth: 250,
+        className: 'custom-popup'
+      });
+      
+      // Store marker with region info
+      marker.region = coords.region;
+      marker.city = city;
+      this.markers.push(marker);
+    });
+  },
+  
+  setupLegendInteractions() {
+    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
+    legendItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const region = item.dataset.region;
+        this.filterByRegion(region);
+        
+        // Toggle active state
+        legendItems.forEach(i => i.classList.remove('active'));
+        if (!item.classList.contains('active')) {
+          item.classList.add('active');
+        }
+      });
+    });
+    
+    // City member click in sidebar
+    setTimeout(() => {
+      const cityMembers = document.querySelectorAll('.city-member');
+      cityMembers.forEach(member => {
+        member.addEventListener('click', () => {
+          const memberId = member.dataset.memberId;
+          const memberData = membersData.find(m => m.id === memberId);
+          if (memberData && typeof Members !== 'undefined' && Members.showMemberModal) {
+            Members.showMemberModal(memberData);
+          }
+        });
+      });
+    }, 100);
+  },
+  
+  filterByRegion(region) {
+    const activeItem = document.querySelector('.member-map__legend .legend-item.active');
+    const isActive = activeItem?.dataset.region === region;
+    
+    this.markers.forEach(marker => {
+      if (isActive || marker.region === region) {
+        marker.setOpacity(1);
+      } else {
+        marker.setOpacity(0.2);
+      }
+    });
+    
+    // Filter city list
+    const cityGroups = document.querySelectorAll('.city-group');
+    cityGroups.forEach(group => {
+      if (isActive || group.dataset.region === region) {
+        group.style.display = 'block';
+      } else {
+        group.style.display = 'none';
+      }
+    });
+    
+    // If clicking same region, reset
+    if (isActive) {
+      this.markers.forEach(m => m.setOpacity(1));
+      cityGroups.forEach(g => g.style.display = 'block');
+      document.querySelectorAll('.member-map__legend .legend-item').forEach(i => i.classList.remove('active'));
+    }
+  },
+  
+  updateCounts() {
+    const counts = { north: 0, central: 0, south: 0 };
+    
+    membersData.forEach(member => {
+      if (member.location && member.location.region) {
+        counts[member.location.region]++;
+      }
+    });
+    
+    const northEl = document.getElementById('north-count');
+    const centralEl = document.getElementById('central-count');
+    const southEl = document.getElementById('south-count');
+    
+    if (northEl) northEl.textContent = counts.north;
+    if (centralEl) centralEl.textContent = counts.central;
+    if (southEl) southEl.textContent = counts.south;
+  },
+  
+  renderCityList() {
+    const cityList = document.getElementById('city-list');
+    if (!cityList) return;
+    
+    const cityMembers = this.getMembersByCity();
+    
+    // Group by region
+    const regions = {
+      north: { name: 'Miền Bắc', icon: '🏔️', cities: {} },
+      central: { name: 'Miền Trung', icon: '🏖️', cities: {} },
+      south: { name: 'Miền Nam', icon: '🌴', cities: {} }
+    };
+    
+    Object.entries(cityMembers).forEach(([city, members]) => {
+      const coords = this.cityCoords[city];
+      if (coords) {
+        regions[coords.region].cities[city] = members;
+      }
+    });
+    
+    let html = '<h4>Thành viên theo thành phố</h4>';
+    
+    Object.entries(regions).forEach(([regionKey, region]) => {
+      const cities = Object.entries(region.cities);
+      if (cities.length === 0) return;
+      
+      cities.forEach(([city, members]) => {
+        html += `
+          <div class="city-group" data-region="${regionKey}">
+            <div class="city-group__name">
+              <span>${region.icon}</span>
+              ${city} (${members.length})
+            </div>
+            <div class="city-group__members">
+              ${members.map(m => `
+                <div class="city-member" data-member-id="${m.id}">
+                  <img class="city-member__avatar" src="${m.photo}" alt="${m.name}" onerror="this.src='images/members/default-avatar.svg'">
+                  <span>${m.nickname || m.name.split(' ').pop()}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      });
+    });
+    
+    cityList.innerHTML = html;
+  },
+  
+  setupInteractions() {
+    // City marker hover
+    const markers = this.container.querySelectorAll('.city-marker');
+    markers.forEach(marker => {
+      marker.addEventListener('mouseenter', (e) => this.showTooltip(e, marker));
+      marker.addEventListener('mouseleave', () => this.hideTooltip());
+      marker.addEventListener('click', () => this.highlightCity(marker.dataset.city));
+    });
+    
+    // Legend region filter
+    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
+    legendItems.forEach(item => {
+      item.addEventListener('click', () => this.filterByRegion(item.dataset.region));
+    });
+    
+    // City member click
+    const cityMembers = document.querySelectorAll('.city-member');
+    cityMembers.forEach(member => {
+      member.addEventListener('click', () => {
+        const memberId = member.dataset.memberId;
+        const memberData = membersData.find(m => m.id === memberId);
+        if (memberData && typeof Members !== 'undefined' && Members.showMemberModal) {
+          Members.showMemberModal(memberData);
+        }
+      });
+    });
+  },
+  
+  showTooltip(e, marker) {
+    const city = marker.dataset.city;
+    const cityMembers = this.getMembersByCity()[city] || [];
+    
+    const tooltipCity = document.getElementById('tooltip-city');
+    const tooltipMembers = document.getElementById('tooltip-members');
+    
+    if (tooltipCity) tooltipCity.innerHTML = `📍 ${city}`;
+    if (tooltipMembers) {
+      tooltipMembers.innerHTML = cityMembers.map(m => `
+        <div class="map-tooltip__member">
+          <img src="${m.photo}" alt="${m.name}" onerror="this.src='images/members/default-avatar.svg'">
+          <span>${m.name}</span>
+        </div>
+      `).join('');
+    }
+    
+    // Position tooltip
+    const rect = marker.getBoundingClientRect();
+    const containerRect = this.container.getBoundingClientRect();
+    
+    this.tooltip.style.left = `${rect.left - containerRect.left + 30}px`;
+    this.tooltip.style.top = `${rect.top - containerRect.top - 10}px`;
+    this.tooltip.classList.add('active');
+  },
+  
+  hideTooltip() {
+    if (this.tooltip) {
+      this.tooltip.classList.remove('active');
+    }
+  },
+  
+  highlightCity(city) {
+    // Scroll to city in list
+    const cityGroup = document.querySelector(`.city-group__name:has(span) + .city-group__members`)?.closest('.city-group');
+    const allGroups = document.querySelectorAll('.city-group');
+    allGroups.forEach(group => {
+      if (group.querySelector('.city-group__name')?.textContent.includes(city)) {
+        group.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        group.style.animation = 'pulse 0.5s ease';
+        setTimeout(() => group.style.animation = '', 500);
+      }
+    });
+  },
+  
+  filterByRegion(region) {
+    const markers = this.container.querySelectorAll('.city-marker');
+    const cityGroups = document.querySelectorAll('.city-group');
+    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
+    
+    // Toggle active state
+    legendItems.forEach(item => {
+      if (item.dataset.region === region) {
+        item.classList.toggle('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+    
+    const activeRegion = document.querySelector('.member-map__legend .legend-item.active')?.dataset.region;
+    
+    // Filter markers
+    markers.forEach(marker => {
+      if (!activeRegion || marker.dataset.region === activeRegion) {
+        marker.style.opacity = '1';
+        marker.style.pointerEvents = 'auto';
+      } else {
+        marker.style.opacity = '0.2';
+        marker.style.pointerEvents = 'none';
+      }
+    });
+    
+    // Filter city list
+    cityGroups.forEach(group => {
+      if (!activeRegion || group.dataset.region === activeRegion) {
+        group.style.display = 'block';
+      } else {
+        group.style.display = 'none';
+      }
+    });
+  }
+};
+
 // ==================== REUNION EVENT ====================
 
 const Reunion = {
@@ -3364,6 +3955,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Timeline.init();  // Initialize timeline
   QuizGame.init();  // Initialize quiz game
   Statistics.init();  // Initialize statistics dashboard
+  MemberMap.init();  // Initialize member location map
   HeroBubbles.init();  // Initialize hero floating avatars
   Spotlight.init();  // Initialize member spotlight
   Animations.init();

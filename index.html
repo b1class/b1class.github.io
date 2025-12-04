@@ -17,6 +17,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Lớp B1">
   
+  <!-- Leaflet CSS for interactive map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
@@ -80,6 +83,9 @@
           </li>
           <li class="nav__item">
             <a href="#birthdays" class="nav__link">Sinh nhật</a>
+          </li>
+          <li class="nav__item">
+            <a href="#member-map" class="nav__link">Bản đồ</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">Giới thiệu</a>
@@ -439,6 +445,42 @@
       </div>
     </section>
 
+    <!-- Member Map Section -->
+    <section class="section member-map" id="member-map">
+      <div class="container">
+        <h2 class="section-title scroll-animate">🗺️ Bản Đồ Thành Viên</h2>
+        <p class="member-map__intro scroll-animate">Xem các bạn trong lớp đang sinh sống ở đâu trên khắp Việt Nam</p>
+        <div class="member-map__content scroll-animate">
+          <div class="member-map__container" id="vietnam-map-container">
+            <!-- Vietnam map will be rendered by JavaScript -->
+          </div>
+          <div class="member-map__sidebar">
+            <div class="member-map__legend">
+              <h4>Vùng miền</h4>
+              <div class="legend-item" data-region="north">
+                <span class="legend-color legend-color--north"></span>
+                <span>Miền Bắc</span>
+                <span class="legend-count" id="north-count">0</span>
+              </div>
+              <div class="legend-item" data-region="central">
+                <span class="legend-color legend-color--central"></span>
+                <span>Miền Trung</span>
+                <span class="legend-count" id="central-count">0</span>
+              </div>
+              <div class="legend-item" data-region="south">
+                <span class="legend-color legend-color--south"></span>
+                <span>Miền Nam</span>
+                <span class="legend-count" id="south-count">0</span>
+              </div>
+            </div>
+            <div class="member-map__city-list" id="city-list">
+              <!-- City list will be rendered by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- About Section -->
     <section class="section about" id="about">
       <div class="container">
@@ -491,6 +533,7 @@
           <a href="#fund" class="footer__link">Quỹ lớp</a>
           <a href="#connect" class="footer__link">Kết nối</a>
           <a href="#birthdays" class="footer__link">Sinh nhật</a>
+          <a href="#member-map" class="footer__link">Bản đồ</a>
         </div>
       </div>
     </div>

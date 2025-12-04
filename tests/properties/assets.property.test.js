@@ -82,6 +82,7 @@ function isAllowedExternalUrl(url) {
     'fonts.googleapis.com', // Google Fonts
     'fonts.gstatic.com',    // Google Fonts assets
     'cdn.jsdelivr.net',     // CDN resources
+    'unpkg.com',            // UNPKG CDN (Leaflet, etc.)
     'm.me',                 // Facebook Messenger links
     'facebook.com',         // Facebook links
     'www.facebook.com',     // Facebook links
