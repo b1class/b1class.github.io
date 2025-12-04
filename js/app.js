@@ -237,7 +237,7 @@ const membersData = [
     nickname: "Toản",
     photo: "images/members/default-avatar.svg",
     role: "",
-    birthday: "",
+    birthday: "06/02",
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -531,6 +531,71 @@ const galleryData = [
     ]
   }
 ];
+
+// ==================== TIMELINE DATA ====================
+
+const timelineData = [
+  {
+    year: "2009",
+    title: "Nhập học lớp 10",
+    description: "Ngày đầu tiên bước vào cổng trường THPT Nguyễn Huệ, bắt đầu hành trình 3 năm đáng nhớ của lớp B1.",
+    icon: "🎒",
+    tags: ["Khởi đầu", "Lớp 10"]
+  },
+  {
+    year: "2010",
+    title: "Lên lớp 11",
+    description: "Năm học thứ hai với nhiều kỷ niệm đẹp, những buổi học nhóm và các hoạt động ngoại khóa.",
+    icon: "📚",
+    tags: ["Lớp 11", "Học tập"]
+  },
+  {
+    year: "2011",
+    title: "Tốt nghiệp THPT",
+    description: "Chia tay mái trường, mỗi người một hướng đi nhưng tình bạn vẫn mãi bền chặt.",
+    icon: "🎓",
+    tags: ["Tốt nghiệp", "Chia tay"]
+  },
+  {
+    year: "2019",
+    title: "Họp lớp Tết Kỷ Hợi",
+    description: "Sau 8 năm xa cách, cả lớp tề tựu đông đủ trong buổi họp mặt đầu xuân đáng nhớ.",
+    icon: "🧧",
+    tags: ["Họp lớp", "Tết"],
+    image: "images/gallery/tet2019/DSC_3655.JPG"
+  },
+  {
+    year: "2024",
+    title: "Kết nối trực tuyến",
+    description: "Ra mắt trang web của lớp, nơi lưu giữ kỷ niệm và kết nối các thành viên dù ở bất cứ đâu.",
+    icon: "🌐",
+    tags: ["Website", "Kết nối"]
+  },
+  {
+    year: "2025",
+    title: "Họp lớp 14 năm",
+    description: "Dự kiến tổ chức họp lớp kỷ niệm 14 năm ra trường. Hãy cùng chờ đón!",
+    icon: "🎉",
+    tags: ["Sắp tới", "Họp lớp"]
+  }
+];
+
+// ==================== REUNION EVENT DATA ====================
+
+const reunionEvent = {
+  title: "Họp Lớp Tết Bính Ngọ 2026",
+  subtitle: "Mồng 2 Tết - Kỷ niệm 15 năm ra trường",
+  date: "2026-02-18T10:00:00", // Mồng 2 Tết = 18/02/2026
+  lunarDate: "Mồng 2 Tết",
+  year: "Bính Ngọ 2026",
+  location: "Thị Xã Quảng Trị",
+  address: "Sẽ thông báo sau",
+  description: "Cùng nhau đón xuân mới và ôn lại kỷ niệm 15 năm ra trường!",
+  contact: "Lê Thanh Vũ - Lớp trưởng",
+  fee: "Sẽ thông báo sau",
+  icon: "🧧",
+  isTet: true
+};
 
 // ==================== NAVIGATION ====================
 
@@ -950,6 +1015,21 @@ const Gallery = {
     const eventEl = document.getElementById('event-count');
     if (photoEl) photoEl.textContent = this.allImages.length;
     if (eventEl) eventEl.textContent = galleryData.length;
+  },
+
+  // Open lightbox with a single image (used by Timeline)
+  openLightboxWithImage(src, caption) {
+    if (!this.lightbox) return;
+    
+    this.lightboxImage.src = src;
+    this.lightboxImage.alt = caption || '';
+    this.lightboxCaption.textContent = caption || '';
+    this.lightbox.classList.add('show');
+    document.body.classList.add('no-scroll');
+    
+    // Hide navigation for single image
+    if (this.lightboxPrev) this.lightboxPrev.style.display = 'none';
+    if (this.lightboxNext) this.lightboxNext.style.display = 'none';
   }
 };
 
@@ -2240,12 +2320,1052 @@ const BirthdayCalendar = {
   }
 };
 
+// ==================== QUIZ GAME ====================
+
+const QuizGame = {
+  container: null,
+  questions: [],
+  currentQuestion: 0,
+  score: 0,
+  totalQuestions: 10,
+  timePerQuestion: 15,
+  timer: null,
+  timeLeft: 0,
+  
+  init() {
+    this.container = document.getElementById('quiz-content');
+    if (!this.container) return;
+    
+    this.renderStartScreen();
+  },
+  
+  renderStartScreen() {
+    this.container.innerHTML = `
+      <div class="quiz__start">
+        <span class="quiz__start-icon">🎯</span>
+        <h3 class="quiz__start-title">Đoán Tên Qua Ảnh</h3>
+        <p class="quiz__start-desc">Thử thách trí nhớ của bạn! Xem ảnh và đoán xem đó là ai trong lớp.</p>
+        <div class="quiz__features">
+          <span class="quiz__feature">📸 ${this.totalQuestions} câu hỏi</span>
+          <span class="quiz__feature">⏱️ ${this.timePerQuestion}s/câu</span>
+          <span class="quiz__feature">⭐ Tính điểm</span>
+        </div>
+        <button class="quiz__start-btn" id="quiz-start">
+          🚀 Bắt đầu chơi
+        </button>
+      </div>
+    `;
+    
+    document.getElementById('quiz-start').addEventListener('click', () => this.startGame());
+  },
+  
+  startGame() {
+    this.score = 0;
+    this.currentQuestion = 0;
+    this.questions = this.generateQuestions();
+    this.renderQuestion();
+  },
+  
+  generateQuestions() {
+    // Get members with photos (not default avatar)
+    const membersWithPhotos = membersData.filter(m => 
+      m.photo && !m.photo.includes('default-avatar')
+    );
+    
+    if (membersWithPhotos.length < 4) {
+      // Not enough members with photos
+      return [];
+    }
+    
+    // Shuffle and pick questions
+    const shuffled = [...membersWithPhotos].sort(() => Math.random() - 0.5);
+    const questions = [];
+    
+    for (let i = 0; i < Math.min(this.totalQuestions, shuffled.length); i++) {
+      const correct = shuffled[i];
+      
+      // Get 3 wrong answers
+      const wrongAnswers = membersWithPhotos
+        .filter(m => m.id !== correct.id)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3);
+      
+      // Create options and shuffle
+      const options = [correct, ...wrongAnswers]
+        .sort(() => Math.random() - 0.5)
+        .map(m => ({ id: m.id, name: m.name }));
+      
+      questions.push({
+        photo: correct.photo,
+        correctId: correct.id,
+        correctName: correct.name,
+        options
+      });
+    }
+    
+    return questions;
+  },
+  
+  renderQuestion() {
+    if (this.currentQuestion >= this.questions.length) {
+      this.renderResult();
+      return;
+    }
+    
+    const q = this.questions[this.currentQuestion];
+    this.timeLeft = this.timePerQuestion;
+    
+    this.container.innerHTML = `
+      <div class="quiz__card">
+        <div class="quiz__header">
+          <span class="quiz__progress">Câu ${this.currentQuestion + 1}/${this.questions.length}</span>
+          <span class="quiz__timer" id="quiz-timer">⏱️ ${this.timeLeft}s</span>
+          <span class="quiz__score">⭐ ${this.score}</span>
+        </div>
+        
+        <div class="quiz__image-container">
+          <img src="${q.photo}" alt="Đoán xem đây là ai?" class="quiz__image">
+        </div>
+        
+        <p class="quiz__question">Đây là ai?</p>
+        
+        <div class="quiz__options">
+          ${q.options.map(opt => `
+            <button class="quiz__option" data-id="${opt.id}">${opt.name}</button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    
+    // Add click handlers
+    this.container.querySelectorAll('.quiz__option').forEach(btn => {
+      btn.addEventListener('click', () => this.checkAnswer(btn.dataset.id));
+    });
+    
+    // Start timer
+    this.startTimer();
+  },
+  
+  startTimer() {
+    clearInterval(this.timer);
+    const timerEl = document.getElementById('quiz-timer');
+    
+    this.timer = setInterval(() => {
+      this.timeLeft--;
+      
+      if (timerEl) {
+        timerEl.textContent = `⏱️ ${this.timeLeft}s`;
+        if (this.timeLeft <= 5) {
+          timerEl.classList.add('warning');
+        }
+      }
+      
+      if (this.timeLeft <= 0) {
+        clearInterval(this.timer);
+        this.timeUp();
+      }
+    }, 1000);
+  },
+  
+  timeUp() {
+    // Show correct answer and move on
+    const q = this.questions[this.currentQuestion];
+    this.showAnswer(null, q.correctId);
+  },
+  
+  checkAnswer(selectedId) {
+    clearInterval(this.timer);
+    
+    const q = this.questions[this.currentQuestion];
+    const isCorrect = selectedId === q.correctId;
+    
+    if (isCorrect) {
+      this.score++;
+    }
+    
+    this.showAnswer(selectedId, q.correctId);
+  },
+  
+  showAnswer(selectedId, correctId) {
+    const options = this.container.querySelectorAll('.quiz__option');
+    
+    options.forEach(btn => {
+      btn.classList.add('disabled');
+      
+      if (btn.dataset.id === correctId) {
+        btn.classList.add('correct');
+      } else if (btn.dataset.id === selectedId) {
+        btn.classList.add('wrong');
+      }
+    });
+    
+    // Move to next question after delay
+    setTimeout(() => {
+      this.currentQuestion++;
+      this.renderQuestion();
+    }, 1500);
+  },
+  
+  renderResult() {
+    clearInterval(this.timer);
+    
+    const percentage = Math.round((this.score / this.questions.length) * 100);
+    let icon, title, message;
+    
+    if (percentage >= 80) {
+      icon = '🏆';
+      title = 'Xuất sắc!';
+      message = 'Bạn nhớ rất rõ các bạn trong lớp!';
+    } else if (percentage >= 60) {
+      icon = '🎉';
+      title = 'Tốt lắm!';
+      message = 'Bạn nhớ khá nhiều bạn trong lớp!';
+    } else if (percentage >= 40) {
+      icon = '😊';
+      title = 'Khá ổn!';
+      message = 'Cần ôn lại một chút nhé!';
+    } else {
+      icon = '😅';
+      title = 'Cố gắng lên!';
+      message = 'Hãy xem lại danh sách thành viên nhé!';
+    }
+    
+    this.container.innerHTML = `
+      <div class="quiz__card">
+        <div class="quiz__result">
+          <div class="quiz__result-icon">${icon}</div>
+          <h3 class="quiz__result-title">${title}</h3>
+          <p class="quiz__result-score">${this.score}/${this.questions.length} câu đúng (${percentage}%)</p>
+          <p class="quiz__result-message">${message}</p>
+          <div class="quiz__result-actions">
+            <button class="quiz__btn quiz__btn--primary" id="quiz-replay">
+              🔄 Chơi lại
+            </button>
+            <a href="#members" class="quiz__btn quiz__btn--secondary">
+              👥 Xem thành viên
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    document.getElementById('quiz-replay').addEventListener('click', () => this.startGame());
+  }
+};
+
+// ==================== HERO BUBBLES ====================
+
+const HeroBubbles = {
+  container: null,
+  bubbles: [],
+  maxBubbles: 8,
+  
+  init() {
+    this.container = document.getElementById('hero-bubbles');
+    if (!this.container) return;
+    
+    this.createBubbles();
+  },
+  
+  getRandomMembers(count) {
+    if (!membersData || membersData.length === 0) return [];
+    
+    // Shuffle and pick random members
+    const shuffled = [...membersData].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, Math.min(count, shuffled.length));
+  },
+  
+  createBubbles() {
+    const members = this.getRandomMembers(this.maxBubbles);
+    
+    // Predefined positions for better distribution
+    const positions = [
+      { left: '5%', top: '15%', size: 60 },
+      { left: '85%', top: '20%', size: 50 },
+      { left: '10%', top: '70%', size: 55 },
+      { left: '90%', top: '65%', size: 45 },
+      { left: '25%', top: '85%', size: 40 },
+      { left: '75%', top: '80%', size: 50 },
+      { left: '15%', top: '40%', size: 35 },
+      { left: '80%', top: '45%', size: 40 },
+    ];
+    
+    members.forEach((member, index) => {
+      if (index >= positions.length) return;
+      
+      const pos = positions[index];
+      const bubble = document.createElement('div');
+      bubble.className = 'hero__bubble hero__bubble--visible';
+      bubble.style.cssText = `
+        left: ${pos.left};
+        top: ${pos.top};
+        width: ${pos.size}px;
+        height: ${pos.size}px;
+        --duration: ${12 + Math.random() * 8}s;
+        --delay: ${index * 1.5}s;
+      `;
+      
+      const img = document.createElement('img');
+      img.src = member.photo;
+      img.alt = member.nickname || member.name;
+      img.loading = 'lazy';
+      
+      bubble.appendChild(img);
+      this.container.appendChild(bubble);
+      this.bubbles.push(bubble);
+    });
+    
+    // Refresh bubbles periodically
+    setInterval(() => this.refreshBubbles(), 20000);
+  },
+  
+  refreshBubbles() {
+    const members = this.getRandomMembers(this.maxBubbles);
+    
+    this.bubbles.forEach((bubble, index) => {
+      if (members[index]) {
+        const img = bubble.querySelector('img');
+        if (img) {
+          img.src = members[index].photo;
+          img.alt = members[index].nickname || members[index].name;
+        }
+      }
+    });
+  }
+};
+
+// ==================== MEMBER SPOTLIGHT ====================
+
+const Spotlight = {
+  container: null,
+  
+  init() {
+    this.container = document.getElementById('spotlight');
+    if (!this.container) return;
+    
+    this.render();
+  },
+  
+  // Get a random member based on the current date (changes daily)
+  getDailyMember() {
+    if (!membersData || membersData.length === 0) return null;
+    
+    // Use date as seed for consistent daily selection
+    const today = new Date();
+    const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+    const index = seed % membersData.length;
+    
+    return membersData[index];
+  },
+  
+  render() {
+    const member = this.getDailyMember();
+    if (!member) {
+      this.container.style.display = 'none';
+      return;
+    }
+    
+    const roleHtml = member.role ? `<span class="spotlight__role">${member.role}</span>` : '';
+    const jobHtml = member.job ? `<span class="spotlight__job">💼 ${member.job}</span>` : '';
+    
+    this.container.innerHTML = `
+      <div class="spotlight__header">
+        <span class="spotlight__header-icon">✨</span>
+        <span>Thành viên hôm nay</span>
+      </div>
+      <div class="spotlight__content">
+        <img src="${member.photo}" alt="${member.name}" class="spotlight__avatar" loading="lazy">
+        <div class="spotlight__info">
+          <div class="spotlight__name">${member.name}</div>
+          <div class="spotlight__nickname">"${member.nickname}"</div>
+          ${roleHtml}
+          ${jobHtml}
+        </div>
+      </div>
+      <div class="spotlight__action">
+        <button class="spotlight__btn" data-member-id="${member.id}">
+          Xem chi tiết →
+        </button>
+      </div>
+    `;
+    
+    // Add click handler
+    const btn = this.container.querySelector('.spotlight__btn');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        // Scroll to members section and open modal
+        const membersSection = document.getElementById('members');
+        if (membersSection) {
+          membersSection.scrollIntoView({ behavior: 'smooth' });
+          
+          // Open member modal after scroll
+          setTimeout(() => {
+            if (typeof Members !== 'undefined' && Members.openModal) {
+              Members.openModal(member);
+            }
+          }, 500);
+        }
+      });
+    }
+  }
+};
+
+// ==================== DARK MODE ====================
+
+const DarkMode = {
+  themeKey: 'classB1_theme',
+  toggleBtn: null,
+  
+  init() {
+    this.toggleBtn = document.getElementById('theme-toggle');
+    
+    // Load saved theme or respect system preference
+    this.loadTheme();
+    
+    // Setup toggle button
+    if (this.toggleBtn) {
+      this.toggleBtn.addEventListener('click', () => this.toggle());
+    }
+    
+    // Listen for system theme changes
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!this.getSavedTheme()) {
+          this.setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    }
+  },
+  
+  loadTheme() {
+    const saved = this.getSavedTheme();
+    if (saved) {
+      this.setTheme(saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      this.setTheme('dark');
+    }
+  },
+  
+  getSavedTheme() {
+    try {
+      return localStorage.getItem(this.themeKey);
+    } catch (e) {
+      return null;
+    }
+  },
+  
+  saveTheme(theme) {
+    try {
+      localStorage.setItem(this.themeKey, theme);
+    } catch (e) {
+      console.log('Could not save theme preference');
+    }
+  },
+  
+  setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+  },
+  
+  getTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'light';
+  },
+  
+  toggle() {
+    const current = this.getTheme();
+    const newTheme = current === 'dark' ? 'light' : 'dark';
+    this.setTheme(newTheme);
+    this.saveTheme(newTheme);
+  }
+};
+
+// ==================== STATISTICS ====================
+
+const Statistics = {
+  container: null,
+  
+  init() {
+    this.container = document.getElementById('statistics-content');
+    if (!this.container) return;
+    
+    this.render();
+    this.animateBars();
+  },
+  
+  getJobStats() {
+    const jobs = {};
+    membersData.forEach(member => {
+      const job = member.job || 'Chưa cập nhật';
+      jobs[job] = (jobs[job] || 0) + 1;
+    });
+    
+    // Sort by count and get top jobs
+    return Object.entries(jobs)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 6);
+  },
+  
+  getBirthdayStats() {
+    const months = Array(12).fill(0);
+    membersData.forEach(member => {
+      if (member.birthday) {
+        const parts = member.birthday.split('/');
+        if (parts.length >= 2) {
+          const month = parseInt(parts[1], 10) - 1;
+          if (month >= 0 && month < 12) {
+            months[month]++;
+          }
+        }
+      }
+    });
+    return months;
+  },
+  
+  getPhotoStats() {
+    let withPhoto = 0;
+    let withoutPhoto = 0;
+    
+    membersData.forEach(member => {
+      if (member.photo && !member.photo.includes('default-avatar')) {
+        withPhoto++;
+      } else {
+        withoutPhoto++;
+      }
+    });
+    
+    return { withPhoto, withoutPhoto };
+  },
+  
+  getSurnameStats() {
+    const surnames = {};
+    membersData.forEach(member => {
+      if (member.name) {
+        const surname = member.name.split(' ')[0];
+        surnames[surname] = (surnames[surname] || 0) + 1;
+      }
+    });
+    
+    return Object.entries(surnames)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+  },
+  
+  render() {
+    const jobStats = this.getJobStats();
+    const photoStats = this.getPhotoStats();
+    const surnameStats = this.getSurnameStats();
+    const birthdayStats = this.getBirthdayStats();
+    
+    const jobColors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#43e97b', '#ffd93d'];
+    const monthNames = ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12'];
+    
+    // Calculate percentages for photo pie chart
+    const total = photoStats.withPhoto + photoStats.withoutPhoto;
+    const withPhotoPercent = Math.round((photoStats.withPhoto / total) * 100);
+    
+    this.container.innerHTML = `
+      <div class="statistics__grid">
+        <!-- Job Distribution -->
+        <div class="stat-card">
+          <div class="stat-card__header">
+            <div class="stat-card__icon">💼</div>
+            <h3 class="stat-card__title">Nghề nghiệp</h3>
+          </div>
+          <div class="stat-card__bars">
+            ${jobStats.map((job, i) => `
+              <div class="bar-item">
+                <span class="bar-item__label">${job[0]}</span>
+                <div class="bar-item__track">
+                  <div class="bar-item__fill" data-width="${(job[1] / membersData.length) * 100}" style="width: 0; background: ${jobColors[i % jobColors.length]};">
+                    <span class="bar-item__value">${job[1]}</span>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+        
+        <!-- Photo Stats -->
+        <div class="stat-card">
+          <div class="stat-card__header">
+            <div class="stat-card__icon">📷</div>
+            <h3 class="stat-card__title">Ảnh đại diện</h3>
+          </div>
+          <div class="stat-card__chart">
+            <svg viewBox="0 0 100 100" class="stat-card__pie">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#e0e0e0" stroke-width="20"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#43e97b" stroke-width="20"
+                stroke-dasharray="${withPhotoPercent * 2.51} 251"
+                stroke-dashoffset="0"
+                transform="rotate(-90 50 50)"
+                style="transition: stroke-dasharray 1s ease-out;"/>
+              <text x="50" y="50" text-anchor="middle" dy="0.3em" font-size="16" font-weight="bold" class="pie-chart-text">${withPhotoPercent}%</text>
+            </svg>
+          </div>
+          <div class="stat-card__legend">
+            <span class="legend-item">
+              <span class="legend-dot" style="background: #43e97b;"></span>
+              Có ảnh (${photoStats.withPhoto})
+            </span>
+            <span class="legend-item">
+              <span class="legend-dot" style="background: #e0e0e0;"></span>
+              Chưa có (${photoStats.withoutPhoto})
+            </span>
+          </div>
+        </div>
+        
+        <!-- Surname Stats -->
+        <div class="stat-card">
+          <div class="stat-card__header">
+            <div class="stat-card__icon">👨‍👩‍👧‍👦</div>
+            <h3 class="stat-card__title">Họ phổ biến</h3>
+          </div>
+          <div class="stat-card__bars">
+            ${surnameStats.map((surname, i) => `
+              <div class="bar-item">
+                <span class="bar-item__label">${surname[0]}</span>
+                <div class="bar-item__track">
+                  <div class="bar-item__fill" data-width="${(surname[1] / membersData.length) * 100}" style="width: 0; background: ${jobColors[i % jobColors.length]};">
+                    <span class="bar-item__value">${surname[1]}</span>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Fun Facts -->
+      <div class="statistics__facts">
+        <div class="fact-card">
+          <div class="fact-card__icon">👥</div>
+          <div class="fact-card__value">${membersData.length}</div>
+          <div class="fact-card__label">Thành viên</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__icon">🎂</div>
+          <div class="fact-card__value">${membersData.filter(m => m.birthday).length}</div>
+          <div class="fact-card__label">Có ngày sinh</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__icon">⭐</div>
+          <div class="fact-card__value">${membersData.filter(m => m.role).length}</div>
+          <div class="fact-card__label">Có chức vụ</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-card__icon">📸</div>
+          <div class="fact-card__value">${galleryData.reduce((sum, e) => sum + e.images.length, 0)}</div>
+          <div class="fact-card__label">Hình ảnh</div>
+        </div>
+      </div>
+    `;
+  },
+  
+  animateBars() {
+    // Animate bars when they come into view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll('.bar-item__fill');
+          bars.forEach((bar, index) => {
+            setTimeout(() => {
+              const width = bar.dataset.width;
+              bar.style.width = `${Math.max(width, 15)}%`;
+            }, index * 100);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    
+    if (this.container) {
+      observer.observe(this.container);
+    }
+  }
+};
+
+// ==================== REUNION EVENT ====================
+
+const Reunion = {
+  container: null,
+  countdownInterval: null,
+  rsvpKey: 'classB1_reunion_rsvp',
+  
+  init() {
+    this.container = document.getElementById('reunion-content');
+    if (!this.container) return;
+    
+    this.render();
+    this.startCountdown();
+    this.loadRSVP();
+  },
+  
+  render() {
+    if (!reunionEvent || !reunionEvent.date) {
+      this.renderNoEvent();
+      return;
+    }
+    
+    const eventDate = new Date(reunionEvent.date);
+    const now = new Date();
+    
+    // Check if event has passed
+    if (eventDate < now) {
+      this.renderPastEvent();
+      return;
+    }
+    
+    const isTet = reunionEvent.isTet;
+    const cardClass = isTet ? 'reunion__card reunion__card--tet' : 'reunion__card';
+    
+    this.container.innerHTML = `
+      <div class="${cardClass}">
+        ${isTet ? '<div class="tet-decorations"><span class="tet-lantern tet-lantern--left">🏮</span><span class="tet-lantern tet-lantern--right">🏮</span><div class="tet-blossoms"></div></div>' : ''}
+        
+        <div class="reunion__header ${isTet ? 'reunion__header--tet' : ''}">
+          <span class="reunion__icon">${reunionEvent.icon || '🎉'}</span>
+          <h3 class="reunion__title">${reunionEvent.title}</h3>
+          <p class="reunion__subtitle">${reunionEvent.subtitle}</p>
+          ${isTet && reunionEvent.lunarDate ? `<div class="reunion__lunar-date">🌸 ${reunionEvent.lunarDate} - ${reunionEvent.year} 🌸</div>` : ''}
+        </div>
+        
+        <div class="reunion__countdown ${isTet ? 'reunion__countdown--tet' : ''}" id="reunion-countdown">
+          <div class="countdown__item">
+            <span class="countdown__number" id="countdown-days">00</span>
+            <span class="countdown__label">Ngày</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="countdown-hours">00</span>
+            <span class="countdown__label">Giờ</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="countdown-minutes">00</span>
+            <span class="countdown__label">Phút</span>
+          </div>
+          <div class="countdown__item">
+            <span class="countdown__number" id="countdown-seconds">00</span>
+            <span class="countdown__label">Giây</span>
+          </div>
+        </div>
+        
+        <div class="reunion__details">
+          <div class="reunion__info">
+            <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
+              <div class="reunion__info-icon">${isTet ? '🧧' : '📅'}</div>
+              <div class="reunion__info-content">
+                <h4>Ngày Âm lịch</h4>
+                <p>${reunionEvent.lunarDate || this.formatDate(eventDate)}</p>
+              </div>
+            </div>
+            <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
+              <div class="reunion__info-icon">📅</div>
+              <div class="reunion__info-content">
+                <h4>Ngày Dương lịch</h4>
+                <p>${this.formatDate(eventDate)}</p>
+              </div>
+            </div>
+            <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
+              <div class="reunion__info-icon">⏰</div>
+              <div class="reunion__info-content">
+                <h4>Giờ</h4>
+                <p>${this.formatTime(eventDate)}</p>
+              </div>
+            </div>
+            <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
+              <div class="reunion__info-icon">📍</div>
+              <div class="reunion__info-content">
+                <h4>Địa điểm</h4>
+                <p>${reunionEvent.location}</p>
+              </div>
+            </div>
+          </div>
+          
+          ${isTet ? `<div class="tet-wishes">
+            <p>🎊 Chúc Mừng Năm Mới 🎊</p>
+            <p class="tet-wishes__text">An Khang Thịnh Vượng - Vạn Sự Như Ý</p>
+          </div>` : ''}
+          
+          <div class="reunion__rsvp">
+            <h4 class="reunion__rsvp-title">${isTet ? '🌺 Bạn có về họp lớp Tết không? 🌺' : 'Bạn có tham gia không?'}</h4>
+            <div class="reunion__rsvp-buttons">
+              <button class="rsvp-btn rsvp-btn--yes ${isTet ? 'rsvp-btn--tet' : ''}" data-rsvp="yes">
+                <span>${isTet ? '🧧' : '✅'}</span> Có mặt
+              </button>
+              <button class="rsvp-btn rsvp-btn--maybe" data-rsvp="maybe">
+                <span>🤔</span> Chưa chắc
+              </button>
+              <button class="rsvp-btn rsvp-btn--no" data-rsvp="no">
+                <span>😢</span> Không thể
+              </button>
+            </div>
+            <div class="reunion__stats" id="reunion-stats">
+              <!-- Stats will be shown after RSVP -->
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    this.setupRSVPButtons();
+  },
+  
+  renderNoEvent() {
+    this.container.innerHTML = `
+      <div class="reunion__no-event">
+        <div class="reunion__no-event-icon">📅</div>
+        <p class="reunion__no-event-text">Chưa có sự kiện họp lớp nào được lên kế hoạch</p>
+        <p class="reunion__no-event-hint">Hãy theo dõi để cập nhật thông tin mới nhất!</p>
+      </div>
+    `;
+  },
+  
+  renderPastEvent() {
+    this.container.innerHTML = `
+      <div class="reunion__no-event">
+        <div class="reunion__no-event-icon">🎉</div>
+        <p class="reunion__no-event-text">Buổi họp lớp đã diễn ra thành công!</p>
+        <p class="reunion__no-event-hint">Xem lại kỷ niệm trong phần Gallery</p>
+      </div>
+    `;
+  },
+  
+  formatDate(date) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('vi-VN', options);
+  },
+  
+  formatTime(date) {
+    return date.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+  },
+  
+  startCountdown() {
+    if (!reunionEvent || !reunionEvent.date) return;
+    
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const eventDate = new Date(reunionEvent.date).getTime();
+      const diff = eventDate - now;
+      
+      if (diff <= 0) {
+        clearInterval(this.countdownInterval);
+        this.render(); // Re-render to show past event state
+        return;
+      }
+      
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      
+      const daysEl = document.getElementById('countdown-days');
+      const hoursEl = document.getElementById('countdown-hours');
+      const minutesEl = document.getElementById('countdown-minutes');
+      const secondsEl = document.getElementById('countdown-seconds');
+      
+      if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+      if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+      if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+      if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+    };
+    
+    updateCountdown();
+    this.countdownInterval = setInterval(updateCountdown, 1000);
+  },
+  
+  setupRSVPButtons() {
+    const buttons = this.container.querySelectorAll('.rsvp-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const rsvp = btn.dataset.rsvp;
+        this.saveRSVP(rsvp);
+        this.updateRSVPUI(rsvp);
+      });
+    });
+  },
+  
+  saveRSVP(status) {
+    try {
+      localStorage.setItem(this.rsvpKey, status);
+    } catch (e) {
+      console.log('Could not save RSVP');
+    }
+  },
+  
+  loadRSVP() {
+    try {
+      const saved = localStorage.getItem(this.rsvpKey);
+      if (saved) {
+        this.updateRSVPUI(saved);
+      }
+    } catch (e) {
+      console.log('Could not load RSVP');
+    }
+  },
+  
+  updateRSVPUI(status) {
+    const buttons = this.container.querySelectorAll('.rsvp-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('selected');
+      if (btn.dataset.rsvp === status) {
+        btn.classList.add('selected');
+      }
+    });
+    
+    // Show thank you message
+    const statsEl = document.getElementById('reunion-stats');
+    if (statsEl) {
+      const messages = {
+        yes: '🎉 Tuyệt vời! Hẹn gặp bạn tại buổi họp lớp!',
+        maybe: '🤔 Hy vọng bạn sẽ sắp xếp được thời gian!',
+        no: '😢 Tiếc quá! Hy vọng lần sau bạn sẽ tham gia!'
+      };
+      statsEl.innerHTML = `<p style="color: var(--color-text-light); font-size: var(--font-size-sm);">${messages[status] || ''}</p>`;
+    }
+  }
+};
+
+// ==================== TIMELINE ====================
+
+const Timeline = {
+  container: null,
+  
+  init() {
+    this.container = document.getElementById('timeline-container');
+    if (!this.container) return;
+    
+    this.render();
+    this.setupScrollAnimation();
+  },
+  
+  render() {
+    if (!timelineData || timelineData.length === 0) return;
+    
+    const html = timelineData.map((event, index) => this.createTimelineItem(event, index)).join('');
+    this.container.innerHTML = html;
+    
+    // Add click handlers for images
+    this.container.querySelectorAll('.timeline__image').forEach(img => {
+      img.addEventListener('click', () => {
+        if (typeof Gallery !== 'undefined' && Gallery.openLightbox) {
+          // Open in lightbox if available
+          const src = img.src;
+          const caption = img.alt;
+          Gallery.openLightboxWithImage(src, caption);
+        }
+      });
+    });
+  },
+  
+  createTimelineItem(event, index) {
+    const tagsHtml = event.tags ? 
+      `<div class="timeline__tags">
+        ${event.tags.map(tag => `<span class="timeline__tag">${tag}</span>`).join('')}
+      </div>` : '';
+    
+    const imageHtml = event.image ? 
+      `<img src="${event.image}" alt="${event.title}" class="timeline__image" loading="lazy">` : '';
+    
+    return `
+      <div class="timeline__item" data-index="${index}">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__icon">${event.icon || '📌'}</span>
+          <span class="timeline__year">${event.year}</span>
+          <h3 class="timeline__title">${event.title}</h3>
+          <p class="timeline__description">${event.description}</p>
+          ${tagsHtml}
+          ${imageHtml}
+        </div>
+      </div>
+    `;
+  },
+  
+  setupScrollAnimation() {
+    const items = this.container.querySelectorAll('.timeline__item');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -100px 0px',
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    items.forEach((item, index) => {
+      // Add staggered delay
+      item.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(item);
+    });
+  }
+};
+
+// ==================== PWA SERVICE WORKER ====================
+
+const PWA = {
+  init() {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registered:', registration.scope);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New content available, show update prompt
+                  this.showUpdatePrompt();
+                }
+              });
+            });
+          })
+          .catch((error) => {
+            console.log('SW registration failed:', error);
+          });
+      });
+    }
+  },
+  
+  showUpdatePrompt() {
+    // Create update notification
+    const notification = document.createElement('div');
+    notification.className = 'pwa-update';
+    notification.innerHTML = `
+      <div class="pwa-update__content">
+        <span>🔄 Có phiên bản mới!</span>
+        <button class="pwa-update__btn" onclick="location.reload()">Cập nhật</button>
+      </div>
+    `;
+    document.body.appendChild(notification);
+    
+    // Auto-hide after 10 seconds
+    setTimeout(() => {
+      notification.remove();
+    }, 10000);
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+  PWA.init();  // Initialize PWA service worker
+  DarkMode.init();  // Initialize dark mode first
   Navigation.init();
   Members.init();
   Search.init();  // Initialize search after members
   Filter.init();  // Initialize filter after search
   Gallery.init();
+  Reunion.init();  // Initialize reunion event
+  Timeline.init();  // Initialize timeline
+  QuizGame.init();  // Initialize quiz game
+  Statistics.init();  // Initialize statistics dashboard
+  HeroBubbles.init();  // Initialize hero floating avatars
+  Spotlight.init();  // Initialize member spotlight
   Animations.init();
   Particles.init();
   CounterAnimation.init();
