@@ -19,6 +19,9 @@
   
   <!-- Leaflet CSS for interactive map -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Leaflet MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"/>
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
@@ -56,7 +59,11 @@
   <!-- Navigation -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#home" class="nav__logo">Lớp B1 - Nguyễn Huệ</a>
+      <a href="#home" class="nav__logo" id="nav-logo">
+          <span class="logo-icon" id="logo-icon">🎓</span>
+          <span class="logo-text">Lớp B1 - Nguyễn Huệ</span>
+          <span class="logo-badge" id="logo-badge"></span>
+        </a>
       
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
@@ -173,7 +180,13 @@
       <div class="hero__bubbles" id="hero-bubbles"></div>
       <div class="hero__particles" id="particles"></div>
       <div class="hero__content container">
-        <h1 class="hero__title animate-slide-up">Lớp B1</h1>
+        <div class="hero__title-wrapper animate-slide-up">
+          <h1 class="hero__title" id="hero-title">
+            <span class="title-text">Lớp B1</span>
+            <span class="title-decoration" id="title-decoration"></span>
+          </h1>
+          <div class="title-effects" id="title-effects"></div>
+        </div>
         <p class="hero__subtitle animate-slide-up">Niên khóa 2009 - 2011</p>
         <p class="hero__welcome animate-fade-in">
           Chào mừng bạn đến với trang web của lớp chúng mình! 
@@ -331,6 +344,8 @@
               src="https://docs.google.com/spreadsheets/d/1ZzrM42HuiEFQEdq1qCvo5gLfQo2fKQ7Ya90KJR8n348/edit?usp=sharing&rm=minimal&widget=true&headers=false"
               frameborder="0"
               loading="lazy"
+              tabindex="-1"
+              sandbox="allow-scripts allow-same-origin allow-popups"
             ></iframe>
           </div>
           <div class="fund__actions">
@@ -472,6 +487,11 @@
                 <span>Miền Nam</span>
                 <span class="legend-count" id="south-count">0</span>
               </div>
+              <div class="legend-item" data-region="international">
+                <span class="legend-color legend-color--international"></span>
+                <span>Quốc Tế</span>
+                <span class="legend-count" id="international-count">0</span>
+              </div>
             </div>
             <div class="member-map__city-list" id="city-list">
               <!-- City list will be rendered by JavaScript -->
@@ -567,6 +587,11 @@
       </button>
     </div>
   </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+    <span class="scroll-to-top__icon">↑</span>
+  </button>
 
   <!-- Scripts - Single bundled file for static hosting -->
   <script src="js/app.js"></script>

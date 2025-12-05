@@ -14,7 +14,7 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "20/11",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -31,22 +31,22 @@ const membersData = [
   {
     id: "member-003",
     name: "Bùi Quang Hiếu",
-    nickname: "Hiếu",
+    nickname: "Quang Hiếu",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/80388618_2546071995488125_1742180825660653568_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lInlNHqw5iEQ7kNvwFB3Mz_&_nc_oc=AdmxsmGwwPz6JEbQxeKp8Q0rFx4j234JXCL11DIltc2MUDRntaVFRH8hYcjZvl23VmrF1VdNgWAOfjeD7bLT3Yre&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=J6jYraf74BwbQ2X0OREqvw&oh=00_AfnOSRqZmkac5n9dSbF-ssBwnFZ1iH_7ZzyPi9oxudSASw&oe=69565C1D",
     role: "",
     birthday: "",
-    location: { city: "TP. Hồ Chí Minh", region: "south" },
+    location: { city: "Hải Phòng", region: "north" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-004",
     name: "Nguyễn Thị Mỹ Trinh",
-    nickname: "Trinh",
+    nickname: "Mỹ Trinh",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/50823698_1183582011811270_1948282549415444480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lf87znFxBM0Q7kNvwGi3TFZ&_nc_oc=Adkpg8181Iw8JHcgVFF4D6QkqvDLF5PHNgTmK8AXr2SQAcAMai8PtXmn694yEGnQrzLSd1BLqnUyF3lVHCWVh37q&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=nXJCBuM8xGpMxGAEDln53A&oh=00_AfmTJC-fCLOK3TquKAnrTJSICbbSKmwxkWBN3nSIwX62_w&oe=69566019",
     role: "",
     job: "Kinh Doanh",
     birthday: "04/08",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Hội An", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -57,7 +57,7 @@ const membersData = [
     role: "",
     job: "Quân Nhân",
     birthday: "04/10",
-    location: { city: "Hà Nội", region: "north" },
+    location: { city: "Đắk Lắk", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -68,61 +68,61 @@ const membersData = [
     role: "",
     job: "Giáo Viên",
     birthday: "",
-    location: { city: "Huế", region: "central" },
+    location: { city: "Đông Hà", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-007",
     name: "Nguyễn Thị Huyền Trang",
-    nickname: "Ty Ty",
+    nickname: "Huyền Trang",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/583098965_3749244548553128_5926935321485392248_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=edCa15RbJKwQ7kNvwGLS61l&_nc_oc=Adlnxxl9Rxm5E7gLDnt9b6R1nuOq1gAnmbk37ibIQENFyzCJ1FiTDkVM-ch2pzr25VSkNejk30yx24rCmpLf4HGO&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=CPK8dPyqCZRyx5il2H0Kxw&oh=00_AfmATzGJMUBL1h3X6UMwSFkjOiHcorxOlo3tJ3VT8sv-9A&oe=6934F183",
     role: "",
     birthday: "",
-    location: { city: "TP. Hồ Chí Minh", region: "south" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-008",
     name: "Trần Ngọc Anh",
-    nickname: "Bò",
+    nickname: "Ngọc Anh",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/518297354_10070924489682307_2049836912380718212_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=pcmc5n2iBuIQ7kNvwFK4cQf&_nc_oc=Adm256n5bmxJo1NBVRKbF-SVbEPG0yNFdYwKXCr72fmS3K8_gYt3n_6KshtLFQ63pLT3hLq9aH2YkRyxlCQNoUvQ&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=h4kcXDzHqI8hDI8dH3phWA&oh=00_AfmtgbasOl8u3uTDEbFc7jwLHXsvDH0ZIVAFXYu-pNDpqw&oe=6934BEC8",
     role: "",
     job: "Designer",
     birthday: "",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-009",
     name: "Trần Thị Thái Hà",
-    nickname: "Hà",
+    nickname: "Thái Hà",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/527986925_3912840735533900_8127659940529731438_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=m-dfuIfyN6EQ7kNvwHz3BtV&_nc_oc=Adk_p1Y2k3y34iSEw-nbXv8HXRkb1ArN1gcfvEEXhCUD84BnbQMbcxr0cZr4aIyb8pJnxVZPZOGtyP5MgF407yA0&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=fmAYgvX24X9x7I1SIeotbQ&oh=00_AflI5qcLQMExOmNf2WCcU4DpYG2Ue5rYnIIQC3JFvAw4Gw&oe=6934CF9A",
     role: "",
     job: "Kinh Doanh",
     birthday: "",
-    location: { city: "Nha Trang", region: "central" },
+    location: { city: "Đông Hà", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-010",
     name: "Trần Xuân Thành",
-    nickname: "Thành Heo",
+    nickname: "Xuân Thành",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/45186808_1092750044222431_3249275430963773440_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=2UiszPeDymQQ7kNvwES5uW1&_nc_oc=Adk6Qs7fMqfJrb2uOsvbFAM_qkL_ZhBvpX-peLkI8CQiJwoD6IPw7ghKeT13Gh8tSHOAcQ2Y2-AQRFIVdbdVSHmN&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Ow7cND5T3gDRy8q6Xehf_Q&oh=00_Afm9XWtBsygmlvkiv9fwi07LlmR9UhDoDnCMjKObpecZuQ&oe=69567169",
     role: "",
     job: "Công An",
     birthday: "01/11",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-011",
     name: "Phạm Thị Linh",
-    nickname: "Linh",
+    nickname: "Phạm Thị Linh",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/74888329_2570078939773916_4648610079904366592_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=fSexLKc3qmIQ7kNvwHkIxUP&_nc_oc=AdkgF_w4mnxE7SbExyfxeCvXRP9lORsNS0du-mW-4h8IAKPA_3STFP5m2-FSPj1Ew58ObiV69KwOn_xL04MKVYBe&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=gPkLUoUbIcf6kZItpUU8wg&oh=00_AfkkCEr3lIccGnBr78uQ5vhHMGD2Uyf9FYuqZNCWY2AI2g&oe=69568211",
     role: "",
     job: "Cán Bộ",
     birthday: "",
-    location: { city: "Hà Nội", region: "north" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -132,7 +132,7 @@ const membersData = [
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/89151439_527185354844542_8065962390207856640_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BXUSOG0QoxEQ7kNvwFWbr4R&_nc_oc=AdmgmIIpmC36nYnUFQKI03h0dR40kgXld1GY9TJM4743u4NbPvv3f3EsPzmP_jF8iGv6Y3OGjrSYgV8xTXm0_h4N&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=UwHNo5YWxIdfgchd2R4DXg&oh=00_AfmM4f8SPWl6e9xKP8mh2nigBlXj0p6HkWpcHCbxFeGcxg&oe=69566B1D",
     role: "",
     birthday: "16/06",
-    location: { city: "TP. Hồ Chí Minh", region: "south" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -143,7 +143,7 @@ const membersData = [
     role: "",
     job: "Quân Nhân",
     birthday: "",
-    location: { city: "Hà Nội", region: "north" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -154,18 +154,18 @@ const membersData = [
     role: "",
     job: "Kinh Doanh",
     birthday: "",
-    location: { city: "TP. Hồ Chí Minh", region: "south" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-015",
     name: "Nguyễn Quang Đạt",
-    nickname: "Ben",
+    nickname: "Đạt",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/491007764_3022053597956818_240798978542083177_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5d1kQClTT9MQ7kNvwG4cGNy&_nc_oc=AdmOKfGUcBBLBjibbUK69HDgRJ-kr_pre3kdxFHKnr9kJMyDLSGuUr1RYs8kjjS4qExqtFLNCpWZHISEo1rnEZ5X&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUbmNHpOkiMT072f9uUcug&oh=00_Afkc7KHXoMMAO7ta5l09E1_SnwsgOh8_c5zCq0BHpov1_Q&oe=6934E331",
     role: "",
     job: "Airport",
     birthday: "05/08",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Huế", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -176,24 +176,24 @@ const membersData = [
     role: "",
     job: "Kỹ Sư Điện",
     birthday: "11/04",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-017",
     name: "Mai Đức Huy",
-    nickname: "Hụ Be",
+    nickname: "Huy",
     photo: "images/members/default-avatar.svg",
     role: "",
     job: "Thu Y",
     birthday: "15/09",
-    location: { city: "Huế", region: "central" },
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-018",
     name: "Nguyễn Xuân Khánh",
-    nickname: "Kệ",
+    nickname: "Xuân Khánh",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/556302338_3198133417029874_1665301481801193711_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OWvy0ENq8KQQ7kNvwFl-FES&_nc_oc=AdlRoW2fMVuMBQrRgjyRv5riIUw-wD4zeeXssAF8-zlAHx3cZ2_E_kGO1-xNBmt5qcH8r8tyBoWOstne9AQGlOTM&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=9_hbWdsJo3QXmO8ExrdHvw&oh=00_Aflb7Fm2AJ9fgcts1yzSgr7GPSA-miqfETgo4Cc4rzOjaA&oe=6934CC3E",
     role: "",
     job: "IT",
@@ -204,61 +204,64 @@ const membersData = [
   {
     id: "member-019",
     name: "Nguyễn Thị Thanh Thảo",
-    nickname: "Thảo Chuột",
+    nickname: "Thanh Thảo",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485910029_9143197962475817_6741619377461411286_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oXD8Gd727zcQ7kNvwHsKLXK&_nc_oc=AdnU2MQGNWvIT7CaltAYZNzqG7pGKbplHaHK2P-RHRQA-xnOejgMXlY6DVkkRTXLHwTJifW537tSQsafpmx6IXAc&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Tw4uqAVuWzilUHW3e-u3sA&oh=00_Afl6PTbIGb645Nft9YdKd3wLx6oITn-02yOxknF7shoDYg&oe=6934DDFA",
     role: "",
     job: "Giáo Viên",
     birthday: "",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-020",
     name: "Nguyễn Hữu Vũ",
-    nickname: "Vũ Dê",
+    nickname: "Hữu Vũ",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/554096748_2933116140228527_5230965230468608967_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=finQ7HjkZyEQ7kNvwEkJG6v&_nc_oc=AdmuHsSc42QpMsG_nuVAzx314hCSFUU3WqMQWOdN1OgKo2BjpoemNZSJilzjSy6RwNAfAXQNqXURqR2vOLN3SYsQ&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=wUmsh2SUdnuUIioo5j33tg&oh=00_AfkKi-s_VVk4TdlAV2fyEW5LIeb4Z73CtKawYLn1a73cKQ&oe=6934F22D",
     role: "",
     job: "Kiến Trúc Sư",
     birthday: "01/01",
-    location: { city: "TP. Hồ Chí Minh", region: "south" },
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-021",
     name: "Tăng Bảo Ngọc",
-    nickname: "Ngọc",
+    nickname: "Bảo Ngọc",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/430986969_3038715566270746_1724521696039631767_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oy1d8FWlk1IQ7kNvwErbE-q&_nc_oc=AdnKIF6yOPO6GMbbBU1yMOXWAL7Q6g3aG5JSmLT0dkSpqUGAej3omxevijA5QfdilJKksilTbwbaxXsGPZGkAReo&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=c9e8eS9tksJlqykITZ1vNA&oh=00_Afm5v72O_jK7V8o-H9BBz-7pqTRbK3EiUplE0agTwwE6Qg&oe=6934E1E9",
     role: "Phó học tập",
     birthday: "16/05",
-    location: { city: "Đà Nẵng", region: "central" },
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-022",
     name: "Nguyễn Thị Thảo",
-    nickname: "Thảo",
+    nickname: "Thị Thảo",
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-023",
     name: "Nguyễn Thái Thảo Trang",
-    nickname: "Trang",
+    nickname: "Thảo Trang",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/499226950_2965896520244857_1341679373321606779_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BODPXyLYAFEQ7kNvwEEyTlE&_nc_oc=AdmLLjrwUyUxxXx1b33mjNClR-oi_VYzpYxfKy9tcklaoD-NFVOE-quVxjEOaz-R3jixkFej8buA_AUweXOapnU8&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=yyVK79t6gNS45JxVcw500w&oh=00_AfnmyAmvCv8aDRd3JUocuNhjMzaXZc7VKSSunD4384zPQQ&oe=6934D95F",
     role: "",
     job: "Kinh Doanh",
     birthday: "21/07",
+    location: { city: "Huế", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-024",
     name: "Lê Văn Toản",
     nickname: "Toản",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/511026528_23940230225664414_4592620808376978865_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EwzynzFVjIkQ7kNvwHOsn8G&_nc_oc=AdncY1E9VI9EEUR9KubDWylntvoTuxmvPNtraQRywH2vnmL67K2C_Rch_FjNmbduqxIvYZ8Tgp-5gt3ahPrZxSF-&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=2DuMZlxs9U7vyZQyVUZ_vw&oh=00_AfkLq2o8_Nusv1UhvLLxTqOOX_DYyy_xoUY0f_cqyXtYyQ&oe=69389B61",
     role: "",
     birthday: "06/02",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -269,6 +272,7 @@ const membersData = [
     role: "",
     job: "Giáo Viên",
     birthday: "15/09",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -278,6 +282,7 @@ const membersData = [
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/474791007_8677264345729885_118594519635216486_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=L3NXgZzwdugQ7kNvwHCkVv9&_nc_oc=AdlLVmIGVUZ1Ha1suKPFznB23cARj0C7kc4booMhO8YHeaO9uZDnq9jux-aIQBd9r6LZKV1b1v7DEzdhTlOK_JdM&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=ebBfCWFcEaqX__3sGegHSA&oh=00_AfnEZZ89fqUz5FakvL1iL7CdbYcPQPEjhz1K_SV3nXuvjw&oe=6934D8CF",
     role: "",
     birthday: "",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -287,6 +292,7 @@ const membersData = [
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/431351663_1594318121321563_6889846639992407263_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=uS5BqzAQpq8Q7kNvwHg6yyJ&_nc_oc=AdmduwdErDmsXnxa7PTXFJQe-gatHWg-aryqLcCGvQ43XoHcTWPRmnQTwrYZZTPmpHVOcbrMMtfRwKuoxv1vxx19&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=1uOkbNx_93BBi-GMvBLtrg&oh=00_AflkSpcoNX9EOS6_urclY9FdJLTlBrUpX4jcTP_h3kzpPw&oe=6934D8D4",
     role: "",
     birthday: "",
+    location: { city: "Đông Hà", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -297,36 +303,40 @@ const membersData = [
     role: "",
     job: "Điều Dưỡng",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-029",
     name: "Nguyễn Thị Thảo Yến",
-    nickname: "Yến",
+    nickname: "Thảo Yên",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.6435-9/61989314_2426611590906871_6933744513458372608_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LVAmy80i1fwQ7kNvwEOIwxV&_nc_oc=AdkpUbIwbNYYjSTkNA-X2nKKPmWB-dEwWizX4N_naNigbB5JHGsgGalvX2X9IJceml8nWu8SoeY7prvdQwHBh_Vg&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=IdsVs-5B7QZlnKhU8Zp5yw&oh=00_Afm9-9U2PSXTdkTgYrGBhin2VvSCGXVY4Rc-YgVTbV1ubw&oe=69567AC5",
     role: "",
     job: "Kế Toán",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-030",
     name: "Phan Minh Hải",
-    nickname: "Hải",
+    nickname: "Minh Hải",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/469316450_3844882542493317_8776456152770617885_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=elym3CiwtToQ7kNvwF6UGKp&_nc_oc=Adl_uDunqAZBgm-edIvORW6LTXYYKHHw-GSBXI8AfKM2wkLiICKkdNztO0QlwmZpptgJw76Aoqp-6LuzLfjlll88&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=y2x4YlB68yhvvm646d3P-g&oh=00_Afmr5v7Pg76SIJKcXN-HEKxMBZnvAUrct2UsQ8cEk8JW6g&oe=6934D2D5",
     role: "",
     job: "Kinh Doanh",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-031",
     name: "Trần Trọng Bảo Trung",
-    nickname: "Trung",
+    nickname: "Bảo Trung",
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/540210683_1599531677684578_1625834998606371815_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vVL3B9F02vUQ7kNvwFyEt9W&_nc_oc=AdmZm28mxQnNNMrqlAKCmAOk5K2ES2zirKPPHXo5eqJKtWABJ-ddO4-cHPKih-UKHsBBoT8gVT8MYDxshcxz4m1A&_nc_zt=23&_nc_ht=scontent.fdad1-1.fna&_nc_gid=aE64xfVkbJ97XCKgf6pKrw&oh=00_AflueOF4B3bWHlnESgqD209dPIl0ubXup-QygEIZGk7ocQ&oe=6934F5CD",
     role: "",
     job: "Công An",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -336,34 +346,38 @@ const membersData = [
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/485770461_2923836017776723_5971644428971530054_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rhJI4_GXO0cQ7kNvwGSozTb&_nc_oc=AdnjJBHxbFPUsAX8pYcxrTs7CB8F3-Zb6Yq9eY5VsuHHI35rDlncsISTwGbpSPQRp876KrSwsT26TPyo-T_i0rdD&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=pk-G5w5eijoRER7UX_TLog&oh=00_AfnHp3pFWSrdg6vlCrpSB2lKd1GpPxc4FUNwFN9oGjw4yA&oe=6934D25D",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-033",
     name: "Lê Đức Hiếu",
-    nickname: "Hiếu",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Đức Hiếu",
+    photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/494219635_2263303634125699_7650263384560835344_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8y21rK4a_cYQ7kNvwHhopcj&_nc_oc=AdlTgQ4GLiCdpOUWG-qEv7hiS8iZn1lUe_95d7bE0V0VsI5nsFadhQKH4vPCMmpg3fxQY34gTBepEz1aA33obvko&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=uptQw5iSOAhl07qmshY1Uw&oh=00_Afmh3YhZhm0yONeQJPDcDHRmQxfvUD40HuUkoxRVKlFoIA&oe=69387660",
     role: "",
     birthday: "17/11",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-034",
     name: "Lê Thanh Nam",
-    nickname: "Nam",
+    nickname: "Thanh Nam",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/561030085_3944678522331012_9165802719273519554_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ey-q11f2TyQQ7kNvwEh_i9E&_nc_oc=Adkh2SV8KXPf5nqrz8Iag7Z7goiodTLEfdpKE5dLL9eY0prgRfZHM3b01JNu-8fEI5Y685UVaDgCXkR7GbUB58lW&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=rcUDXzUlI9x-0hHicqdYgw&oh=00_AfmGbOT41eYK2ViOMCdz3iebOHjRvJwqbFu32oJ9m8Gb-Q&oe=6934F66D",
     role: "",
     job: "Ca Sỹ",
     birthday: "",
+    location: { city: "Đà Lạt", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-035",
     name: "Nguyễn Thị Linh",
-    nickname: "Linh",
+    nickname: "Nguyễn Linh",
     photo: "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/49051479_2088243844625032_677272748661145600_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=Uj_4U5Qf32kQ7kNvwGh-3l7&_nc_oc=Adl1psdLRiJCF7xZAjJjsIdfzUOzWWWb3DY83ovqHVi4gywiFnqJ5kixDHuyI0EjZzNxORIflFY7cevJkNSOEYwZ&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=JihEZG0dKwkcOjv9muSqdw&oh=00_AfnVnF0Q4OuYv67_P6QgtD9-sjdmgG0I2aBs7JzNF3Lflg&oe=69568020",
     role: "",
     birthday: "",
+    location: { city: "Đồng Nai", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -373,24 +387,27 @@ const membersData = [
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/70882547_1410335979107098_3431221502731616256_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MoByM5JGiVoQ7kNvwEGlrGk&_nc_oc=AdlBPiynX4-la0yZrgleBkzIQv2w_8tflWekuirMMgdeYuj6phxZf4jCSMFHXodJHwiYgtaDM9K9cM3B1aY6fzgq&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=oGJgKHx8zKxGYwmRy-Q5JQ&oh=00_Afk0xmnZycUDAPtpSfF7vtM90IGbxgTFxNI_lZbwV5VFcw&oe=69567605",
     role: "",
     birthday: "",
+    location: { city: "Đông Hà", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-037",
     name: "Nguyễn Thị Đức Ly",
-    nickname: "Ly",
+    nickname: "Đức Ly",
     photo: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/480565224_3094754737346878_5418936432656616522_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=U9qpspll4KAQ7kNvwEA7NkX&_nc_oc=AdnLf_xvEDN061muPn6OssTwUXilxl8-bjUbKmq2_08Od1L-SB0YYUN1wSjxxL-un-hnpB_Sr1NmkfFNn8s6_bff&_nc_zt=23&_nc_ht=scontent.fdad1-4.fna&_nc_gid=Lt_krEY_vnJ44Rj4Ne9ncQ&oh=00_AfnEqNNaGBYx1uonjDGigV-D2_15O4o6nRizDPzcLE-lHQ&oe=6934DC35",
     role: "",
     birthday: "",
+    location: { city: "Nhật Bản", region: "international" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-038",
     name: "Nguyễn Thị Tuyết Sương",
-    nickname: "Sương",
+    nickname: "Tuyết Sương",
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -400,15 +417,17 @@ const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-040",
     name: "Trần Hữu Thắng",
-    nickname: "Mèo",
+    nickname: "Hữu Thắng",
     photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/268044848_4457406587705597_3862248351912430175_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=71dLocUj5noQ7kNvwG0K81r&_nc_oc=Adk7Sygp0oufpmWMzZ320_qTDpS4ZtuBnnngfBa8prHk41mqM4YLo-DDo4oBgs0IEVVPMEmuIqyyp98WqRwC0qUi&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=DKqgzQgriIBW-TRHoO2u_Q&oh=00_AfmbvliNrCNlyGFhwy_0s79-y3KEjJ02PEI3PDFiAKTHZQ&oe=69358370",
     role: "",
     birthday: "",
+    location: { city: "Mỹ", region: "international" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -418,6 +437,7 @@ const membersData = [
     photo: "https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-1/279056808_997622237812109_5502293309768180651_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=24S2XO4UCpsQ7kNvwGf02wU&_nc_oc=AdnM9AwE_8fJGkJsfPGDnjCNBXJfWsMzyCDnBIjWrmuWcGN0LlpJ2IT4Vfkk78odfLcdx45cnRlHRJaDSVjBBhVT&_nc_zt=24&_nc_ht=scontent.fdad1-1.fna&_nc_gid=dYpH0CBobaU_afBbL5N4Xg&oh=00_AfmaavlbKR4OPPg9RtM0iGBXT8KmzjBP9k8v2bzjBtsSjw&oe=69358250",
     role: "",
     birthday: "",
+    location: { city: "Nhật Bản", region: "international" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -428,15 +448,17 @@ const membersData = [
     role: "",
     job: "Kỹ Sư",
     birthday: "",
+    location: { city: "Nhật Bản", region: "international" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-043",
     name: "Nguyễn Thành An",
     nickname: "An",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/470663072_608290525052003_4344675090419767089_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=k2mVnoDU7NIQ7kNvwEf3aXH&_nc_oc=AdntEIkFhpCMo-sxS87qgBz60ATgEOK1J5_WGcArBhZz2WsCMD5SVEd40QW5UAjOOWePiVQ_DRthyKM1NVT_5Hsd&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=r3Rj-_MZcyhwgEyYBT9sBw&oh=00_AfmOWJ7phnzGe41rR4_YdxT-LuD6Wd0n1wdgKqslTaNyMg&oe=69389A61",
     role: "",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -447,6 +469,7 @@ const membersData = [
     role: "",
     job: "Ngân Hàng",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
     {
@@ -456,33 +479,37 @@ const membersData = [
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/493272312_3536250333338644_4338566331873608835_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ncj04FgvDsoQ7kNvwElnXwu&_nc_oc=AdkNW1e9z8J_weL1eJJ9ZkW0Jqu6C8CqKcYiG4-kjT879XthE6JBcnq-Wt08ulpxNPc87ORLdCoY2xj8IUBBXeK2&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=SGjGNay-oeybvhFOLjAnLw&oh=00_AfmIFC-MyXpqwQOUfi5_bTGEIibshe1iRINn8FKt8dq6Og&oe=69356B4A",
     role: "",
     birthday: "",
+    location: { city: "Đà Nẵng", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
    {
     id: "member-046",
     name: "Hồ Minh Hoàng Giang",
     nickname: "Giang",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/508629705_10045096912269633_6459398310425756276_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=G_LNUCHhuEEQ7kNvwGzZsVK&_nc_oc=AdlI0_yYfj6fSNcW_aNQ68kW-fwC-kh0BTtANpXVxyqvtRafWA9M5ApXYp9C0pN0NODeFw1jxURGFHSmhY_IM8nz&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=KI_uN9TF4uGRZJTvFwFraw&oh=00_AfkItdegejmT1305aFa0bW1dVwFHDED0dqAOwWltdeU8Rw&oe=693872B5",
     role: "",
     birthday: "",
+    location: { city: "TP. Hồ Chí Minh", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
    {
     id: "member-047",
     name: "Nguyễn Văn Banh",
     nickname: "Banh",
-    photo: "images/members/default-avatar.svg",
+    photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/499566368_4013322678911261_2734416767498039893_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-SU-FvSdxv0Q7kNvwHAt60Q&_nc_oc=AdlNOvi0IOSSGcQjVn458szGGdAGkpMGPrTiCH1KTVJAqKVdui2SUW6lwmbkwr0zsEpq35AtcHmvTAmR8ykQOAhx&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=mDnndQc4CBh_ZbZgfenSxQ&oh=00_AfmQ1Un61gb7rjRIFerA_ng_KWQhBZthdL-Bq6PehCFDHA&oe=69388555",
     role: "",
     birthday: "",
+    location: { city: "Phú Quốc", region: "south" },
     contact: { email: "", phone: "", facebook: "" }
   },
    {
     id: "member-048",
     name: "Lê Hải Thành",
-    nickname: "Thành",
+    nickname: "Hải Thành",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-1/327719469_965226777772280_2818018298089427583_n.jpg?stp=c304.0.1405.1406a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=dKJwIddOBXoQ7kNvwElWQ10&_nc_oc=AdmuozNyX1QLUWynY3k-HbedOWUn1LEghtHtEm3DETfGyrSekkO33C9LYfbTOZVilW1jrX5_z894VHMoPkR-HzKM&_nc_zt=24&_nc_ht=scontent.fdad1-3.fna&_nc_gid=tfdxK9-E_q6CPn87Om8T3Q&oh=00_AflQzi-rENQz76-YSR9UWQUMmI1cQ15Z0bqFXD_IC6amsw&oe=6935765C",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -492,15 +519,17 @@ const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
     id: "member-050",
     name: "Nguyễn Bá Sáng",
-    nickname: "Sáng",
-    photo: "images/members/default-avatar.svg",
+    nickname: "Bá Sáng",
+    photo: "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/502429776_2938245663024911_6354881646326425934_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Trc00MmpcxoQ7kNvwHCDYOP&_nc_oc=AdmK4QgXvMUTHvMLHKy2c8dyNPyXdh2fhEv0rHNq3rZmjGEm4Jplai64UVof34eKznbR6gEvg-rXOlIOy4jQVqPx&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=ani9QTtAx09FEbOTnXVWKQ&oh=00_AfkEf6A92jmW_N9QPi-7yYKGGexon1kRlMgHSQOMRG00xg&oe=693874B2",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
   {
@@ -510,15 +539,17 @@ const membersData = [
     photo: "images/members/default-avatar.svg",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
     {
     id: "member-052",
     name: "Hoàng Thị Thành Gơn",
-    nickname: "Thuỷ",
+    nickname: "Gơn",
     photo: "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/490167068_3123231914482309_6597812347888420681_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6S8fHIToNOkQ7kNvwE_yai8&_nc_oc=Adlp5FMrezxaMs6_MA9YlPLnjxXu81_1LNcxq2vX_2LV_kXsTZsngusNTqKMQjeNOTFxwtG0NnrC2jnqNUHDfUDf&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=M04Vzp_Ha3w21nmkXOzh1Q&oh=00_AfkjQV7FzcPyt-STCFhf10QdLZmOhaecuk_jCRABD9nuaw&oe=69357FEC",
     role: "",
     birthday: "",
+    location: { city: "Quảng Trị", region: "central" },
     contact: { email: "", phone: "", facebook: "" }
   },
 ];
@@ -1688,9 +1719,11 @@ const AvatarViewer = {
 
 const FundIframe = {
   container: null,
+  iframe: null,
 
   init() {
     this.container = document.querySelector('.fund__sheet-container');
+    this.iframe = document.querySelector('.fund__sheet');
     if (!this.container) return;
     this.setupEventListeners();
   },
@@ -1704,6 +1737,10 @@ const FundIframe = {
   deactivate() {
     if (this.container) {
       this.container.classList.remove('active');
+      // Remove focus from iframe to prevent scroll hijacking
+      if (this.iframe) {
+        this.iframe.blur();
+      }
     }
   },
 
@@ -1726,13 +1763,26 @@ const FundIframe = {
     });
 
     // Deactivate when scrolling away
+    let scrollTimeout;
     window.addEventListener('scroll', () => {
-      const rect = this.container.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      if (!isVisible && this.container.classList.contains('active')) {
-        this.deactivate();
-      }
+      // Debounce scroll check
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const rect = this.container.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        if (!isVisible && this.container.classList.contains('active')) {
+          this.deactivate();
+        }
+      }, 100);
     }, { passive: true });
+
+    // Prevent iframe from stealing focus on load
+    if (this.iframe) {
+      this.iframe.addEventListener('load', () => {
+        // Blur iframe after load to prevent auto-focus
+        this.iframe.blur();
+      });
+    }
   }
 };
 
@@ -2777,27 +2827,42 @@ const Spotlight = {
       return;
     }
     
-    const roleHtml = member.role ? `<span class="spotlight__role">${member.role}</span>` : '';
+    const roleHtml = member.role ? `<span class="spotlight__role">⭐ ${member.role}</span>` : '';
     const jobHtml = member.job ? `<span class="spotlight__job">💼 ${member.job}</span>` : '';
     
     this.container.innerHTML = `
-      <div class="spotlight__header">
-        <span class="spotlight__header-icon">✨</span>
-        <span>Thành viên hôm nay</span>
+      <div class="spotlight__particles">
+        <span class="spotlight__particle"></span>
+        <span class="spotlight__particle"></span>
+        <span class="spotlight__particle"></span>
+        <span class="spotlight__particle"></span>
+        <span class="spotlight__particle"></span>
       </div>
-      <div class="spotlight__content">
-        <img src="${member.photo}" alt="${member.name}" class="spotlight__avatar" loading="lazy">
-        <div class="spotlight__info">
-          <div class="spotlight__name">${member.name}</div>
-          <div class="spotlight__nickname">"${member.nickname}"</div>
-          ${roleHtml}
-          ${jobHtml}
+      <div class="spotlight__inner">
+        <div class="spotlight__header">
+          <span class="spotlight__header-icon">✨</span>
+          <span>Thành viên hôm nay</span>
+          <span class="spotlight__header-icon">✨</span>
         </div>
-      </div>
-      <div class="spotlight__action">
-        <button class="spotlight__btn" data-member-id="${member.id}">
-          Xem chi tiết →
-        </button>
+        <div class="spotlight__content">
+          <div class="spotlight__avatar-wrapper">
+            <img src="${member.photo}" alt="${member.name}" class="spotlight__avatar" loading="lazy">
+          </div>
+          <div class="spotlight__info">
+            <div class="spotlight__name">${member.name}</div>
+            <div class="spotlight__nickname">"${member.nickname}"</div>
+            <div class="spotlight__meta">
+              ${roleHtml}
+              ${jobHtml}
+            </div>
+          </div>
+        </div>
+        <div class="spotlight__action">
+          <button class="spotlight__btn" data-member-id="${member.id}">
+            <span>Xem chi tiết</span>
+            <span class="spotlight__btn-arrow">→</span>
+          </button>
+        </div>
       </div>
     `;
     
@@ -2819,6 +2884,45 @@ const Spotlight = {
         }
       });
     }
+  }
+};
+
+// ==================== SCROLL TO TOP ====================
+
+const ScrollToTop = {
+  button: null,
+  scrollThreshold: 300,
+  
+  init() {
+    this.button = document.getElementById('scroll-to-top');
+    if (!this.button) return;
+    
+    // Listen for scroll events
+    window.addEventListener('scroll', () => this.handleScroll(), { passive: true });
+    
+    // Click handler
+    this.button.addEventListener('click', () => this.scrollToTop());
+    
+    // Initial check
+    this.handleScroll();
+  },
+  
+  handleScroll() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    
+    // Show/hide button
+    if (scrollY > this.scrollThreshold) {
+      this.button.classList.add('visible');
+    } else {
+      this.button.classList.remove('visible');
+    }
+  },
+  
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 };
 
@@ -3101,6 +3205,7 @@ const MemberMap = {
   container: null,
   map: null,
   markers: [],
+  markerCluster: null,
   
   // Vietnam cities with real geographic coordinates [lat, lng]
   cityCoords: {
@@ -3108,23 +3213,31 @@ const MemberMap = {
     'Hải Phòng': { lat: 20.8449, lng: 106.6881, region: 'north' },
     'Quảng Ninh': { lat: 21.0064, lng: 107.2925, region: 'north' },
     'Đà Nẵng': { lat: 16.0544, lng: 108.2022, region: 'central' },
+    'Hội An': { lat: 15.8801, lng: 108.3380, region: 'central' },
     'Huế': { lat: 16.4637, lng: 107.5909, region: 'central' },
+    'Quảng Trị': { lat: 16.7520, lng: 107.1857, region: 'central' },
+    'Đông Hà': { lat: 16.8164, lng: 107.1003, region: 'central' },
     'Nha Trang': { lat: 12.2388, lng: 109.1967, region: 'central' },
     'Đà Lạt': { lat: 11.9404, lng: 108.4583, region: 'central' },
+    'Đắk Lắk': { lat: 12.6667, lng: 108.0500, region: 'central' },
     'Quy Nhơn': { lat: 13.7830, lng: 109.2197, region: 'central' },
     'TP. Hồ Chí Minh': { lat: 10.8231, lng: 106.6297, region: 'south' },
+    'Đồng Nai': { lat: 10.9574, lng: 106.8426, region: 'south' },
     'Cần Thơ': { lat: 10.0452, lng: 105.7469, region: 'south' },
     'Vũng Tàu': { lat: 10.4114, lng: 107.1362, region: 'south' },
     'Biên Hòa': { lat: 10.9574, lng: 106.8426, region: 'south' },
     'Bình Dương': { lat: 10.9804, lng: 106.6519, region: 'south' },
-    'Phú Quốc': { lat: 10.2899, lng: 103.9840, region: 'south' }
+    'Phú Quốc': { lat: 10.2899, lng: 103.9840, region: 'south' },
+    'Nhật Bản': { lat: 35.6762, lng: 139.6503, region: 'international' },
+    'Mỹ': { lat: 37.0902, lng: -95.7129, region: 'international' }
   },
   
   // Region colors
   regionColors: {
     north: '#3b82f6',    // Blue
     central: '#f59e0b',  // Orange  
-    south: '#10b981'     // Green
+    south: '#10b981',    // Green
+    international: '#8b5cf6' // Purple
   },
   
   init() {
@@ -3150,7 +3263,13 @@ const MemberMap = {
       script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
       script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
       script.crossOrigin = '';
-      script.onload = resolve;
+      script.onload = () => {
+        // Load MarkerCluster plugin after Leaflet
+        const clusterScript = document.createElement('script');
+        clusterScript.src = 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js';
+        clusterScript.onload = resolve;
+        document.head.appendChild(clusterScript);
+      };
       document.head.appendChild(script);
     });
   },
@@ -3163,8 +3282,8 @@ const MemberMap = {
     this.map = L.map('leaflet-map', {
       center: [16.0, 106.0],
       zoom: 6,
-      minZoom: 5,
-      maxZoom: 12,
+      minZoom: 3,
+      maxZoom: 18,
       zoomControl: true,
       attributionControl: true
     });
@@ -3173,7 +3292,7 @@ const MemberMap = {
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: 'abcd',
-      maxZoom: 19
+      maxZoom: 20
     }).addTo(this.map);
     
     // Add Vietnam islands
@@ -3282,81 +3401,133 @@ const MemberMap = {
     return cityMembers;
   },
   
+  // Random offset for members in same city
+  getRandomOffset(index, total) {
+    const angle = (index / total) * 2 * Math.PI;
+    const radius = 0.008 + Math.random() * 0.005; // ~0.8-1.3km offset
+    return {
+      lat: Math.cos(angle) * radius,
+      lng: Math.sin(angle) * radius
+    };
+  },
+  
   addCityMarkers() {
+    // Create marker cluster group with custom styling
+    this.markerCluster = L.markerClusterGroup({
+      maxClusterRadius: 50,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: false,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        const size = Math.min(40 + count * 2, 60);
+        return L.divIcon({
+          html: `<div class="avatar-cluster"><span>${count}</span></div>`,
+          className: 'avatar-cluster-icon',
+          iconSize: [size, size]
+        });
+      }
+    });
+    
+    // Handle cluster click to show member list popup
+    this.markerCluster.on('clusterclick', (e) => {
+      const cluster = e.layer;
+      const members = cluster.getAllChildMarkers().map(m => m.memberData);
+      this.showClusterPopup(cluster, members);
+    });
+    
     const cityMembers = this.getMembersByCity();
     
     Object.entries(cityMembers).forEach(([city, members]) => {
       const coords = this.cityCoords[city];
       if (!coords) return;
       
-      const color = this.regionColors[coords.region];
-      const size = Math.min(20 + members.length * 5, 45);
-      
-      // Create custom icon with member count
-      const icon = L.divIcon({
-        className: 'custom-marker',
-        html: `
-          <div class="marker-pin" style="background-color: ${color}; width: ${size}px; height: ${size}px;">
-            <span class="marker-count">${members.length}</span>
-          </div>
-          <div class="marker-label">${city}</div>
-        `,
-        iconSize: [size, size + 20],
-        iconAnchor: [size/2, size/2]
-      });
-      
-      // Create marker
-      const marker = L.marker([coords.lat, coords.lng], { icon })
-        .addTo(this.map);
-      
-      // Create popup content
-      const popupContent = `
-        <div class="map-popup">
-          <h4>📍 ${city}</h4>
-          <div class="popup-members">
-            ${members.map(m => `
-              <div class="popup-member">
-                <img src="${m.photo}" alt="${m.name}" onerror="this.src='images/members/default-avatar.svg'">
-                <span>${m.nickname || m.name.split(' ').pop()}</span>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      `;
-      
-      marker.bindPopup(popupContent, {
-        maxWidth: 250,
-        className: 'custom-popup'
-      });
-      
-      // Store marker with region info
-      marker.region = coords.region;
-      marker.city = city;
-      this.markers.push(marker);
-    });
-  },
-  
-  setupLegendInteractions() {
-    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
-    legendItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const region = item.dataset.region;
-        this.filterByRegion(region);
+      members.forEach((member, index) => {
+        // Add random offset for members in same city
+        const offset = this.getRandomOffset(index, members.length);
+        const lat = coords.lat + offset.lat;
+        const lng = coords.lng + offset.lng;
         
-        // Toggle active state
-        legendItems.forEach(i => i.classList.remove('active'));
-        if (!item.classList.contains('active')) {
-          item.classList.add('active');
-        }
+        // Create avatar marker icon
+        const icon = L.divIcon({
+          className: 'avatar-marker',
+          html: `
+            <div class="avatar-marker__wrapper" style="border-color: ${this.regionColors[coords.region]}">
+              <img src="${member.photo}" alt="${member.nickname}" onerror="this.src='images/members/default-avatar.svg'">
+            </div>
+            <div class="avatar-marker__name">${member.nickname || member.name.split(' ').pop()}</div>
+          `,
+          iconSize: [44, 56],
+          iconAnchor: [22, 44]
+        });
+        
+        const marker = L.marker([lat, lng], { icon });
+        marker.memberData = member;
+        marker.region = coords.region;
+        marker.city = city;
+        
+        // Individual marker popup
+        marker.bindPopup(`
+          <div class="member-popup">
+            <img src="${member.photo}" alt="${member.name}" onerror="this.src='images/members/default-avatar.svg'">
+            <div class="member-popup__info">
+              <h4>${member.name}</h4>
+              <p>📍 ${city}</p>
+              ${member.job ? `<p>💼 ${member.job}</p>` : ''}
+            </div>
+          </div>
+        `, { className: 'member-popup-container' });
+        
+        this.markerCluster.addLayer(marker);
+        this.markers.push(marker);
       });
     });
     
-    // City member click in sidebar
+    this.map.addLayer(this.markerCluster);
+  },
+  
+  showClusterPopup(cluster, members) {
+    const cityCount = {};
+    members.forEach(m => {
+      const city = m.location?.city || 'Unknown';
+      cityCount[city] = (cityCount[city] || 0) + 1;
+    });
+    
+    const mainCity = Object.entries(cityCount).sort((a, b) => b[1] - a[1])[0][0];
+    
+    const content = `
+      <div class="cluster-popup">
+        <div class="cluster-popup__header">
+          <h3>📍 ${mainCity}</h3>
+          <span class="cluster-popup__count">${members.length} thành viên</span>
+        </div>
+        <div class="cluster-popup__members">
+          ${members.map(m => `
+            <div class="cluster-popup__member" data-member-id="${m.id}">
+              <img src="${m.photo}" alt="${m.name}" onerror="this.src='images/members/default-avatar.svg'">
+              <div class="cluster-popup__member-info">
+                <span class="cluster-popup__member-name">${m.nickname || m.name.split(' ').pop()}</span>
+                <span class="cluster-popup__member-city">${m.location?.city || ''}</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    
+    L.popup({
+      maxWidth: 300,
+      className: 'cluster-popup-container'
+    })
+      .setLatLng(cluster.getLatLng())
+      .setContent(content)
+      .openOn(this.map);
+    
+    // Add click handlers for member items
     setTimeout(() => {
-      const cityMembers = document.querySelectorAll('.city-member');
-      cityMembers.forEach(member => {
-        member.addEventListener('click', () => {
-          const memberId = member.dataset.memberId;
+      document.querySelectorAll('.cluster-popup__member').forEach(el => {
+        el.addEventListener('click', () => {
+          const memberId = el.dataset.memberId;
           const memberData = membersData.find(m => m.id === memberId);
           if (memberData && typeof Members !== 'undefined' && Members.showMemberModal) {
             Members.showMemberModal(memberData);
@@ -3366,38 +3537,118 @@ const MemberMap = {
     }, 100);
   },
   
-  filterByRegion(region) {
-    const activeItem = document.querySelector('.member-map__legend .legend-item.active');
-    const isActive = activeItem?.dataset.region === region;
+  setupLegendInteractions() {
+    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
+    legendItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const region = item.dataset.region;
+        const wasActive = item.classList.contains('active');
+        
+        // Remove active from all items
+        legendItems.forEach(i => i.classList.remove('active'));
+        
+        if (wasActive) {
+          // Was active, now unselect - show all
+          this.showAllMarkers();
+        } else {
+          // Select this region
+          item.classList.add('active');
+          this.filterByRegion(region);
+        }
+      });
+    });
     
+    // City member click in sidebar - zoom to member on map
+    setTimeout(() => {
+      const cityMembers = document.querySelectorAll('.city-member');
+      cityMembers.forEach(member => {
+        member.addEventListener('click', () => {
+          const memberId = member.dataset.memberId;
+          this.zoomToMember(memberId);
+        });
+      });
+    }, 100);
+  },
+  
+  // Find and zoom to a specific member on the map
+  zoomToMember(memberId) {
+    const memberMarker = this.markers.find(m => m.memberData && m.memberData.id === memberId);
+    if (!memberMarker) return;
+    
+    const memberData = memberMarker.memberData;
+    const latlng = memberMarker.getLatLng();
+    
+    // Zoom to member location
+    this.map.setView(latlng, 15, { animate: true });
+    
+    // Spiderfy cluster if member is in a cluster
+    if (this.markerCluster) {
+      const visibleParent = this.markerCluster.getVisibleParent(memberMarker);
+      if (visibleParent && visibleParent !== memberMarker) {
+        // Member is in a cluster, zoom in more to spiderfy
+        this.map.once('zoomend', () => {
+          setTimeout(() => {
+            memberMarker.openPopup();
+            this.highlightMemberMarker(memberMarker);
+          }, 300);
+        });
+      } else {
+        // Member marker is visible, open popup directly
+        setTimeout(() => {
+          memberMarker.openPopup();
+          this.highlightMemberMarker(memberMarker);
+        }, 500);
+      }
+    }
+  },
+  
+  // Highlight a member marker with animation
+  highlightMemberMarker(marker) {
+    const icon = marker.getElement();
+    if (icon) {
+      icon.classList.add('marker-highlight');
+      setTimeout(() => {
+        icon.classList.remove('marker-highlight');
+      }, 2000);
+    }
+  },
+  
+  filterByRegion(region) {
+    // Filter markers by region
     this.markers.forEach(marker => {
-      if (isActive || marker.region === region) {
+      if (marker.region === region) {
         marker.setOpacity(1);
       } else {
-        marker.setOpacity(0.2);
+        marker.setOpacity(0.15);
       }
     });
     
     // Filter city list
     const cityGroups = document.querySelectorAll('.city-group');
     cityGroups.forEach(group => {
-      if (isActive || group.dataset.region === region) {
+      if (group.dataset.region === region) {
         group.style.display = 'block';
       } else {
         group.style.display = 'none';
       }
     });
+  },
+  
+  showAllMarkers() {
+    // Show all markers
+    this.markers.forEach(marker => {
+      marker.setOpacity(1);
+    });
     
-    // If clicking same region, reset
-    if (isActive) {
-      this.markers.forEach(m => m.setOpacity(1));
-      cityGroups.forEach(g => g.style.display = 'block');
-      document.querySelectorAll('.member-map__legend .legend-item').forEach(i => i.classList.remove('active'));
-    }
+    // Show all city groups
+    const cityGroups = document.querySelectorAll('.city-group');
+    cityGroups.forEach(group => {
+      group.style.display = 'block';
+    });
   },
   
   updateCounts() {
-    const counts = { north: 0, central: 0, south: 0 };
+    const counts = { north: 0, central: 0, south: 0, international: 0 };
     
     membersData.forEach(member => {
       if (member.location && member.location.region) {
@@ -3408,10 +3659,12 @@ const MemberMap = {
     const northEl = document.getElementById('north-count');
     const centralEl = document.getElementById('central-count');
     const southEl = document.getElementById('south-count');
+    const intlEl = document.getElementById('international-count');
     
     if (northEl) northEl.textContent = counts.north;
     if (centralEl) centralEl.textContent = counts.central;
     if (southEl) southEl.textContent = counts.south;
+    if (intlEl) intlEl.textContent = counts.international;
   },
   
   renderCityList() {
@@ -3424,7 +3677,8 @@ const MemberMap = {
     const regions = {
       north: { name: 'Miền Bắc', icon: '🏔️', cities: {} },
       central: { name: 'Miền Trung', icon: '🏖️', cities: {} },
-      south: { name: 'Miền Nam', icon: '🌴', cities: {} }
+      south: { name: 'Miền Nam', icon: '🌴', cities: {} },
+      international: { name: 'Quốc Tế', icon: '🌍', cities: {} }
     };
     
     Object.entries(cityMembers).forEach(([city, members]) => {
@@ -3534,43 +3788,6 @@ const MemberMap = {
         setTimeout(() => group.style.animation = '', 500);
       }
     });
-  },
-  
-  filterByRegion(region) {
-    const markers = this.container.querySelectorAll('.city-marker');
-    const cityGroups = document.querySelectorAll('.city-group');
-    const legendItems = document.querySelectorAll('.member-map__legend .legend-item');
-    
-    // Toggle active state
-    legendItems.forEach(item => {
-      if (item.dataset.region === region) {
-        item.classList.toggle('active');
-      } else {
-        item.classList.remove('active');
-      }
-    });
-    
-    const activeRegion = document.querySelector('.member-map__legend .legend-item.active')?.dataset.region;
-    
-    // Filter markers
-    markers.forEach(marker => {
-      if (!activeRegion || marker.dataset.region === activeRegion) {
-        marker.style.opacity = '1';
-        marker.style.pointerEvents = 'auto';
-      } else {
-        marker.style.opacity = '0.2';
-        marker.style.pointerEvents = 'none';
-      }
-    });
-    
-    // Filter city list
-    cityGroups.forEach(group => {
-      if (!activeRegion || group.dataset.region === activeRegion) {
-        group.style.display = 'block';
-      } else {
-        group.style.display = 'none';
-      }
-    });
   }
 };
 
@@ -3624,14 +3841,17 @@ const Reunion = {
             <span class="countdown__number" id="countdown-days">00</span>
             <span class="countdown__label">Ngày</span>
           </div>
+          <span class="countdown__separator">:</span>
           <div class="countdown__item">
             <span class="countdown__number" id="countdown-hours">00</span>
             <span class="countdown__label">Giờ</span>
           </div>
+          <span class="countdown__separator">:</span>
           <div class="countdown__item">
             <span class="countdown__number" id="countdown-minutes">00</span>
             <span class="countdown__label">Phút</span>
           </div>
+          <span class="countdown__separator">:</span>
           <div class="countdown__item">
             <span class="countdown__number" id="countdown-seconds">00</span>
             <span class="countdown__label">Giây</span>
@@ -3643,21 +3863,21 @@ const Reunion = {
             <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
               <div class="reunion__info-icon">${isTet ? '🧧' : '📅'}</div>
               <div class="reunion__info-content">
-                <h4>Ngày Âm lịch</h4>
-                <p>${reunionEvent.lunarDate || this.formatDate(eventDate)}</p>
+                <h4>Âm lịch</h4>
+                <p>${reunionEvent.lunarDate || 'N/A'}</p>
               </div>
             </div>
             <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
               <div class="reunion__info-icon">📅</div>
               <div class="reunion__info-content">
-                <h4>Ngày Dương lịch</h4>
-                <p>${this.formatDate(eventDate)}</p>
+                <h4>Dương lịch</h4>
+                <p>${this.formatDateShort(eventDate)}</p>
               </div>
             </div>
             <div class="reunion__info-item ${isTet ? 'reunion__info-item--tet' : ''}">
               <div class="reunion__info-icon">⏰</div>
               <div class="reunion__info-content">
-                <h4>Giờ</h4>
+                <h4>Thời gian</h4>
                 <p>${this.formatTime(eventDate)}</p>
               </div>
             </div>
@@ -3676,16 +3896,16 @@ const Reunion = {
           </div>` : ''}
           
           <div class="reunion__rsvp">
-            <h4 class="reunion__rsvp-title">${isTet ? '🌺 Bạn có về họp lớp Tết không? 🌺' : 'Bạn có tham gia không?'}</h4>
+            <h4 class="reunion__rsvp-title">${isTet ? '🌺 Bạn có tham gia không? 🌺' : 'Bạn có tham gia không?'}</h4>
             <div class="reunion__rsvp-buttons">
               <button class="rsvp-btn rsvp-btn--yes ${isTet ? 'rsvp-btn--tet' : ''}" data-rsvp="yes">
-                <span>${isTet ? '🧧' : '✅'}</span> Có mặt
+                <span>${isTet ? '🧧' : '✅'}</span> Có
               </button>
               <button class="rsvp-btn rsvp-btn--maybe" data-rsvp="maybe">
                 <span>🤔</span> Chưa chắc
               </button>
               <button class="rsvp-btn rsvp-btn--no" data-rsvp="no">
-                <span>😢</span> Không thể
+                <span>😢</span> Không
               </button>
             </div>
             <div class="reunion__stats" id="reunion-stats">
@@ -3722,6 +3942,14 @@ const Reunion = {
   formatDate(date) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('vi-VN', options);
+  },
+  
+  formatDateShort(date) {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const weekday = date.toLocaleDateString('vi-VN', { weekday: 'long' });
+    return `${weekday}, ${day}/${month}/${year}`;
   },
   
   formatTime(date) {
@@ -3943,9 +4171,255 @@ const PWA = {
   }
 };
 
+// ==================== EVENT THEME (Seasonal Decorations) ====================
+
+const EventTheme = {
+  // Event definitions with dates and themes
+  events: [
+    {
+      name: 'christmas',
+      startMonth: 12, startDay: 1,  // Start Dec 1
+      endMonth: 12, endDay: 26,     // End Dec 26
+      icon: '🎄',
+      badge: '🎅',
+      titleDecor: '❄️',
+      effects: 'snow',
+      colors: ['#dc2626', '#16a34a', '#fbbf24'],
+      greeting: 'Merry Christmas!'
+    },
+    {
+      name: 'newyear',
+      startMonth: 12, startDay: 27, // Start Dec 27
+      endMonth: 1, endDay: 5,       // End Jan 5
+      icon: '🎆',
+      badge: '✨',
+      titleDecor: '🎊',
+      effects: 'fireworks',
+      colors: ['#fbbf24', '#f59e0b', '#ef4444'],
+      greeting: 'Happy New Year!'
+    },
+    {
+      name: 'tet',
+      startMonth: 1, startDay: 15,  // ~1 month before Tết (adjust yearly)
+      endMonth: 2, endDay: 15,      // ~2 weeks after Tết
+      icon: '🧧',
+      badge: '🐍',  // 2025 is Year of Snake
+      titleDecor: '🏮',
+      effects: 'lanterns',
+      colors: ['#dc2626', '#fbbf24', '#f97316'],
+      greeting: 'Chúc Mừng Năm Mới!'
+    },
+    {
+      name: 'valentine',
+      startMonth: 2, startDay: 1,   // Start Feb 1
+      endMonth: 2, endDay: 16,      // End Feb 16
+      icon: '💕',
+      badge: '💝',
+      titleDecor: '💖',
+      effects: 'hearts',
+      colors: ['#ec4899', '#f472b6', '#db2777'],
+      greeting: 'Happy Valentine!'
+    },
+    {
+      name: 'women',
+      startMonth: 3, startDay: 1,   // Start Mar 1
+      endMonth: 3, endDay: 10,      // End Mar 10
+      icon: '🌸',
+      badge: '💐',
+      titleDecor: '🌷',
+      effects: 'flowers',
+      colors: ['#ec4899', '#a855f7', '#f472b6'],
+      greeting: 'Happy Women\'s Day!'
+    },
+    {
+      name: 'teacher',
+      startMonth: 11, startDay: 10, // Start Nov 10
+      endMonth: 11, endDay: 22,     // End Nov 22
+      icon: '📚',
+      badge: '🎓',
+      titleDecor: '✏️',
+      effects: 'books',
+      colors: ['#3b82f6', '#8b5cf6', '#06b6d4'],
+      greeting: 'Happy Teacher\'s Day!'
+    }
+  ],
+  
+  currentEvent: null,
+  
+  init() {
+    this.detectEvent();
+    this.applyTheme();
+    this.startEffects();
+  },
+  
+  detectEvent() {
+    const now = new Date();
+    const month = now.getMonth() + 1;
+    const day = now.getDate();
+    
+    for (const event of this.events) {
+      if (this.isInEventPeriod(month, day, event)) {
+        this.currentEvent = event;
+        document.body.setAttribute('data-event', event.name);
+        return;
+      }
+    }
+    
+    this.currentEvent = null;
+    document.body.removeAttribute('data-event');
+  },
+  
+  isInEventPeriod(month, day, event) {
+    const { startMonth, startDay, endMonth, endDay } = event;
+    
+    // Handle year wrap (e.g., Dec 27 - Jan 5)
+    if (startMonth > endMonth) {
+      return (month === startMonth && day >= startDay) || 
+             (month === endMonth && day <= endDay) ||
+             (month > startMonth) || (month < endMonth);
+    }
+    
+    // Same year period
+    if (month === startMonth && month === endMonth) {
+      return day >= startDay && day <= endDay;
+    }
+    if (month === startMonth) return day >= startDay;
+    if (month === endMonth) return day <= endDay;
+    return month > startMonth && month < endMonth;
+  },
+  
+  applyTheme() {
+    const titleEl = document.getElementById('hero-title');
+    const decorEl = document.getElementById('title-decoration');
+    const logoIcon = document.getElementById('logo-icon');
+    const logoBadge = document.getElementById('logo-badge');
+    
+    if (this.currentEvent) {
+      // Apply event decorations
+      if (decorEl) {
+        decorEl.innerHTML = ` ${this.currentEvent.titleDecor}`;
+        decorEl.classList.add('active');
+      }
+      if (logoIcon) logoIcon.textContent = this.currentEvent.icon;
+      if (logoBadge) {
+        logoBadge.textContent = this.currentEvent.badge;
+        logoBadge.classList.add('active');
+      }
+      
+      // Set CSS variables for event colors
+      document.documentElement.style.setProperty('--event-color-1', this.currentEvent.colors[0]);
+      document.documentElement.style.setProperty('--event-color-2', this.currentEvent.colors[1]);
+      document.documentElement.style.setProperty('--event-color-3', this.currentEvent.colors[2]);
+    } else {
+      // Default theme
+      if (decorEl) decorEl.classList.remove('active');
+      if (logoIcon) logoIcon.textContent = '🎓';
+      if (logoBadge) logoBadge.classList.remove('active');
+    }
+  },
+  
+  startEffects() {
+    if (!this.currentEvent) return;
+    
+    const effectsContainer = document.getElementById('title-effects');
+    if (!effectsContainer) return;
+    
+    switch (this.currentEvent.effects) {
+      case 'snow':
+        this.createSnowEffect(effectsContainer);
+        break;
+      case 'hearts':
+        this.createHeartsEffect(effectsContainer);
+        break;
+      case 'lanterns':
+        this.createLanternsEffect(effectsContainer);
+        break;
+      case 'flowers':
+        this.createFlowersEffect(effectsContainer);
+        break;
+      case 'fireworks':
+        this.createFireworksEffect(effectsContainer);
+        break;
+    }
+  },
+  
+  createSnowEffect(container) {
+    const snowflakes = ['❄', '❅', '❆', '•'];
+    for (let i = 0; i < 50; i++) {
+      const snow = document.createElement('span');
+      snow.className = 'effect-particle snow';
+      snow.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+      snow.style.left = Math.random() * 100 + '%';
+      snow.style.animationDelay = Math.random() * 8 + 's';
+      snow.style.animationDuration = (8 + Math.random() * 8) + 's';
+      snow.style.fontSize = (8 + Math.random() * 12) + 'px';
+      snow.style.opacity = 0.3 + Math.random() * 0.5;
+      snow.style.color = 'white';
+      container.appendChild(snow);
+    }
+  },
+  
+  createHeartsEffect(container) {
+    const hearts = ['💕', '💖', '💗', '💓', '💝', '❤️'];
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('span');
+      heart.className = 'effect-particle heart';
+      heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDelay = Math.random() * 4 + 's';
+      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+      heart.style.fontSize = (12 + Math.random() * 12) + 'px';
+      container.appendChild(heart);
+    }
+  },
+  
+  createLanternsEffect(container) {
+    const lanterns = ['🏮', '🧧', '✨', '🎊'];
+    for (let i = 0; i < 15; i++) {
+      const lantern = document.createElement('span');
+      lantern.className = 'effect-particle lantern';
+      lantern.textContent = lanterns[Math.floor(Math.random() * lanterns.length)];
+      lantern.style.left = Math.random() * 100 + '%';
+      lantern.style.animationDelay = Math.random() * 3 + 's';
+      lantern.style.animationDuration = (6 + Math.random() * 4) + 's';
+      lantern.style.fontSize = (15 + Math.random() * 15) + 'px';
+      container.appendChild(lantern);
+    }
+  },
+  
+  createFlowersEffect(container) {
+    const flowers = ['🌸', '🌺', '🌷', '💐', '🌹', '🌼'];
+    for (let i = 0; i < 20; i++) {
+      const flower = document.createElement('span');
+      flower.className = 'effect-particle flower';
+      flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+      flower.style.left = Math.random() * 100 + '%';
+      flower.style.animationDelay = Math.random() * 4 + 's';
+      flower.style.animationDuration = (5 + Math.random() * 5) + 's';
+      flower.style.fontSize = (12 + Math.random() * 12) + 'px';
+      container.appendChild(flower);
+    }
+  },
+  
+  createFireworksEffect(container) {
+    const sparks = ['✨', '⭐', '🌟', '💫', '✦'];
+    for (let i = 0; i < 25; i++) {
+      const spark = document.createElement('span');
+      spark.className = 'effect-particle firework';
+      spark.textContent = sparks[Math.floor(Math.random() * sparks.length)];
+      spark.style.left = Math.random() * 100 + '%';
+      spark.style.animationDelay = Math.random() * 3 + 's';
+      spark.style.animationDuration = (2 + Math.random() * 3) + 's';
+      spark.style.fontSize = (10 + Math.random() * 15) + 'px';
+      container.appendChild(spark);
+    }
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   PWA.init();  // Initialize PWA service worker
   DarkMode.init();  // Initialize dark mode first
+  EventTheme.init();  // Initialize seasonal event theme
   Navigation.init();
   Members.init();
   Search.init();  // Initialize search after members
@@ -3958,6 +4432,7 @@ document.addEventListener('DOMContentLoaded', () => {
   MemberMap.init();  // Initialize member location map
   HeroBubbles.init();  // Initialize hero floating avatars
   Spotlight.init();  // Initialize member spotlight
+  ScrollToTop.init();  // Initialize scroll to top button
   Animations.init();
   Particles.init();
   CounterAnimation.init();
